@@ -1,0 +1,106 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  /* background-image: url("https://blog.writers.work/wp-content/uploads/2018/11/desktopwithlaptop.jpg"); */
+  background-color: rgb(199, 199, 199);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  font-family: Arial, Helvetica, sans-serif;
+  animation: Pageanimation 1s linear 1 forwards;
+}
+
+@keyframes Pageanimation {
+  from {
+      opacity: 0;
+      /* transform: translate(0, 200px); */
+      filter:blur(33px)
+  }
+
+  to {
+      opacity: 1;
+      /* transform: translate(0); */
+      filter: blur(0);
+  }
+}
+
+.navbar {
+  background-color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  /* position:fixed; */
+  position: sticky;
+}
+
+.navbar ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar li {
+  height: 50px;
+}
+
+.navbar li:first-child {
+  margin-right: auto;
+}
+
+
+.navbar a {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+
+}
+
+.navbar a:hover {
+  background-color: #f0f0f0;
+}
+
+ul.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  backdrop-filter: blur(10px);
+  background-color:rgb(255, 255, 255, 0.2);
+  box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.ul.sidebar li {
+  width: 250px;
+}
+
+ul.sidebar a {
+  width: 250px;
+}
+
+#search {
+  border-radius: 5px;
+  padding: 3px 20px;
+}
+
+#logo {
+  transition: 0.3s;
+}
+
+#logo:hover {
+  background-color: #f0f0f0;
+  transition: 0.3s;
+}
