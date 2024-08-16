@@ -4,9 +4,9 @@ import './index.css';
 import Navbar from './components/Navbar';
 
 import reportWebVitals from './reportWebVitals';
-import Body from './Body';
 import Slideshow from './components/SlideShow';
 import Home from './components/Home'
+import Slogan from './components/Slogan'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,6 +15,7 @@ root.render(
       <Navbar />
       <Home/>
       <Slideshow/>
+      <Slogan/>
       
     </>
   </React.StrictMode>
