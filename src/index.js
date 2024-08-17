@@ -5,16 +5,21 @@ import Navbar from './components/Navbar';
 
 import reportWebVitals from './reportWebVitals';
 import Slideshow from './components/SlideShow';
-// import Home from './components/Home'
+import Home from './components/Home'
 import Slogan from './components/Slogan'
+import Featured from './components/Featured';
+import Sale from './components/Sale';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <>
       <Navbar />
+      <Home/>
       <Slideshow/>
       <Slogan/>
+      <Featured/>
+      <Sale/>
       
     </>
   </React.StrictMode>

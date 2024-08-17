@@ -1,16 +1,30 @@
 .home {
     width: 1000;
     height: 700px;
-    background-image: url('https://scontent.xx.fbcdn.net/v/t1.15752-9/440957510_1526008334926626_7740029123597612278_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=0024fc&_nc_ohc=dkIdLZFEH3MQ7kNvgGmdaEh&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QEwtanrRDWWWy2eELd2PXeta0nBH3STsgbeFs9jbR0Yww&oe=66E529C7');
+    background-image: url('https://scontent.xx.fbcdn.net/v/t1.15752-9/440957510_1526008334926626_7740029123597612278_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=0024fc&_nc_ohc=dkIdLZFEH3MQ7kNvgEllgX4&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QEdhPr8_HvEUeOF_7OSDgAApT_glTCv1yi04SHkdd9ADA&oe=66E67B47');
     background-repeat: no-repeat;
     background-size:100%;
     background-position: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    font-family: sans-serif;
+    margin-bottom: 50px;
 }
 
+
 #Title {
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 9em;
+}
+
+#next, #prev {
+    border-radius: 50px;
+    width: 80px;
+    height: 80px;
+    border: 1px solid gray;
+    background: transparent;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
 }
