@@ -10,7 +10,7 @@ function SlideShow() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://i.pinimg.com/736x/66/e5/6f/66e56fbfb2bb598219d409946f8f4ff4.jpg"
+          src="https://i.pinimg.com/564x/b5/1c/64/b51c64f53f8aa88c6d14dda0f43ccd7f.jpg"
           alt="First slide"
         />
         <Carousel.Caption>
@@ -21,7 +21,7 @@ function SlideShow() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://i.pinimg.com/736x/41/e9/f8/41e9f88e306ed80b608aa6dc4bc4b974.jpg"
+          src="https://i.pinimg.com/564x/b5/1c/64/b51c64f53f8aa88c6d14dda0f43ccd7f.jpg"
           alt="Second slide"
         />
         <Carousel.Caption>
@@ -32,7 +32,7 @@ function SlideShow() {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://i.pinimg.com/originals/da/64/85/da64852513772cdb532c17708fd06c0b.jpg"
+          src="https://i.pinimg.com/564x/b5/1c/64/b51c64f53f8aa88c6d14dda0f43ccd7f.jpg"
           alt="Third slide"
         />
         <Carousel.Caption>

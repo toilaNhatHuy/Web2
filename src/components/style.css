@@ -4,18 +4,26 @@
     height: 10px;
 }
 
-.carousel-control-prev-icon {
+.carousel-control-prev {
     border-radius: 100px;
     border: 1px solid rgb(173, 173, 173);
     background-color: rgb(173, 173, 173);
-    width: 40px;
-    height:120px;
+    width: 100px;
+    height:100px;
+    transform: translate(50%, 50%);
+    display: flex;
 }
 
-.carousel-control-next-icon {
+.carousel-control-next {
     border-radius: 100px;
-    border: 1px solid rgb(0, 0, 0);
-    background-color: rgb(0, 0, 0);
-    width: 40px;
-    height:120px;
+    border: 1px solid rgb(173, 173, 173);
+    background-color: rgb(173, 173, 173);
+    width: 100px;
+    height:100px;
+    transform: translate(-50%, 50%);
+    display: flex;
+    align-items: center;
 }
+
+
+
