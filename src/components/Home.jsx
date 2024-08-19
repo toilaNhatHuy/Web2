@@ -1,4 +1,5 @@
-import './Home.css'
+import './Home.css';
+import React , { Component}  from 'react';
 function Home() {
     return(
         <div className="home">

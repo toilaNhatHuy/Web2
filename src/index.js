@@ -9,6 +9,10 @@ import Home from './components/Home'
 import Slogan from './components/Slogan'
 import Featured from './components/Featured';
 import Sale from './components/Sale';
+import NewArrivals from './components/NewArrivals';
+import Nameproduct from './components/Nameproduct';
+import Note from './components/Note';
+import Footer from './components/Footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -20,7 +24,10 @@ root.render(
       <Slogan/>
       <Featured/>
       <Sale/>
-      
+      <NewArrivals/>
+      <Nameproduct/>
+      <Note/>
+      <Footer/>
     </>
   </React.StrictMode>
 );

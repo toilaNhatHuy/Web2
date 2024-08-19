@@ -1,5 +1,5 @@
 import './Featured.css';
-
+import React , { Component}  from 'react';
 function Featured() {
   return (
     <div className="container">

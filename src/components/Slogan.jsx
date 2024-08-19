@@ -1,4 +1,5 @@
-import './Slogan.css'
+import './Slogan.css';
+import React , { Component}  from 'react';
 
 function Slogan () {
    return (
