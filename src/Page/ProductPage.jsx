@@ -1,6 +1,11 @@
+import Product from "../components/Product_ProductPage"
 
-import HeaderProduct from "../components/HeaderProduct"
+
 function ProductPage(){
-    <HeaderProduct/>
+    return(
+        <>
+        <Product/>
+        </>
+    )
 }
 export default ProductPage
