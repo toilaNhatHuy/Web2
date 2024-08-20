@@ -1,0 +1,19 @@
+.Note {
+    width: 100vw;
+    height: 400px;
+    background-color: rgb(208, 208, 208);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+#n-btn {
+    font-size: large;
+    font-weight: 500;
+    padding: 14px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+}

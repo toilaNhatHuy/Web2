@@ -1,0 +1,26 @@
+.Container {
+    margin-bottom: 100px;
+}
+
+
+
+.carousel-indicators [data-bs-target] {
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+}
+
+.slide1, .slide2, .slide3 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+#img1, #img2, #img3 {
+    border: 3px solid black;
+
+}
+
+
+
+

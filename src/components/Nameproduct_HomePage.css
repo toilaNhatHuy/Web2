@@ -1,0 +1,22 @@
+.Nameproduct {
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 200px;
+}
+
+.np-title {
+    margin-bottom: 20px;
+}
+
+.np-paragraph {
+    font-size: large;
+}
+
+#np-btn {
+    border: none;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    padding: 5px 50px;
+    font-size: 30px;
+}
