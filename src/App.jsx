@@ -1,11 +1,11 @@
-import Slideshow from "./components/SlideShow.jsx";
-import Navbar from "./components/Navbar.jsx";
-import Home from "./components/Home.jsx";
-import Slogan from "./components/Slogan.jsx";
-import Featured from "./components/Featured.jsx";
-import Sale from "./components/Sale.jsx";
-import NewArrivals from "./components/NewArrivals.jsx";
-import Footer from "./components/Footer.jsx";
+import Slideshow from "./components/Home/SlideShow.jsx";
+import Navbar from "./components/Home/Navbar.jsx";
+import Home from "./components/Home/Home.jsx";
+import Slogan from "./components/Home/Slogan.jsx";
+import Featured from "./components/Home/Featured.jsx";
+import Sale from "./components/Home/Sale.jsx";
+import NewArrivals from "./components/Home/NewArrivals.jsx";
+import Footer from "./components/Home/Footer.jsx";
 // import Body from "./Body"
 // import Slideshow from "./SlideShow"
 

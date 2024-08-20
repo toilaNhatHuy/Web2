@@ -199,6 +199,15 @@ ul.sidebar a {
   transition: 0.3s;
 }
 
+#logo {
+  transition: 0.3s;
+}
+
+#logo:hover {
+  transform:rotate(-6deg);
+  transition: 0.3s;
+}
+
 
 
 
