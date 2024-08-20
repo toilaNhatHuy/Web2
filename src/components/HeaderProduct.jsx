@@ -2,7 +2,7 @@ import './HeaderProduct.css'
 import React , {Component}  from 'react';
 function HeaderProduct(){
     return(
-        <h1 className="Test">HELLO WORLD</h1>
+        <h2>Hello</h2>
     )
 }
 export default HeaderProduct
