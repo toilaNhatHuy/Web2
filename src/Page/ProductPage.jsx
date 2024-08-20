@@ -1,9 +1,10 @@
-import TestProduct from "../components/TestProduct"
+import Product from "../components/Product_ProductPage"
+
 
 function ProductPage(){
     return(
         <>
-        <TestProduct/>
+        <Product/>
         </>
     )
 }

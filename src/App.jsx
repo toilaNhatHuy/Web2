@@ -8,8 +8,8 @@ function App() {
         <div className="Main">
             <div className="navbar">
                 <ul>
-                    <li><Link id="logo" to="#">STREET BRAND</Link></li>
-                    <li><Link id="home" to="/home">HOME</Link></li>
+                    <li><img id="logo"></img></li>
+                    <li><Link id="home" to="/">HOME</Link></li>
                     <li><Link id = "products" to="/products">PRODUCTS</Link></li>
                     <li><Link id = "about-us" to="/aboutus">ABOUT US</Link></li>
                     <li><Link id = "sign-in" to="/signin">SIGN IN</Link></li>
@@ -22,7 +22,7 @@ function App() {
                 </ul>
             </div>
             <Routes>
-                <Route path="/home" element={<Home/>}/>
+                <Route path="/" element={<Home/>}/>
                 <Route path="/products" element={<Product/>}/>
             </Routes>
         </div>
