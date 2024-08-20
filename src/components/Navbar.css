@@ -34,6 +34,7 @@ body {
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
   font-weight: bold;
   /* position:fixed; */
+  margin-top: 10px
 }
 
 .navbar ul {
@@ -92,7 +93,115 @@ ul.sidebar a {
   border-radius: 50px;
   padding: 3px 20px;
   border: 2px solid black;
+  background: transparent;
 }
+
+#search-icon {
+  border:none;
+  background-color: white;
+  position: absolute;
+  top: 20px;
+  right: 125px;
+  z-index: 100;
+  border-radius: 50%;
+}
+
+.search-bar {
+  display: flex;
+}
+
+#cart {
+  transition: 0.3s;
+}
+
+#cart:hover {
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  width:0px;
+  height: 2px;
+  background-color: rgb(75, 75, 75);
+  transform: translate(0,10px);
+  transition: 0.3s;
+}
+
+#home:hover::before {
+  content: "";
+  width: 49px;
+  transition: 0.3s;
+}
+
+#products::before {
+  content: "";
+  position: absolute;
+  width:0px;
+  height: 2px;
+  background-color: rgb(75, 75, 75);
+  transform: translate(0,10px);
+  transition: 0.3s;
+}
+
+#products:hover::before {
+  content: "";
+  width: 82px;
+  transition: 0.3s;
+}
+
+#about-us::before {
+  content: "";
+  position: absolute;
+  width:0px;
+  height: 2px;
+  background-color: rgb(75, 75, 75);
+  transform: translate(0,10px);
+  transition: 0.3s;
+}
+
+#about-us:hover::before {
+  content: "";
+  width: 82px;
+  transition: 0.3s;
+}
+
+#sign-in::before {
+  content: "";
+  position: absolute;
+  width:0px;
+  height: 2px;
+  background-color: rgb(75, 75, 75);
+  transform: translate(0,10px);
+  transition: 0.3s;
+}
+
+#sign-in:hover::before {
+  content: "";
+  width: 60px;
+  transition: 0.3s;
+}
+
+#sign-up::before {
+  content: "";
+  position: absolute;
+  width:0px;
+  height: 2px;
+  background-color: rgb(75, 75, 75);
+  transform: translate(0,10px);
+  transition: 0.3s;
+}
+
+#sign-up:hover::before {
+  content: "";
+  width: 61px;
+  transition: 0.3s;
+}
+
+
+
+
 
 
 
