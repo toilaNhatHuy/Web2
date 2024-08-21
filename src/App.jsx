@@ -28,11 +28,16 @@ function App() {
             </Routes>
             <div className="Footer">
                 <div className="nav-footer">
-                    <li>Home</li>
+                    {/* <li>Home</li>
                     <li>Products</li>
                     <li>About Us</li>
                     <li>Sign In</li>
-                    <li>Sign Up</li>
+                    <li>Sign Up</li> */}
+                    <li><Link id="home" to="/">HOME</Link></li>
+                    <li><Link id = "products" to="/products">PRODUCTS</Link></li>
+                    <li><Link id = "about-us" to="/aboutus">ABOUT US</Link></li>
+                    <li><Link id = "sign-in" to="/signin">SIGN IN</Link></li>
+                    <li><Link id = "sign-up" to="/signup">SIGN UP</Link></li>
                 </div>
                 <div className="footer-info">
                     <div className="footer-slogan">
