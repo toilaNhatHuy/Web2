@@ -4,13 +4,13 @@
     justify-content: space-between;
     align-items: center;
     font-family: "Righteous", sans-serif;
-    
 }
 
 .container {
     animation: appear2 linear;
     animation-timeline: view();
     animation-range: entry 0 cover 40%;
+    margin-top: 50px;
 }
 
 @keyframes appear2 {
