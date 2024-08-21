@@ -2,7 +2,7 @@
 import Carousel from 'react-bootstrap/Carousel';
 import React , { Component}  from 'react';
 // import 'bootstrap/dist/css/bootstrap.min.css';
-import './style.css'
+import './SlideShow_HomePage.css'
 
 function SlideShow() {
   return (

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Righteous&family=Staatliches&display=swap');
 .Sale {
     display: flex;
     justify-content: center;
@@ -10,15 +11,27 @@
     animation-timeline: view();
     animation-range: entry 0 cover 40%;
     margin-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
 
 .right-sl {
-    margin-left: 150px;
-    margin-bottom: 30px;
+    width: 61%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
+#h3-1{
+    width: 100%;
+    font-size: 50px;
+    font-family: "Righteous", sans-serif;
+}
 @keyframes appear3 {
     from {
         opacity: 0;

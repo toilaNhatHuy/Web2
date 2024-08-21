@@ -1,34 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import Navbar from './components/Home/Navbar';
 
+import {BrowserRouter as Router} from 'react-router-dom'
+import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Slideshow from './components/Home/SlideShow';
-import Home from './components/Home/Home';
-import Slogan from './components/Home/Slogan';
-import Featured from './components/Home/Featured';
-import Sale from './components/Home/Sale';
-import NewArrivals from './components/Home/NewArrivals';
-import Nameproduct from './components/Home/Nameproduct';
-import Note from './components/Home/Note';
-import Footer from './components/Home/Footer';
+import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <>
-      <Navbar />
-      <Home/>
-      <Slideshow/>
-      <Slogan/>
-      <Featured/>
-      <Sale/>
-      <NewArrivals/>
-      <Nameproduct/>
-      <Note/>
-      <Footer/>
-    </>
+    <Router>
+      <App/>
+    </Router>
   </React.StrictMode>
 );
 

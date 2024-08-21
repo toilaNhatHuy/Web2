@@ -1,0 +1,116 @@
+#ctus {
+    text-align: center;
+    font-size: 4em;
+    margin-bottom: 20px;
+}
+
+.ContactUs {
+    animation: appear7 linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+@keyframes appear7 {
+    from {
+        opacity: 0;
+        transform: translate(100px,0);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+
+.Get-in-touch {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+#myP {
+    font-size: 1.2em;
+    font-weight: bolder;
+}
+
+#p-icon, #e-icon, #l-icon {
+    font-size: 3em;
+}
+
+.Phone-number {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+} 
+
+.Email {
+    display: flex;
+    gap: 30px;
+}
+
+.location {
+    display: flex;
+    gap: 40px;
+}
+
+.send-a-message {
+    width: 420px;
+    height: 530px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 15px;
+
+}
+
+.send-a-message-in {
+    margin-left: 30px;
+}
+
+.send-a-message-title {
+    text-align: center;
+}
+
+#username, #user-email {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px 80px;
+    display: flex;
+    justify-content: start;
+}
+
+#user-message {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 40px 80px;
+}
+
+#sam-input {
+    font-size: 1.3em;
+}
+
+.sam-name, .sam-email {
+    margin-bottom: 20px;
+}
+
+.send-a-message-title {
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+#submit-send {
+    margin-top: 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 10px 120px;
+    border-radius: 50px;
+    font-size: 30px;
+}
+
+#pn, #em, #lc {
+    font-weight: bold;
+    font-size: 20px;
+}

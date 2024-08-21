@@ -1,4 +1,4 @@
-import './NewArrivals.css'
+import './NewArrivals_HomePage.css'
 import React , { Component}  from 'react';
 
 function NewArrivals() {

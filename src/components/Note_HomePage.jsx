@@ -1,4 +1,4 @@
-import './Note.css'
+import './Note_HomePage.css'
 import React , { Component}  from 'react';
 
 function Note() {
