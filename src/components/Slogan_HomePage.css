@@ -38,6 +38,7 @@
         font-size: 1.5em;
         margin-bottom: 100px;
         transition: 0.3s;
+        text-decoration: none;
     }
 
     .button:hover {
