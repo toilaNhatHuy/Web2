@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Righteous&family=Staatliches&display=swap');
 .Featured {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    font-family: "Righteous", sans-serif;
 }
 
 .container {

@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Righteous&family=Staatliches&display=swap');
 #na-title {
     font-size: 10em;
     font-weight: lighter;
     text-align: center;
+    font-family: "Righteous", sans-serif;
 }
 
 .Introduce {
@@ -30,6 +32,7 @@
 
 #wis {
     font-size: 4em;
+    font-family: "Righteous", sans-serif;
 }
 
 .NewArrivals {
@@ -38,7 +41,6 @@
     animation-timeline: view();
     animation-range: entry 0 cover 40%;
     margin-bottom: 100px;
-
 }
 
 @keyframes appear4 {

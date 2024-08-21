@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Righteous&family=Staatliches&display=swap');
 .Footer {
     background-color: black;
     width: 100vw;
     height: 550px;
     color: white;
+    font-family: "Righteous", sans-serif;
 }
 
 .nav-footer {

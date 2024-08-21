@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Righteous&family=Staatliches&display=swap');
+    
     .Slogan {
         text-transform: uppercase;
         text-align: center;
@@ -25,20 +27,21 @@
 
     .h1-2 {
         font-size: 5em;
+        margin-bottom: 30px;
+        font-family: "Righteous", sans-serif;
     }
 
     .button {
         background-color: rgb(46, 46, 46);
         color: white;
         padding: 15px 20px;
-        width: 300px;
         border-radius: 50px;
         border: none;
         text-transform: uppercase;
         font-size: 1.5em;
-        margin-bottom: 100px;
         transition: 0.3s;
         text-decoration: none;
+        font-family: "Righteous", sans-serif;
     }
 
     .button:hover {
