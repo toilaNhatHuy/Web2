@@ -1,6 +1,6 @@
 
 import Carousel from 'react-bootstrap/Carousel';
-import React , { Component}  from 'react';
+import React from 'react';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import './SlideShow_HomePage.css'
 

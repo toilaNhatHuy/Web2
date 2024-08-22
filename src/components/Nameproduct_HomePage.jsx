@@ -1,5 +1,5 @@
 import './Nameproduct_HomePage.css'
-import React , { Component}  from 'react';
+import React from 'react';
 
 function Nameproduct() {
   return (

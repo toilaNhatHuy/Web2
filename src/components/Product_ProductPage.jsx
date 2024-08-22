@@ -1,5 +1,5 @@
 import './Product_ProductPage.css'
-import React , {Component}  from 'react';
+import React from 'react';
 function Product(){
     return(
         <div className='Div'>

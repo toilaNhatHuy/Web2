@@ -8,7 +8,7 @@ import Nameproduct from "../components/Nameproduct_HomePage"
 import Note from "../components/Note_HomePage"
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
-
+import React  from 'react';
 
 function HomePage() {
     return (
