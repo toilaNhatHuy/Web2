@@ -1,13 +1,12 @@
-const mongoose = require('mongoose')
-
-const TeeSchema = new mongoose.Schema({
+const mongoose = require("mongoose")
+const productSchema = new mongoose.Schema({
     Name:{
         type: String,
         required: true
     },
     Price:{
         type: Number,
-        reuqired: true
+        required: true
     },
     Detail:{
         type: String,
@@ -25,6 +24,6 @@ const TeeSchema = new mongoose.Schema({
         type: String,
         required: true
     }
-});
-const product = new mongoose.model('T-Shirt', TeeSchema)
-module.exports = product;
+})
+let Product = mongoose.model("Product",productSchema);
+module.exports = {Product}
