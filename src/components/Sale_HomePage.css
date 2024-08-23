@@ -54,9 +54,40 @@
     display: flex;
     justify-content: center;
     align-items: end;
-    
+    transition: 0.3s;
 }
 
+.sale-1:hover {
+    transform: translate(-5px, -10px);
+    box-shadow: 4px 5px 14px 0px rgba(114,114,114,0.75);
+-webkit-box-shadow: 4px 5px 14px 0px rgba(114,114,114,0.75);
+-moz-box-shadow: 4px 5px 14px 0px rgba(114,114,114,0.75);
+    transition: 0.3s;
+}
+
+.sale-2:hover {
+    transform: translate(-5px, -10px);
+    box-shadow: 4px 5px 14px 0px rgba(114,114,114,0.75);
+-webkit-box-shadow: 4px 5px 14px 0px rgba(114,114,114,0.75);
+-moz-box-shadow: 4px 5px 14px 0px rgba(114,114,114,0.75);
+    transition: 0.3s;
+}
+
+.sale-3:hover {
+    transform: translate(-5px, -10px);
+    box-shadow: 4px 5px 14px 0px rgba(114,114,114,0.75);
+-webkit-box-shadow: 4px 5px 14px 0px rgba(114,114,114,0.75);
+-moz-box-shadow: 4px 5px 14px 0px rgba(114,114,114,0.75);
+    transition: 0.3s;
+}
+
+.sale-4:hover {
+    transform: translate(-5px, -10px);
+    box-shadow: 4px 5px 14px 0px rgba(114,114,114,0.75);
+-webkit-box-shadow: 4px 5px 14px 0px rgba(114,114,114,0.75);
+-moz-box-shadow: 4px 5px 14px 0px rgba(114,114,114,0.75);
+    transition: 0.3s;
+}
 
 .sale-2 {
     width: 500px;
@@ -69,6 +100,7 @@
     display: flex;
     justify-content: center;
     align-items: end;
+    transition: 0.3s;
 }
 
 .sale-3 {
@@ -83,6 +115,7 @@
     display: block;
     text-align: center;
     align-items: end;
+    transition: 0.3s;
 }
 
 .sale-4 {
@@ -97,6 +130,7 @@
     display: block;
     text-align: center;
     align-items: end;
+    transition: 0.3s;
 }
 
 .sale-3-4 {
