@@ -1,15 +1,13 @@
-import './Featured_HomePage.css'
-import React from 'react'
+import './Popular_HomePage.css'
 import Carousel from 'react-bootstrap/Carousel';
+import React from 'react'
 
-function Featured() {
-
-
+function Popular() {
   return (
     <div className="container">
       <div className="Featured">
         <div className="right-ft">
-          <h3 id = "h3-1">Featured</h3>
+          <h3 id = "h3-1">Popular right now</h3>
         </div>
 
         <div className="left-ft">
@@ -60,4 +58,4 @@ function Featured() {
   )
 }
 
-export default Featured
+export default Popular
