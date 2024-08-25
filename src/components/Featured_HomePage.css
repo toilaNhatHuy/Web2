@@ -12,7 +12,7 @@
     animation-timeline: view();
     animation-range: entry 0 cover 40%;
     width: 1530px;
-    height: 800px;
+    height: 550px;
 }
 
 @keyframes appear2 {
@@ -107,3 +107,5 @@ a.carousel-control-next {
     border-radius: 50px;
     text-decoration: none;
 }
+
+

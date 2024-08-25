@@ -1,13 +1,11 @@
-import './Featured_ProductPage.css'
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel';
-
-function Featured() {
+function Featured_Product4() {
   return (
     <div className="container">
       <div className="Featured">
         <div className="right-ft">
-          <h3 id = "h3-1">SALE 30% FOR T-SHIRTS</h3>
+          <h3 id = "h3-1">SALE ..% FOR TANK TOPS</h3>
         </div>
 
         <div className="left-ft">
@@ -58,4 +56,4 @@ function Featured() {
   )
 }
 
-export default Featured
+export default Featured_Product4

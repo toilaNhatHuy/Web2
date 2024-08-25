@@ -47,7 +47,9 @@
 .sale-1 {
     width: 500px;
     height: 500px;
-    background-color: rgb(208, 208, 208);
+    background-image: url('https://i.pinimg.com/474x/0b/a6/e4/0ba6e4756afb10324871753d8c95c59b.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
     font-size: 2em;
     font-weight: 500;
     padding: 20px;
@@ -55,6 +57,23 @@
     justify-content: center;
     align-items: end;
     transition: 0.3s;
+    cursor: pointer;
+}
+
+#bts {
+    color: white
+}
+
+#shirts {
+    color: white
+}
+
+#hoodies {
+    color: white
+}
+
+#sweaters {
+    color: white;
 }
 
 .sale-1:hover {
@@ -92,7 +111,7 @@
 .sale-2 {
     width: 500px;
     height: 220px;
-    background-color: rgb(208, 208, 208);
+    background-image: url('https://i.pinimg.com/736x/64/6a/82/646a82e9010245c380766f4503b712ca.jpg');
     font-size: 2em;
     font-weight: 500;
     padding: 20px;
@@ -101,13 +120,14 @@
     justify-content: center;
     align-items: end;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .sale-3 {
     width: 235px;
     height: 250px;
     margin-top: 30px;
-    background-color: rgb(208, 208, 208);
+    background-image: url('https://i.pinimg.com/736x/e9/65/31/e9653148065b0ced8918755d7fd9ffa8.jpg');
     font-size: 2em;
     font-weight: 500;
     padding: 20px;
@@ -116,13 +136,14 @@
     text-align: center;
     align-items: end;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .sale-4 {
     width: 235px;
     height: 250px;
     margin-top: 30px;
-    background-color: rgb(208, 208, 208);
+    background-image: url('https://i.pinimg.com/736x/da/07/96/da0796e787aac8cf605f06fc022d19ed.jpg');
     font-size: 2em;
     font-weight: 500;
     padding: 20px;
@@ -131,6 +152,7 @@
     text-align: center;
     align-items: end;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 .sale-3-4 {
