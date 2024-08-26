@@ -1,5 +1,5 @@
 import './Note_HomePage.css'
-import React , { Component}  from 'react';
+import React from 'react';
 
 function Note() {
   return (
