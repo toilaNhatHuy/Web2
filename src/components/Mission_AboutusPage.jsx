@@ -4,10 +4,11 @@ import React from 'react'
 
 function Mission() {
   return (
+    <div className="mainOurMission">
     <div className="Our-Mission">
         <div className="Mission">
             <h1 id = "mission-1">OUR MISSION</h1>
-            <p id = "afterword">Lorem Ipsum is simply dummy text of<br/> the printing and typesetting industry.<br/> Lorem Ipsum has been the industry's<br/> standard scdsc dummy Lorem Ipsum is<br/> seen the industry's standard<br/> dummy typesetting industry. Lorem<br/> Ipsum has been thetypesetting industry.<br/> Lorem Ipsum has been the</p>
+            <p id = "afterword">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard scdsc dummy Lorem Ipsum is seen the industry's standard dummy typesetting industry. Lorem Ipsum has been thetypesetting industry. Lorem Ipsum has been the</p>
         </div>
         <div className="Mission-Img">
             <div className="M-img-1-2">
@@ -22,6 +23,7 @@ function Mission() {
 
             </div>
         </div>
+    </div>
     </div>
   )
 }

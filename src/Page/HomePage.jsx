@@ -6,11 +6,14 @@ import NewArrivals from "../components/NewArrivals_HomePage"
 import Featured from "../components/Featured_HomePage"
 import Nameproduct from "../components/Nameproduct_HomePage"
 import Note from "../components/Note_HomePage"
-
+import Navbar from "../components/Navbar"
+import Footer from "../components/Footer"
+import React  from 'react';
 
 function HomePage() {
     return (
     <>
+        <Navbar/>
         <Home/>
         <Slideshow/>
         <Slogan/>
@@ -19,6 +22,7 @@ function HomePage() {
         <NewArrivals/>
         <Nameproduct/>
         <Note/>
+        <Footer/>
     </>
     )
 }

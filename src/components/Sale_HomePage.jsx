@@ -1,5 +1,5 @@
 import'./Sale_HomePage.css';
-import React , { Component}  from 'react';
+import React  from 'react';
 function Sale() {
   return (
     
