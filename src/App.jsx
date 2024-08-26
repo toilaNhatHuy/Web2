@@ -3,6 +3,8 @@ import Home from "./Page/HomePage.jsx";
 import "./components/Navbar.css";
 import "./components/Footer.css"
 import Product from './Page/ProductPage.jsx';
+import AboutUs from './Page/AboutusPage.jsx';
+import Signin from './Page/SigninPage.jsx';
 
 function App() {
     return (
@@ -25,6 +27,8 @@ function App() {
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="/products" element={<Product/>}/>
+                <Route path="/aboutus" element={<AboutUs/>}/>
+                <Route path="/signin" element={<Signin/>}/>
             </Routes>
             <div className="Footer">
                 <div className="nav-footer">
