@@ -1,0 +1,106 @@
+.SignUp {
+    display: flex;
+    gap: 100px;
+    justify-content: space-around;
+    align-items: end;
+    
+}
+
+.sign-up {
+    width: 400px;
+    height: 700px;
+    margin-right: 150px;
+}
+
+.sign-up-title {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+.remember-have {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.have {
+    text-decoration: none;
+    color: black;
+    transition : 0.3s;
+    font-size: 1.2em;
+    text-decoration: underline;
+  }
+
+.have:hover {
+    color: rgb(100, 100, 100);
+    transform: 0.3s;
+  }
+
+#havebtn {
+    width: 400px;
+    height: 50px;
+    font-size: 1.5em;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 100px;
+    margin-bottom: 30px;
+    text-decoration: none;
+  }
+
+.sign-in-please {
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    height: 50px;
+    border: 1px solid ;
+    border-radius: 100px;
+    text-align: center;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+  
+
+  .su-img1 {
+    border: 2px solid black;
+    margin-bottom: 10px;
+    position: relative;
+    transform: translate(0, -10px);
+  }
+
+  .su-img2 {
+    border: 2px solid black;
+  }
+
+  .su-img3 {
+    border: 2px solid black;
+    margin-bottom: -10px;
+    position: relative;
+    transform: translate(0, -30px);
+  }
+
+  .su-img4 {
+    border: 2px solid black;
+  }
+
+#su-img4 {
+    background-position: 100%;
+}
+
+.all-sign-up-images {
+    height: 729px;
+    width: 1530px;
+    overflow-y:hidden;
+}
+
+.sign-up-images {
+    display: flex;
+    gap: 20px;
+  }
+
+

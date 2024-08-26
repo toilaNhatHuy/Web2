@@ -1,0 +1,56 @@
+.Review-Rate {
+    display: flex;
+    gap: 20px;
+}
+
+.Reviews {
+    margin-left: 200px;
+    margin-bottom: 80px;
+}
+
+.Review-Rate h2 {
+    display:flex;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.Comment h2 {
+    display: flex;
+    gap: 5px
+}
+
+#comment {
+    color: black;
+    font-size: 1.5em;
+}
+
+.Comment {
+    margin-top: 50px;
+}
+
+.Client-Reviews {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Summarize h2 {
+    font-weight: lighter;
+}
+
+.client-name {
+    margin-right: 200px;
+}
+
+.client-name h2 {
+    font-weight: lighter;
+}
+
+.Comment-P {
+    width: 1000px
+}
+
+.Comment-P p {
+    font-size: 30px;
+}
+
+
