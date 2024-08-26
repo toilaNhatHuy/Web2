@@ -109,11 +109,13 @@ const getDetailsProduct = (id) => {
     })
 }
 
-const getAllProduct = (limit=9,page=0) => {
+const getAllProduct = (limit,page,sort) => {
     return new Promise(async (resolve, reject)=>{
         try{
             const totalProduct = await Product.count()
-            const allProduct = await Product.find().limit(limit).skip( page * limit )
+            const allProduct = await Product.find().limit(limit).skip( page * limit ).sort({
+                name: sort
+            })
             resolve({
                 status: "OK",
                 message: "Get all product success!!!",
