@@ -1,4 +1,4 @@
-import './AboutUs_AboutusPage.css'
+import './AboutUsAboutusPage.css'
 
 import React from 'react'
 

@@ -1,8 +1,8 @@
-import Featured_Product4 from "../components/Featured_Product4Page"
-import Product from "../components/Product_ProductPage"
+import FeaturedProduct4 from "../components/FeaturedProduct4Page"
+import Product from "../components/ProductProductPage"
 import Navbar from "../components/Navbar"
-import Attire from "../components/Attire_ProductPage"
-import Categories4 from "../components/Categoies_ProductPage-4"
+import Attire from "../components/AttireProductPage"
+import Categories4 from "../components/CategoiesProductPage-4"
 import Footer from "../components/Footer"
 import React from 'react'
 function Product4Page(){
@@ -10,7 +10,7 @@ function Product4Page(){
         <>
             <Navbar/>
             <Product/>
-            <Featured_Product4/>
+            <FeaturedProduct4/>
             <Attire/>
             <Categories4/>
             <Footer/>

@@ -1,4 +1,4 @@
-import './Popular_HomePage.css'
+import './PopularHomePage.css'
 import Carousel from 'react-bootstrap/Carousel';
 import React from 'react'
 

@@ -1,4 +1,4 @@
-import "./Detail_ProductPage.css"
+import "./DetailProductPage.css"
 import {Link} from 'react-router-dom'
 import React, { useState } from 'react';
 // import {image} from '' 

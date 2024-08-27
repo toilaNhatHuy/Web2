@@ -1,4 +1,4 @@
-import './Categoies_ProductPage.css'
+import './CategoiesProductPage.css'
 import {Routes, Route, Link} from 'react-router-dom'
 import React from 'react'
 

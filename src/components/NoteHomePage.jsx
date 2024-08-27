@@ -1,4 +1,4 @@
-import './Note_HomePage.css'
+import './NoteHomePage.css'
 import React from 'react';
 
 function Note() {

@@ -1,8 +1,8 @@
-import Featured_Product3 from "../components/Featured_Product3Page"
-import Product from "../components/Product_ProductPage"
+import FeaturedProduct3 from "../components/FeaturedProduct3Page"
+import Product from "../components/ProductProductPage"
 import Navbar from "../components/Navbar"
-import Attire from "../components/Attire_ProductPage"
-import Categories3 from "../components/Categoies_ProductPage-3"
+import Attire from "../components/AttireProductPage"
+import Categories3 from "../components/CategoiesProductPage-3"
 import Footer from "../components/Footer"
 import React from 'react'
 function Product3Page(){
@@ -10,7 +10,7 @@ function Product3Page(){
         <>
             <Navbar/>
             <Product/>
-            <Featured_Product3/>
+            <FeaturedProduct3/>
             <Attire/>
             <Categories3/>
             <Footer/>

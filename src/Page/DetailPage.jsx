@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
-import Detail from '../components/Detail_ProductPage'
-import Review from '../components/Review_ProductPage'
+import Detail from '../components/DetailProductPage'
+import Review from '../components/ReviewProductPage'
 import Relevant from '../components/Relevant'
 import Footer from '../components/Footer'
 

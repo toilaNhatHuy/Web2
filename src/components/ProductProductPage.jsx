@@ -1,4 +1,4 @@
-import './Product_ProductPage.css'
+import './ProductProductPage.css'
 import React from 'react';
 function Product(){
     return(

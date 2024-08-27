@@ -1,4 +1,4 @@
-import './Attire_ProductPage.css'
+import './AttireProductPage.css'
 import Carousel from 'react-bootstrap/Carousel';
 
 import React from 'react'
