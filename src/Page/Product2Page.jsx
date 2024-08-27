@@ -1,9 +1,9 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
-import Product from '../components/ProductProductPage'
-import FeaturedProduct2 from '../components/FeaturedProduct2Page'
-import Attire from '../components/AttireProductPage'
-import Categories2 from '../components/CategoiesProductPage-2'
+import Navbar from '../components/Navbar/Navbar'
+import Product from '../components/Products/ProductProductPage'
+import FeaturedProduct2 from '../components/Featured/FeaturedProduct2Page'
+import Attire from '../components/Attire/AttireProductPage'
+import Categories2 from '../components/Categories/CategoiesProductPage-2'
 import { Route } from 'react-router'
 function Product2Page() {
   return (

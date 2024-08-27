@@ -1,9 +1,9 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
-import Detail from '../components/DetailProductPage'
-import Review from '../components/ReviewProductPage'
-import Relevant from '../components/Relevant'
-import Footer from '../components/Footer'
+import Navbar from '../components/Navbar/Navbar'
+import Detail from '../components/Detail/DetailProductPage'
+import Review from '../components/Review/ReviewProductPage'
+import Relevant from '../components/Relevant/Relevant'
+import Footer from '../components/Footer/Footer'
 
 function DetailPage() {
   return (

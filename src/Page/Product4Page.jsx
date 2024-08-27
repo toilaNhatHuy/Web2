@@ -1,9 +1,9 @@
-import FeaturedProduct4 from "../components/FeaturedProduct4Page"
-import Product from "../components/ProductProductPage"
-import Navbar from "../components/Navbar"
-import Attire from "../components/AttireProductPage"
-import Categories4 from "../components/CategoiesProductPage-4"
-import Footer from "../components/Footer"
+import FeaturedProduct4 from "../components/Featured/FeaturedProduct4Page"
+import Product from "../components/Products/ProductProductPage"
+import Navbar from "../components/Navbar/Navbar"
+import Attire from "../components/Attire/AttireProductPage"
+import Categories4 from "../components/Categories/CategoiesProductPage-4"
+import Footer from "../components/Footer/Footer"
 import React from 'react'
 function Product4Page(){
     return(

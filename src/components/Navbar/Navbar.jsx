@@ -37,7 +37,7 @@ function Navbar() {
     return (
         <div className="navbar">
             <ul>
-                <li><img id="logo" alt="Logo" /></li>
+                <li><img id="logo" src='https://scontent.xx.fbcdn.net/v/t1.15752-9/454887513_342717868807516_7391926271869795433_n.png?_nc_cat=110&ccb=1-7&_nc_sid=0024fc&_nc_ohc=uqyQ829PEaIQ7kNvgGl9zLP&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QHZVtdk3G4Mk768T6KJ888D3HTYJdLQ6vcV2PsTRril7w&oe=66F561E2' alt="Logo" /></li>
                 <li><Link id="home" to="/">HOME</Link></li>
                 <li><Link id="products" to="/products">PRODUCTS</Link></li>
                 <li><Link id="about-us" to="/aboutus">ABOUT US</Link></li>

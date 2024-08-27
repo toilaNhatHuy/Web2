@@ -1,6 +1,6 @@
 import React from 'react'
 import "./ReviewProductPage.css"
-import {Routes, Route, Link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 function Review() {
   return (
