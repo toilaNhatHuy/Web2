@@ -11,6 +11,8 @@
     animation: appear2 linear;
     animation-timeline: view();
     animation-range: entry 0 cover 40%;
+    width: 1530px;
+    height: 550px;
 }
 
 @keyframes appear2 {
@@ -50,39 +52,60 @@
     height: 60px;
 }
 
-.right-ft {
-    margin-left: 30px;
-}
-
-.left-ft {
-    margin-right: 30px;
-}
 
 .Attire-1, .Attire-2 {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 30px;
     cursor: pointer;
-    gap: 100px;
 }
 
-.attire-1, .attire-2 {
+.attire-1, .attire-2, .attire-3, .attire-4, .attire-5, .attire-6  {
     width: 310px;
     height: 280px;
     background-color:rgb(208, 208, 208);
+    border: 2px solid rgb(198, 198, 198);
     font-size: 2em;
     font-weight: 500;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 80px;
+
 }
+
+
+
 
 
 .container-2 {
     display: flex;
-    overflow: hidden;
-    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
     margin-bottom: 200px;
+    margin-right: 180px;
+    transform: translate(100px,0);
 }
+
+a.carousel-control-prev {
+    transform: translate(-30px, -23px);
+    width: 60px;
+    height: 60px;
+    top: 42%;
+    left: 5%;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+a.carousel-control-next {
+    transform: translate(30px, -23px);
+    width: 60px;
+    height: 60px;
+    top: 42%;
+    right: 5%;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
 

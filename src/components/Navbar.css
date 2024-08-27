@@ -36,16 +36,20 @@ body {
   background-repeat: no-repeat;
   background-size:100%;
   background-position: 100%;
-  background-color: red;
-  border:none;
+  transition: 0.3s;
 }
+
+#logo:hover {
+  transform: rotate(-3deg);
+  transition: 0.3s;
+}
+
 .navbar {
   background-color: white;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
   font-weight: bold;
   /* position:fixed; */
-  margin-top: 10px;
-  font-family: "Righteous", sans-serif;
+  margin-top: 10px
 }
 
 .navbar ul {

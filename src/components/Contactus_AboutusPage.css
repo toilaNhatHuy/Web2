@@ -76,7 +76,9 @@
 #username, #user-email {
     border: 2px solid black;
     border-radius: 10px;
-    padding: 10px 80px;
+    width: 350px;
+    height: 50px;
+    padding: 0 20px;
     display: flex;
     justify-content: flex-start;
 }
@@ -84,7 +86,9 @@
 #user-message {
     border: 2px solid black;
     border-radius: 10px;
-    padding: 40px 80px;
+    width: 350px;
+    height: 110px;
+    padding: 20px;
 }
 
 #sam-input {

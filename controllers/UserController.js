@@ -6,6 +6,7 @@ const createUser = async (req,res) => {
         console.log(req.body)
         const {name, email, password, confirmPassword, phone} = req.body
         const reg = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
+        const checkAdmin = "admin"
         const isCheckEmail = reg.test(email)
 
         if( !name || !email || !password || !confirmPassword || !phone){
@@ -26,7 +27,6 @@ const createUser = async (req,res) => {
                 message: "The password is equal confirmPassword"
             })
         };
-        console.log(isCheckEmail)
         const response = await UserService.createUser(req.body)
         return res.status(200).json(response)
     }catch(e){

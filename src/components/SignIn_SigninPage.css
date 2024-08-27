@@ -1,0 +1,185 @@
+/* The switch - the box around the slider */
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 2.5em;
+    height: 1.4em;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    border: 1px solid #adb5bd;
+    transition: .4s;
+    border-radius: 30px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 0.8em;
+    width: 0.8em;
+    border-radius: 20px;
+    left: 0.1em;
+    bottom: 0.23em;
+    background-color: #adb5bd;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #000000;
+    border: 1px solid #000000;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #000000;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(1.4em);
+    background-color: #fff;
+  }
+
+  .sign-in {
+    width: 400px;
+    height: 700px;
+    margin-left: 150px;
+  }
+
+  .sign-in-title {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  #si-tt {
+      font-size: 4em;
+  }
+
+  .remember-me {
+      display: flex;
+      gap: 5px;
+      font-size: 1.2em;
+  }
+
+  .remember-create {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 40px;
+  }
+
+  .switch {
+    margin-top: 4px;
+  }
+  
+  .create {
+    text-decoration: underline;
+    color: black;
+    transition : 0.3s;
+    font-size: 1.2em;
+  }
+
+  .create:hover {
+    color: rgb(100, 100, 100);
+    transform: 0.3s;
+  }
+
+  #inputyouremail, #inputyourpassword {
+      width: 400px;
+      height: 40px;
+      margin-bottom: 20px;
+      border: 2px solid rgb(208,208,208);
+      border-radius: 8px;
+      color: black;
+      padding: 0 10px;
+  }
+
+  #btnsn {
+    width: 400px;
+    height: 50px;
+    font-size: 1.5em;
+    color: white;
+    background-color: black;
+    border-radius: 100px;
+    margin-bottom: 30px;
+  }
+
+  #crtbtn {
+    font-size: 1.5em;
+    color: rgb(0, 0, 0);
+    
+    margin-bottom: 30px;
+    text-decoration: none;
+  }
+
+  .create-an-account {
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    height: 50px;
+    border: 1px solid ;
+    border-radius: 100px;
+    text-align: center;
+    padding: 5px;
+  }
+
+
+
+
+
+
+
+  .sign-in-images {
+    display: flex;
+    gap: 20px;
+    transform: translate(80px,0);
+  }
+
+  .all-sign-in-images {
+    width: 700px;
+    height: 729px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
+  .si-img1 {
+    border: 2px solid black;
+    margin-bottom: 10px;
+    position: relative;
+    transform: translate(0, -10px);
+  }
+
+  .si-img2 {
+    border: 2px solid black;
+  }
+
+  .si-img3 {
+    border: 2px solid black;
+    margin-bottom: -10px;
+    position: relative;
+    transform: translate(0, -30px);
+  }
+
+  .si-img4 {
+    border: 2px solid black;
+  }
+
+
+  .SignIn {
+    display: flex;
+    gap: 100px;
+    justify-content: space-around;
+    align-items: end;
+  }
