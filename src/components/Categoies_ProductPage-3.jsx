@@ -23,11 +23,11 @@ function Categoies3() {
                     <p>| Men's Checkered Long Sleeve Button Shirt </p>
                     <div className="star-detail">
                         <div className="star">
-                            <p id="rate"><i class="fa-solid fa-star"></i></p>
-                            <p id="rate"><i class="fa-solid fa-star"></i></p>
-                            <p id="rate"><i class="fa-solid fa-star"></i></p>
-                            <p id="rate"><i class="fa-solid fa-star"></i></p>
-                            <p id="rate"><i class="fa-solid fa-star"></i></p>
+                            <p id="rate"><i className="fa-solid fa-star"></i></p>
+                            <p id="rate"><i className="fa-solid fa-star"></i></p>
+                            <p id="rate"><i className="fa-solid fa-star"></i></p>
+                            <p id="rate"><i className="fa-solid fa-star"></i></p>
+                            <p id="rate"><i className="fa-solid fa-star"></i></p>
                         </div>
                         <div className="detail">
                             <p id="description">
