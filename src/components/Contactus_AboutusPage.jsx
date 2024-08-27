@@ -18,7 +18,7 @@ function Contactus() {
                 <div className="get-in-touch-info">
                     <div className="Phone-number">
                         <div className="phone-number-icon">
-                            <i id = 'p-icon' class="fa-solid fa-phone"></i>
+                            <i id = 'p-icon' className="fa-solid fa-phone"></i>
                         </div>
                         <div className="phone-number-info">
                             <h2>Phone Number</h2>
@@ -28,7 +28,7 @@ function Contactus() {
                     <div className="Email-address">
                         <div className="Email">
                             <div className="email-icon">
-                                <i id ='e-icon' class="fa-solid fa-envelope"></i>
+                                <i id ='e-icon' className="fa-solid fa-envelope"></i>
                             </div>
                             <div className="email-info">
                                 <h2>Email</h2>
@@ -39,7 +39,7 @@ function Contactus() {
                     <div className="Location">
                         <div className="location">
                                 <div className="location-icon">
-                                    <i id = 'l-icon' class="fa-solid fa-location-dot"></i>
+                                    <i id = 'l-icon' className="fa-solid fa-location-dot"></i>
                                 </div>
                                 <div className="location-info">
                                     <h2>Address</h2>

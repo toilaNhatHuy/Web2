@@ -24,15 +24,15 @@ function Categories2() {
                     <p>| Men's Checkered Long Sleeve Button Shirt </p>
                     <div className="star-detail">
                         <div className="star">
-                            <p id="rate"><i class="fa-solid fa-star"></i></p>
-                            <p id="rate"><i class="fa-solid fa-star"></i></p>
-                            <p id="rate"><i class="fa-solid fa-star"></i></p>
-                            <p id="rate"><i class="fa-solid fa-star"></i></p>
-                            <p id="rate"><i class="fa-solid fa-star"></i></p>
+                            <p id="rate"><i className="fa-solid fa-star"></i></p>
+                            <p id="rate"><i className="fa-solid fa-star"></i></p>
+                            <p id="rate"><i className="fa-solid fa-star"></i></p>
+                            <p id="rate"><i className="fa-solid fa-star"></i></p>
+                            <p id="rate"><i className="fa-solid fa-star"></i></p>
                         </div>
                         <div className="detail">
                             <p id="description">
-                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                                <Link id = "link" to = "/detail">More details</Link>
                             </p>
                         </div>
                         
@@ -54,15 +54,15 @@ function Categories2() {
                         <p>| Men's Checkered Long Sleeve Button Shirt </p>
                         <div className="star-detail">
                             <div className="star">
-                                <p id="rate"><i class="fa-solid fa-star"></i></p>
-                                <p id="rate"><i class="fa-solid fa-star"></i></p>
-                                <p id="rate"><i class="fa-solid fa-star"></i></p>
-                                <p id="rate"><i class="fa-solid fa-star"></i></p>
-                                <p id="rate"><i class="fa-solid fa-star"></i></p>
+                                <p id="rate"><i className="fa-solid fa-star"></i></p>
+                                <p id="rate"><i className="fa-solid fa-star"></i></p>
+                                <p id="rate"><i className="fa-solid fa-star"></i></p>
+                                <p id="rate"><i className="fa-solid fa-star"></i></p>
+                                <p id="rate"><i className="fa-solid fa-star"></i></p>
                             </div>
                             <div className="detail">
                                 <p id="description">
-                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    <Link id = "link" to = "/detail">More details</Link>
                                 </p>
                             </div>
                             
@@ -83,15 +83,15 @@ function Categories2() {
                         <p>| Men's Checkered Long Sleeve Button Shirt </p>
                         <div className="star-detail">
                             <div className="star">
-                                <p id="rate"><i class="fa-solid fa-star"></i></p>
-                                <p id="rate"><i class="fa-solid fa-star"></i></p>
-                                <p id="rate"><i class="fa-solid fa-star"></i></p>
-                                <p id="rate"><i class="fa-solid fa-star"></i></p>
-                                <p id="rate"><i class="fa-solid fa-star"></i></p>
+                                <p id="rate"><i className="fa-solid fa-star"></i></p>
+                                <p id="rate"><i className="fa-solid fa-star"></i></p>
+                                <p id="rate"><i className="fa-solid fa-star"></i></p>
+                                <p id="rate"><i className="fa-solid fa-star"></i></p>
+                                <p id="rate"><i className="fa-solid fa-star"></i></p>
                             </div>
                             <div className="detail">
                                 <p id="description">
-                                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                                    <Link id = "link" to = "/detail">More details</Link>    
                                 </p>
                             </div>
                             
@@ -116,15 +116,15 @@ function Categories2() {
                             <p>| Men's Checkered Long Sleeve Button Shirt </p>
                             <div className="star-detail">
                                 <div className="star">
-                                    <p id="rate"><i class="fa-solid fa-star"></i></p>
-                                    <p id="rate"><i class="fa-solid fa-star"></i></p>
-                                    <p id="rate"><i class="fa-solid fa-star"></i></p>
-                                    <p id="rate"><i class="fa-solid fa-star"></i></p>
-                                    <p id="rate"><i class="fa-solid fa-star"></i></p>
+                                    <p id="rate"><i className="fa-solid fa-star"></i></p>
+                                    <p id="rate"><i className="fa-solid fa-star"></i></p>
+                                    <p id="rate"><i className="fa-solid fa-star"></i></p>
+                                    <p id="rate"><i className="fa-solid fa-star"></i></p>
+                                    <p id="rate"><i className="fa-solid fa-star"></i></p>
                                 </div>
                                 <div className="detail">
                                     <p id="description">
-                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                        <Link id = "link" to = "/detail">More details</Link>
                                     </p>
                                 </div>
                                 
@@ -146,15 +146,15 @@ function Categories2() {
                                 <p>| Men's Checkered Long Sleeve Button Shirt </p>
                                 <div className="star-detail">
                                     <div className="star">
-                                        <p id="rate"><i class="fa-solid fa-star"></i></p>
-                                        <p id="rate"><i class="fa-solid fa-star"></i></p>
-                                        <p id="rate"><i class="fa-solid fa-star"></i></p>
-                                        <p id="rate"><i class="fa-solid fa-star"></i></p>
-                                        <p id="rate"><i class="fa-solid fa-star"></i></p>
+                                        <p id="rate"><i className="fa-solid fa-star"></i></p>
+                                        <p id="rate"><i className="fa-solid fa-star"></i></p>
+                                        <p id="rate"><i className="fa-solid fa-star"></i></p>
+                                        <p id="rate"><i className="fa-solid fa-star"></i></p>
+                                        <p id="rate"><i className="fa-solid fa-star"></i></p>
                                     </div>
                                     <div className="detail">
                                         <p id="description">
-                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                            <Link id = "link" to = "/detail">More details</Link>
                                         </p>
                                     </div>
                                     
@@ -175,15 +175,15 @@ function Categories2() {
                                 <p>| Men's Checkered Long Sleeve Button Shirt </p>
                                 <div className="star-detail">
                                     <div className="star">
-                                        <p id="rate"><i class="fa-solid fa-star"></i></p>
-                                        <p id="rate"><i class="fa-solid fa-star"></i></p>
-                                        <p id="rate"><i class="fa-solid fa-star"></i></p>
-                                        <p id="rate"><i class="fa-solid fa-star"></i></p>
-                                        <p id="rate"><i class="fa-solid fa-star"></i></p>
+                                        <p id="rate"><i className="fa-solid fa-star"></i></p>
+                                        <p id="rate"><i className="fa-solid fa-star"></i></p>
+                                        <p id="rate"><i className="fa-solid fa-star"></i></p>
+                                        <p id="rate"><i className="fa-solid fa-star"></i></p>
+                                        <p id="rate"><i className="fa-solid fa-star"></i></p>
                                     </div>
                                     <div className="detail">
                                         <p id="description">
-                                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                                            <Link id = "link" to = "/detail">More details</Link>
                                         </p>
                                     </div>
                                     

@@ -1,43 +1,55 @@
 import "./SignIn_SigninPage.css"
-import React from 'react'
+import React, {useState} from 'react'
 import {Routes, Route, Link} from 'react-router-dom'
 
+
 function SignIn() {
+
+    const [userData, setUserData] = useState({
+        email: '',
+        password: ''
+    })
+
+    const changeInputHandle = (e) => {
+        setUserData(prevState => {
+            return { ...prevState, [e.target.name]: e.target.value }
+        })
+    }
   return (
     <div className="SignIn">
         <div className="sign-in">
             <div className="sign-in-title">
                 <h1 id = "si-tt">SIGN IN</h1>
             </div>
-            <div className="sign-in-info">
+            <form className="sign-in-info">
                 <div className="sign-in-email">
                     <h6 id="label">Email</h6>
-                    <input type="text" id="inputyouremail" placeholder="Email"/>
+                    <input type="text" id="inputyouremail" placeholder="Email" name='email' value={userData.email} onChange={changeInputHandle}/>
                 </div>
                 <div className="sing-in-password">
                     <h6 id="label">Password</h6>
-                    <input type="password" id="inputyourpassword" placeholder="Password" />
+                    <input type="password" id="inputyourpassword" placeholder="Password" name='password' value={userData.password} onChange={changeInputHandle}/>
                 </div>
                 <div className="remember-create">
                     <div className="remember-me">
-                        <label class="switch">
+                        <label className="switch">
                             <input type="checkbox"/>
-                            <span class="slider"></span>
+                            <span className="slider"></span>
                         </label>
                         <p id="rememberP">Remember me</p>
                     </div>
 
                     <Link to = "/signup" className="create">Create an account</Link>
                 </div>
-    
-            </div>
                 <div className="sign-in-btn">
-                    <button id = "btnsn">SIGN IN</button><br/>
+                    <button type="submit" id = "btnsn">SIGN IN</button><br/>
                     <div className="create-an-account">
                         <Link to = "/signup" id = "crtbtn">CREATE AN ACCOUNT</Link>
                     </div>
                     
                 </div>
+            </form>
+                
         </div>
         <div className="all-sign-in-images">
             <div className="sign-in-images">

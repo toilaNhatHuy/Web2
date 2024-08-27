@@ -16,10 +16,10 @@ function Member() {
                 <div className="member1-info">
                     <p id = "name1">Nguyễn Hoàng Phúc</p>
                     <div className="ctu-icon2">
-                        <i id = 'contact-icon' class="fa-brands fa-facebook"></i>
-                        <i id = 'contact-icon' class="fa-brands fa-instagram"></i>
-                        <i id = 'contact-icon' class="fa-brands fa-telegram"></i>
-                        <i id = 'contact-icon' class="fa-brands fa-facebook-messenger"></i>
+                        <i id = 'contact-icon' className="fa-brands fa-facebook"></i>
+                        <i id = 'contact-icon' className="fa-brands fa-instagram"></i>
+                        <i id = 'contact-icon' className="fa-brands fa-telegram"></i>
+                        <i id = 'contact-icon' className="fa-brands fa-facebook-messenger"></i>
                     </div>
                 </div>
             </div>
@@ -30,10 +30,10 @@ function Member() {
                 <div className="member2-info">
                     <p id = "name2">Nguyễn Đình Nhất Huy</p>
                     <div className="ctu-icon2">
-                        <i id = 'contact-icon' class="fa-brands fa-facebook"></i>
-                        <i id = 'contact-icon' class="fa-brands fa-instagram"></i>
-                        <i id = 'contact-icon' class="fa-brands fa-telegram"></i>
-                        <i id = 'contact-icon' class="fa-brands fa-facebook-messenger"></i>
+                        <i id = 'contact-icon' className="fa-brands fa-facebook"></i>
+                        <i id = 'contact-icon' className="fa-brands fa-instagram"></i>
+                        <i id = 'contact-icon' className="fa-brands fa-telegram"></i>
+                        <i id = 'contact-icon' className="fa-brands fa-facebook-messenger"></i>
                     </div>
                 </div>
             </div>
@@ -44,10 +44,10 @@ function Member() {
                 <div className="member3-info">
                     <p id = "name3">Nguyễn Cao Cường</p>
                     <div className="ctu-icon2">
-                        <i id = 'contact-icon' class="fa-brands fa-facebook"></i>
-                        <i id = 'contact-icon' class="fa-brands fa-instagram"></i>
-                        <i id = 'contact-icon' class="fa-brands fa-telegram"></i>
-                        <i id = 'contact-icon' class="fa-brands fa-facebook-messenger"></i>
+                        <i id = 'contact-icon' className="fa-brands fa-facebook"></i>
+                        <i id = 'contact-icon' className="fa-brands fa-instagram"></i>
+                        <i id = 'contact-icon' className="fa-brands fa-telegram"></i>
+                        <i id = 'contact-icon' className="fa-brands fa-facebook-messenger"></i>
                     </div>
                 </div>
             </div>

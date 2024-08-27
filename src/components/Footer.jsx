@@ -26,10 +26,10 @@ import "./Footer.css"
                   <h2 id ="myh2">FOLLOW AND<br/> CONTACT US</h2>
               </div>
               <div className="ctu-icon">
-                  <i id = 'contact-icon' class="fa-brands fa-facebook"></i>
-                  <i id = 'contact-icon' class="fa-brands fa-instagram"></i>
-                  <i id = 'contact-icon' class="fa-brands fa-telegram"></i>
-                  <i id = 'contact-icon' class="fa-brands fa-facebook-messenger"></i>
+                  <i id = 'contact-icon' className="fa-brands fa-facebook"></i>
+                  <i id = 'contact-icon' className="fa-brands fa-instagram"></i>
+                  <i id = 'contact-icon' className="fa-brands fa-telegram"></i>
+                  <i id = 'contact-icon' className="fa-brands fa-facebook-messenger"></i>
               </div>
               <div className="ctu-clothes">
                   <div className="row-1">
