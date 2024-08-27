@@ -181,5 +181,5 @@
     display: flex;
     gap: 100px;
     justify-content: space-around;
-    align-items: end;
+    align-items: flex-end;
   }

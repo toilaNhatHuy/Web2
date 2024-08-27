@@ -1,5 +1,5 @@
 import './Signup_SignupPage.css'
-import { Routes, Route, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import React, { useState } from 'react'
 
 function Signup() {

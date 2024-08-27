@@ -272,7 +272,7 @@
 
 .original-price {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     margin-left: 20px;
     gap: 20px;
     margin-bottom: 20px;
@@ -473,7 +473,7 @@
 
 .original-price {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     margin-left: 20px;
     gap: 20px;
     margin-bottom: 20px;
