@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar"
 import Attire from "../components/Attire_ProductPage"
 import Categories3 from "../components/Categoies_ProductPage-3"
 import Footer from "../components/Footer"
-
+import React from 'react'
 function Product3Page(){
     return(
         <>

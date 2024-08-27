@@ -4,7 +4,7 @@ import Product from "../components/Product_ProductPage"
 import Attire from "../components/Attire_ProductPage"
 import Categoies from "../components/Categoies_ProductPage"
 import Footer from "../components/Footer"
-
+import React from 'react'
 function ProductPage(){
     return(
         <>
