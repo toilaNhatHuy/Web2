@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import './Navbar.css'
 import {Routes, Route, Link} from 'react-router-dom'
 import React, { useEffect, useState } from 'react';
@@ -63,6 +64,14 @@ function Navbar() {
 
   return (
     <div className="navbar">
+=======
+import './Navbar.css';
+import React  from 'react';
+import {Link} from 'react-router-dom'
+function Navbar(){
+    return(
+            <div className="navbar">
+>>>>>>> d7e6c8cb14075244aeaaec57748df04ff7490c08
                 <ul>
                     <li><img id="logo"></img></li>
                     <li><Link id="home" to="/">HOME</Link></li>
@@ -70,6 +79,7 @@ function Navbar() {
                     <li><Link id = "about-us" to="/aboutus">ABOUT US</Link></li>
                     <li><Link id = "sign-in" to="/signin">SIGN IN</Link></li>
                     <li><Link id = "sign-up" to="/signup">SIGN UP</Link></li>
+<<<<<<< HEAD
                     <form className="search-bar" onSubmit={handleSearch}>
                         <li><a href="#"><input id="search" type="text" placeholder='Search...' value={query} onChange={(e) => setQuery(e.target.value)} /></a></li>
                         <button type='submit' id = "search-icon"><i className="fa-solid fa-magnifying-glass"></i></button>
@@ -98,4 +108,15 @@ function Navbar() {
   )
 }
 
+=======
+                    <div className="search-bar">
+                        <li><a href="http://localhost:3000"><input id="search" type="text" placeholder='Search...'/></a></li>
+                        <button id = "search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                    <li><Link id="cart" to="#"><i className="fa-solid fa-cart-shopping"></i></Link></li>
+                </ul>
+            </div>
+    )
+}
+>>>>>>> d7e6c8cb14075244aeaaec57748df04ff7490c08
 export default Navbar

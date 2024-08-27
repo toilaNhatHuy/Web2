@@ -1,4 +1,4 @@
-import {Routes, Route, Link} from 'react-router-dom'
+import {Routes, Route} from 'react-router-dom'
 import Home from "./Page/HomePage.jsx";
 import "./components/Footer.css"
 import "./components/Navbar.css"

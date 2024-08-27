@@ -36,6 +36,7 @@ body {
   background-repeat: no-repeat;
   background-size:100%;
   background-position: 100%;
+<<<<<<< HEAD
   transition: 0.3s;
 }
 
@@ -44,12 +45,22 @@ body {
   transition: 0.3s;
 }
 
+=======
+  background-color: red;
+  border:none;
+}
+>>>>>>> d7e6c8cb14075244aeaaec57748df04ff7490c08
 .navbar {
   background-color: white;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
   font-weight: bold;
   /* position:fixed; */
+<<<<<<< HEAD
   margin-top: 10px
+=======
+  margin-top: 10px;
+  font-family: "Righteous", sans-serif;
+>>>>>>> d7e6c8cb14075244aeaaec57748df04ff7490c08
 }
 
 .navbar ul {
