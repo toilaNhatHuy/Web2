@@ -16,13 +16,6 @@ import DetailPage from './Page/DetailPage.jsx';
 import React from 'react';
 
 function App() {
-    useEffect(()=>{
-        fetchApi()
-    },[])
-    const fetchApi = async () => {
-        const res = await axios.get(`${process.env.REACT_BACKEND_API_URL}/product/get-all`)
-        console.log("res",res)
-    };
     return (
         <div className="Main">
             <Routes>

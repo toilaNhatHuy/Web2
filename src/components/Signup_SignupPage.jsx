@@ -1,6 +1,6 @@
 import './Signup_SignupPage.css'
 import { Link} from 'react-router-dom'
-
+import SignupPage from '../Page/SignupPage'
 import React from 'react'
 
 function Signup() {
@@ -25,7 +25,7 @@ function Signup() {
             <div className="sign-up-info">
                 <div className="sign-up-email">
                     <h6 id="label">Email</h6>
-                    <input type="text" id="inputyouremail" placeholder="Email"/>
+                    <input type="text" id="inputyouremail" placeholder="Email" value={userData.email}/>
                 </div>
                 <div className="sign-up-password">
                     <h6 id="label">Password</h6>
