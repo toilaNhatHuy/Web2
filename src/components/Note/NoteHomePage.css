@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Righteous&family=Staatliches&display=swap');
+
 .Note {
     width: 100vw;
     height: 400px;
@@ -9,9 +10,11 @@
     align-items: center;
     margin-bottom: 100px;
 }
+
 #note-1{
     font-family: "Righteous", sans-serif;
 }
+
 #n-btn {
     font-size: large;
     font-weight: 500;
@@ -19,4 +22,9 @@
     border-radius: 10px;
     border: none;
     background-color: white;
+    transition: 0.3s;
+}
+
+#n-btn:hover {
+    background-color: rgb(228, 228, 228);
 }
