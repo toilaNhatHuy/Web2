@@ -28,5 +28,5 @@ mongoose.connect(`${process.env.MONGODB_URL}`)
 
 // RUN SEVER
 app.listen(port,()=>{
-    console.log("Server is running in port: " + port)
+    console.log(`Server is running in port: `+port)
 })

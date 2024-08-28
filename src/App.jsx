@@ -14,16 +14,25 @@ import Product3Page from './Page/Product3Page.jsx';
 import Product4Page from './Page/Product4Page.jsx';
 import DetailPage from './Page/DetailPage.jsx';
 import React from 'react';
+const dotenv = require('dotenv')
+dotenv.config()
 
 function App() {
+    useEffect(()=>{
+        fetchApi()
+    },[])
+    const fetchApi = async () => {
+        const res = await axios.get(`http://localhost:3001/api/product/get-all`)
+        console.log("res",res)
+    }
     return (
         <div className="Main">
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="/products" element={<Product/>}/>
                 <Route path="/aboutus" element={<AboutUs/>}/>
-                <Route path="/signin" element={<Signin/>}/>
-                <Route path="/signup" element={<Signup/>}/>
+                <Route path="/sign-in" element={<Signin/>}/>
+                <Route path="/sign-up" element={<Signup/>}/>
                 <Route path="/products" element={<ProductPage/>}/>
                 <Route path="/products2" element={<Product2Page/>}/>
                 <Route path="/products3" element={<Product3Page/>}/>

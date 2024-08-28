@@ -8,22 +8,22 @@ function Review() {
         <div className="Review-Rate">
             <h1 id ="rv-title">Reviews</h1>
             <h2>
-                <p id="rate"><i class="fa-solid fa-star"></i></p>
-                <p id="rate"><i class="fa-solid fa-star"></i></p>
-                <p id="rate"><i class="fa-solid fa-star"></i></p>
-                <p id="rate"><i class="fa-solid fa-star"></i></p>
-                <p id="rate"><i class="fa-solid fa-star"></i></p>
+                <p id="rate"><i className="fa-solid fa-star"></i></p>
+                <p id="rate"><i className="fa-solid fa-star"></i></p>
+                <p id="rate"><i className="fa-solid fa-star"></i></p>
+                <p id="rate"><i className="fa-solid fa-star"></i></p>
+                <p id="rate"><i className="fa-solid fa-star"></i></p>
             </h2>
             <h1 id = "consequence">5 Stars</h1>
         </div>
         <Link id = "comment" to = "/aboutus">Write a Review</Link>
         <div className="Comment">
             <h2>
-                <p id="rate"><i class="fa-solid fa-star"></i></p>
-                <p id="rate"><i class="fa-solid fa-star"></i></p>
-                <p id="rate"><i class="fa-solid fa-star"></i></p>
-                <p id="rate"><i class="fa-solid fa-star"></i></p>
-                <p id="rate"><i class="fa-solid fa-star"></i></p>
+                <p id="rate"><i className="fa-solid fa-star"></i></p>
+                <p id="rate"><i className="fa-solid fa-star"></i></p>
+                <p id="rate"><i className="fa-solid fa-star"></i></p>
+                <p id="rate"><i className="fa-solid fa-star"></i></p>
+                <p id="rate"><i className="fa-solid fa-star"></i></p>
             </h2>
         </div>
 
@@ -44,11 +44,11 @@ function Review() {
 
         <div className="Comment">
             <h2>
-                <p id="rate"><i class="fa-solid fa-star"></i></p>
-                <p id="rate"><i class="fa-solid fa-star"></i></p>
-                <p id="rate"><i class="fa-solid fa-star"></i></p>
-                <p id="rate"><i class="fa-solid fa-star"></i></p>
-                <p id="rate"><i class="fa-solid fa-star"></i></p>
+                <p id="rate"><i className="fa-solid fa-star"></i></p>
+                <p id="rate"><i className="fa-solid fa-star"></i></p>
+                <p id="rate"><i className="fa-solid fa-star"></i></p>
+                <p id="rate"><i className="fa-solid fa-star"></i></p>
+                <p id="rate"><i className="fa-solid fa-star"></i></p>
             </h2>
         </div>
         <div className="Client-Reviews">
@@ -67,11 +67,11 @@ function Review() {
 
         <div className="Comment">
             <h2>
-                <p id="rate"><i class="fa-solid fa-star"></i></p>
-                <p id="rate"><i class="fa-solid fa-star"></i></p>
-                <p id="rate"><i class="fa-solid fa-star"></i></p>
-                <p id="rate"><i class="fa-solid fa-star"></i></p>
-                <p id="rate"><i class="fa-solid fa-star"></i></p>
+                <p id="rate"><i className="fa-solid fa-star"></i></p>
+                <p id="rate"><i className="fa-solid fa-star"></i></p>
+                <p id="rate"><i className="fa-solid fa-star"></i></p>
+                <p id="rate"><i className="fa-solid fa-star"></i></p>
+                <p id="rate"><i className="fa-solid fa-star"></i></p>
             </h2>
         </div>
         <div className="Client-Reviews">

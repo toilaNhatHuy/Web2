@@ -14,7 +14,7 @@ function Sale() {
           </div>
           <div className="sale-2-3-4">
             <div className="sale-2">
-              <label id = "shirts" htmlFor="shopbtn">Sale 30% for shirts</label>
+              <p id = "shirts" htmlFor="shopbtn">Sale 30% for shirts</p>
               <button id = "shop-btn">Shop</button>
             </div>
             <div className="sale-3-4">

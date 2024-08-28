@@ -1,30 +1,31 @@
 import "./Detail_ProductPage.css"
 import {Routes, Route, Link} from 'react-router-dom'
 import React, { useState } from 'react';
-
+// import {image} from '' 
 function Detail() {
-    const [des1, setDes1] = useState();
+    
+    const [des1, setDes1] = useState('');
 
-    const updateDes1 = () => {
-        setDes1("hello1")
+    const updateDes1 = (url, position) => {
+        setDes1(url); // Nếu không có URL, đặt giá trị rỗng
     }
 
-    const [des2, setDes2] = useState();
+    const [des2, setDes2] = useState('');
 
-    const updateDes2 = () => {
-        setDes1("hello2")
+    const updateDes2 = (url) => {
+        setDes2(url || '')
     }
 
-    const [des3, setDes3] = useState();
+    const [des3, setDes3] = useState('');
 
-    const updateDes3 = () => {
-        setDes1("hello3")
+    const updateDes3 = (url) => {
+        setDes3(url || '')
     }
 
-    const [des4, setDes4] = useState();
+    const [des4, setDes4] = useState('');
 
-    const updateDes4 = () => {
-        setDes1("hello4")
+    const updateDes4 = (url) => {
+        setDes4(url || '')
     }
 
 
@@ -36,38 +37,51 @@ function Detail() {
         </div>
         <div className="Clothes-Description">
             <div className="Clothes">
-                <div className="left-side">
-                    <div onClick={updateDes1} className="side1">
-
-                    </div>
-                    <div onClick={updateDes2} className="side2">
-
-                    </div>
-                    <div onClick={updateDes3} className="side3">
-
-                    </div>
-                    <div onClick={updateDes4} className="side4">
-
-                    </div>
-                </div>
+            <div className="left-side">
+            <div
+              onClick={() => updateDes1('https://images.unsplash.com/photo-1502823403499-6ccfcf4fb453?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D')}
+              className="side1"
+            >
+              <div className="dt-img1">
                 
-                <div className="right-side">
-                    <div className="des1">
-                        <div id="des1">{des1}</div>
-                    </div>
-                    <div className="des2">
-                        {des2}
-                    </div>
-                    <div className="des3">
-                        {des3}
-                    </div>
-                    <div className="des4">
-                        {des4}
-                    </div>
-                </div>
-                
-
+              </div>
+              
             </div>
+            <div
+              onClick={() => updateDes1('https://plus.unsplash.com/premium_photo-1673866484792-c5a36a6c025e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D')}
+              className="side2"
+            >
+              <div className="dt-img2">
+
+              </div>
+            </div>
+            <div
+              onClick={() => updateDes1('https://plus.unsplash.com/premium_photo-1689606093808-3cb4393248d2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D')}
+              className="side3"
+            >
+              <div className="dt-img3">
+
+              </div>
+            </div>
+            <div
+              onClick={() => updateDes1('https://images.unsplash.com/photo-1543610892-0b1f7e6d8ac1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D')}
+              className="side4"
+            >
+              <div className="dt-img4">
+
+              </div>
+            </div>
+          </div>
+
+          <div className="right-side">
+            {/* Hiển thị ảnh hiện tại */}
+            {des1 && (
+              <div className="des1">
+                <img src={des1} alt="Selected" />
+              </div>
+            )}
+          </div>
+        </div>
 
             <div className="Description">
                 <h1>Men's Checkered Long<br/> Sleeve Button Shirt</h1>

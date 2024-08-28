@@ -12,10 +12,12 @@ function AboutusPage() {
   return (
     <>
         <Navbar/>
+        <Navbar/>
         <AboutUsTitle/>
         <Mission/>
         <Member/>
         <Contactus/>
+        <Footer/>
         <Footer/>
     </>
   )

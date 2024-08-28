@@ -34,6 +34,7 @@ function Popular() {
             <div className="Attire-1">
               <div className="pl-1">
                 <img id = "pl-img1" src="https://cdn.shopify.com/s/files/1/0300/1493/1082/files/men-s-long-sleeve-checkered-button-shirt-anotherchill-1_400x.png?v=1694763099" width={'310px'} height={'400px'} alt="" />
+                <div className="pl-imgbf"></div>
               </div>
               <div className="pl-2">
                 <img id = "pl-img2" src="https://cdn.shopify.com/s/files/1/0300/1493/1082/files/men-s-checkered-print-button-down-shirt-anotherchill-1-32061016441066_400x.png?v=1694761230" width={'310px'}  alt="" />

@@ -42,6 +42,8 @@ body {
 #logo:hover {
   transform: rotate(-3deg);
   transition: 0.3s;
+  background-color: red;
+  border:none;
 }
 
 .navbar {
@@ -49,7 +51,9 @@ body {
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
   font-weight: bold;
   /* position:fixed; */
-  margin-top: 10px
+  margin-top: 10px;
+  margin-top: 10px;
+  font-family: "Righteous", sans-serif;
 }
 
 .navbar ul {
