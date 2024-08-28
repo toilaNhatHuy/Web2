@@ -17,7 +17,7 @@ function Featured() {
         </div>
       </div>
 
-      <div className="container-2">
+      <div className="container-ep-2">
         {/* <div className="Attire-1">
           <div className="attire-1">Hoodies</div>
           <div className="attire-1">Tank Tops</div>
@@ -31,7 +31,7 @@ function Featured() {
         </div> */}
         <Carousel data-bs-theme="dark">
           <Carousel.Item>
-            <div className="Attire-1">
+            <div className="Attire-ep-1">
               <div className="attire-1">Product 1</div>
               <div className="attire-2">Product 2</div>
               <div className="attire-3">Product 3</div>        
@@ -41,7 +41,7 @@ function Featured() {
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <div className="Attire-2">
+            <div className="Attire-ep-2">
               <div className="attire-4">Product 4</div>
               <div className="attire-5">Product 5</div>
               <div className="attire-6">Product 6</div>

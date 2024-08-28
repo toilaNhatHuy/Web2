@@ -10,7 +10,7 @@ function NewArrivals() {
       <div className="Introduce">
         <div className="Introduce-1">
           <div className="introduce-1">
-
+            <div className="hot-tag"></div>
           </div>
         </div>
         <div className="Introduce2-3">
@@ -19,7 +19,7 @@ function NewArrivals() {
             <p>Introducing our new local brand collection: chic, <br/>high-quality shirts crafted for comfort and style.<br/> Upgrade your wardrobe with us!</p>
           </div>
           <div className="introduce-3">
-
+            
           </div>
         </div>
       </div>

@@ -19,7 +19,7 @@ function Featured() {
         </div>
       </div>
 
-      <div className="container-2">
+      <div className="container-ep-2">
         {/* <div className="Attire-1">
           <div className="attire-1">Hoodies</div>
           <div className="attire-1">Tank Tops</div>
@@ -33,7 +33,7 @@ function Featured() {
         </div> */}
         <Carousel data-bs-theme="dark">
           <Carousel.Item>
-            <div className="Attire-1">
+            <div className="Attire-ep-1">
               <Link id = "attire-1" to = "/products2">
                 Hoodie
               </Link>
@@ -49,12 +49,12 @@ function Featured() {
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <div className="Attire-2">
+            <div className="Attire-ep-2">
               <Link id = "attire-4" to = "/products">
                 Shirts
               </Link>
-              <div className="attire-5"></div>
-              <div className="attire-6"></div>
+              <div className="attire-5-k"></div>
+              <div className="attire-6-k"></div>
             </div>
             <Carousel.Caption>
               {/* <h5>Second slide label</h5> */}

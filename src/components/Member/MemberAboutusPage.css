@@ -33,10 +33,38 @@
 
 
 
-.member1-img, .member2-img, .member3-img {
+.member1-img {
     width: 250px;
     height: 300px;
-    background-color: white;
+    background-image: url('https://scontent.xx.fbcdn.net/v/t1.15752-9/456239692_831494949109643_1561807836854008990_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=0024fc&_nc_ohc=eUBnCpTKoO8Q7kNvgH8wdkx&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QHpWNpBYCkjtM5nfZB8sSGNFJPulqdWXuwrBTTbDX6bOA&oe=66F64B0E');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid black;
+    margin-top: 50px;
+    position: relative;
+    top: 50px;
+    z-index: 1000;
+}
+
+.member2-img {
+    width: 250px;
+    height: 300px;
+    background-image: url('https://scontent.xx.fbcdn.net/v/t1.15752-9/457526429_1844354792753104_8963373409479753844_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=0024fc&_nc_ohc=8wBJemAD5wIQ7kNvgEHusMp&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QGy2AbrupJVZNC_tZ7K5ebeC2fG8hqcrFcTXFYNOxY9Fw&oe=66F663B9');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid black;
+    margin-top: 50px;
+    position: relative;
+    top: 50px;
+    z-index: 1000;
+}
+
+.member3-img {
+    width: 250px;
+    height: 300px;
+    background-image: url('https://scontent.xx.fbcdn.net/v/t1.15752-9/457386773_532423959450489_8802898667036023775_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=0024fc&_nc_ohc=N9ePT2l9l5UQ7kNvgHb4ksh&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QHeCOjYemrn-DAZPcTSTY_8eXRyNRpK8AaYICQvN7PzEw&oe=66F644BF');
+    background-repeat: no-repeat;
+    background-size: cover;
     border: 2px solid black;
     margin-top: 50px;
     position: relative;

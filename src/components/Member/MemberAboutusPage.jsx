@@ -6,7 +6,7 @@ function Member() {
   return (
     <div className="Member">
         <div className="member-title">
-            <h1 id= "meet">MEET OUR LEADER</h1>
+            <h1 id= "meet">MEET OUR MEMBER</h1>
         </div>
         <div className="all-member">
             <div className="member1">

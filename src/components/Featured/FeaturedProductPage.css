@@ -26,47 +26,7 @@
 }
 
 
-.left-ft {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
-
-#prev-ft {
-    border: none;
-    border-radius: 50px;
-    background-color: rgb(208, 208, 208);
-    color: black;
-    width: 60px;
-    height: 60px;
-}
-
-#next-ft {
-    border: none;
-    border-radius: 50px;
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    width: 60px;
-    height: 60px;
-}
-
-.right-ft {
-    margin-left: 30px;
-}
-
-.left-ft {
-    margin-right: 30px;
-}
-
-.Attire-1, .Attire-2 {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
-    cursor: pointer;
-    gap: 100px;
-}
-
-.attire-1, .attire-2 {
+.attire-1, .attire-2, .attire-3, .attire-4, .attire-5, .attire-6 {
     width: 310px;
     height: 280px;
     background-color:rgb(208, 208, 208);
@@ -78,11 +38,19 @@
     margin-bottom: 80px;
 }
 
+a.carousel-control-prev {
+    transform: translate(0, -40px);
+}
 
-.container-2 {
+.Attire-ep-1 {
     display: flex;
-    overflow: hidden;
     gap: 100px;
-    margin-bottom: 200px;
+    justify-content: center;
+}
+
+.Attire-ep-2 {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
 }
 
