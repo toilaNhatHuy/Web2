@@ -19,8 +19,8 @@ function Categoies3() {
         <div className="All-Categories3">
             <div className="Categories-1">
                 <div className="img-des">
-                    <img src="https://i.pinimg.com/474x/1f/0d/4f/1f0d4fae8d75a57a3a495ed09c085fef.jpg" width={'380px'} height={'480px'} alt="" />
-                    <p>| Men's Checkered Long Sleeve Button Shirt </p>
+                    <img src="https://i.pinimg.com/736x/6d/d4/ee/6dd4eee674ddbf9c417d605061b94381.jpg" width={'380px'} height={'480px'} alt="" />
+                    <p>| Pull Lapin Motifs Japonais 'Saitama' </p>
                     <div className="star-detail">
                         <div className="star">
                             <p id="rate"><i className="fa-solid fa-star"></i></p>
@@ -49,8 +49,8 @@ function Categoies3() {
             </div>
             <div className="Categories-2">
                 <div className="img-des">
-                        <img src="https://i.pinimg.com/474x/1f/0d/4f/1f0d4fae8d75a57a3a495ed09c085fef.jpg" width={'380px'} height={'480px'} alt="" />
-                        <p>| Men's Checkered Long Sleeve Button Shirt </p>
+                        <img src="https://i.pinimg.com/736x/1d/19/25/1d1925a7ab9a6abc6ec4c10430499e7a.jpg" width={'380px'} height={'480px'} alt="" />
+                        <p>| Herren Strickpullover mit Katzenmuster</p>
                         <div className="star-detail">
                             <div className="star">
                                 <p id="rate"><i className="fa-solid fa-star"></i></p>
@@ -78,8 +78,8 @@ function Categoies3() {
                 </div>
             <div className="Categories-3">
                 <div className="img-des">
-                        <img src="https://i.pinimg.com/474x/1f/0d/4f/1f0d4fae8d75a57a3a495ed09c085fef.jpg" width={'380px'} height={'480px'} alt="" />
-                        <p>| Men's Checkered Long Sleeve Button Shirt </p>
+                        <img src="https://i.pinimg.com/736x/1e/49/08/1e490818c8c2dfa6e7196d70081f5e80.jpg" width={'380px'} height={'480px'} alt="" />
+                        <p>| Stylish Letter Knitted Sweater</p>
                         <div className="star-detail">
                             <div className="star">
                                 <p id="rate"><i className="fa-solid fa-star"></i></p>
@@ -111,8 +111,8 @@ function Categoies3() {
             <div className="All-Categories3">
                     <div className="Categories-1">
                         <div className="img-des">
-                            <img src="https://i.pinimg.com/474x/1f/0d/4f/1f0d4fae8d75a57a3a495ed09c085fef.jpg" width={'380px'} height={'480px'} alt="" />
-                            <p>| Men's Checkered Long Sleeve Button Shirt </p>
+                            <img src="https://i.pinimg.com/736x/92/bf/81/92bf8187481ef3fa36c0fa81dbeb57c0.jpg" width={'380px'} height={'480px'} alt="" />
+                            <p>| Oversized Skeleton Knit Sweater </p>
                             <div className="star-detail">
                                 <div className="star">
                                     <p id="rate"><i className="fa-solid fa-star"></i></p>
@@ -141,8 +141,8 @@ function Categoies3() {
                     </div>
                     <div className="Categories-2">
                         <div className="img-des">
-                                <img src="https://i.pinimg.com/474x/1f/0d/4f/1f0d4fae8d75a57a3a495ed09c085fef.jpg" width={'380px'} height={'480px'} alt="" />
-                                <p>| Men's Checkered Long Sleeve Button Shirt </p>
+                                <img src="https://i.pinimg.com/736x/6b/17/16/6b17161cdc7b538ed89062f9c36c81f9.jpg" width={'380px'} height={'480px'} alt="" />
+                                <p>| Special Blue Sweater </p>
                                 <div className="star-detail">
                                     <div className="star">
                                         <p id="rate"><i className="fa-solid fa-star"></i></p>
@@ -170,8 +170,8 @@ function Categoies3() {
                         </div>
                     <div className="Categories-3">
                         <div className="img-des">
-                                <img src="https://i.pinimg.com/474x/1f/0d/4f/1f0d4fae8d75a57a3a495ed09c085fef.jpg" width={'380px'} height={'480px'} alt="" />
-                                <p>| Men's Checkered Long Sleeve Button Shirt </p>
+                                <img src="https://i.pinimg.com/736x/79/e3/3e/79e33e59ecb2c928f73df3b92bc829f6.jpg" width={'380px'} height={'480px'} alt="" />
+                                <p>| Magnificent colorful sweater </p>
                                 <div className="star-detail">
                                     <div className="star">
                                         <p id="rate"><i className="fa-solid fa-star"></i></p>

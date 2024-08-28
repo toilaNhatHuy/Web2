@@ -31,7 +31,10 @@
 .introduce-3 {
     width: 500px;
     height: 220px;
-    background-color: rgb(208, 208, 208);
+    background-image: url('https://png.pngtree.com/png-vector/20220705/ourmid/pngtree-new-product-in-banner-style-png-image_5687254.png');
+    background-position: 50%;
+    background-repeat: no-repeat;
+    width: 400px
 }
 
 #wis {

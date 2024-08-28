@@ -20,8 +20,8 @@ function Categoies() {
         <div className="All-Categories">
             <div className="Categories-1">
                 <div className="img-des">
-                    <img src="https://i.pinimg.com/474x/1f/0d/4f/1f0d4fae8d75a57a3a495ed09c085fef.jpg" width={'380px'} height={'480px'} alt="" />
-                    <p>| Men's Checkered Long Sleeve Button Shirt </p>
+                    <img src="https://i.pinimg.com/736x/ab/44/73/ab44736245c77fe9bd1e88ed3c659f6a.jpg" width={'380px'} height={'480px'} alt="" />
+                    <p>| Men's Checkered Long Sleeve Button Shirt</p>
                     <div className="star-detail">
                         <div className="star">
                             <p id="rate"><i className="fa-solid fa-star"></i></p>
@@ -50,8 +50,8 @@ function Categoies() {
             </div>
             <div className="Categories-2">
                 <div className="img-des">
-                        <img src="https://i.pinimg.com/474x/1f/0d/4f/1f0d4fae8d75a57a3a495ed09c085fef.jpg" width={'380px'} height={'480px'} alt="" />
-                        <p>| Men's Checkered Long Sleeve Button Shirt </p>
+                        <img src="https://i.pinimg.com/736x/33/89/02/338902d7bc2a84778f1faca5ec0aa6ae.jpg" width={'380px'} height={'480px'} alt="" />
+                        <p>| Aelfric Eden Corduroy Plaid Fake Two Jacket </p>
                         <div className="star-detail">
                             <div className="star">
                                 <p id="rate"><i className="fa-solid fa-star"></i></p>
@@ -79,8 +79,8 @@ function Categoies() {
                 </div>
             <div className="Categories-3">
                 <div className="img-des">
-                        <img src="https://i.pinimg.com/474x/1f/0d/4f/1f0d4fae8d75a57a3a495ed09c085fef.jpg" width={'380px'} height={'480px'} alt="" />
-                        <p>| Men's Checkered Long Sleeve Button Shirt </p>
+                        <img src="https://i.pinimg.com/736x/11/cb/44/11cb445863666f6e300d54d1738f63a5.jpg" width={'380px'} height={'480px'} alt="" />
+                        <p>| Minaka Long Sleeve Button Shirt </p>
                         <div className="star-detail">
                             <div className="star">
                                 <p id="rate"><i className="fa-solid fa-star"></i></p>
@@ -111,8 +111,8 @@ function Categoies() {
         <div className="All-Categories-2">
             <div className="Categories-1">
                 <div className="img-des">
-                    <img src="https://i.pinimg.com/474x/1f/0d/4f/1f0d4fae8d75a57a3a495ed09c085fef.jpg" width={'380px'} height={'480px'} alt="" />
-                    <p>| Men's Checkered Long Sleeve Button Shirt </p>
+                    <img src="https://i.pinimg.com/736x/c9/74/a4/c974a41ec07bac6017c5937be097be4d.jpg" width={'380px'} height={'480px'} alt="" />
+                    <p>| White Striped T-shirt </p>
                     <div className="star-detail">
                         <div className="star">
                             <p id="rate"><i className="fa-solid fa-star"></i></p>
@@ -141,8 +141,8 @@ function Categoies() {
             </div>
             <div className="Categories-2">
                 <div className="img-des">
-                        <img src="https://i.pinimg.com/474x/1f/0d/4f/1f0d4fae8d75a57a3a495ed09c085fef.jpg" width={'380px'} height={'480px'} alt="" />
-                        <p>| Men's Checkered Long Sleeve Button Shirt </p>
+                        <img src="https://i.pinimg.com/736x/05/06/14/050614405263341552bd1a7d9fc7466c.jpg" width={'380px'} height={'480px'} alt="" />
+                        <p>| Aqua Checkered Long Sleeve Button Shirt </p>
                         <div className="star-detail">
                             <div className="star">
                                 <p id="rate"><i className="fa-solid fa-star"></i></p>
@@ -170,8 +170,8 @@ function Categoies() {
                 </div>
             <div className="Categories-3">
                 <div className="img-des">
-                        <img src="https://i.pinimg.com/474x/1f/0d/4f/1f0d4fae8d75a57a3a495ed09c085fef.jpg" width={'380px'} height={'480px'} alt="" />
-                        <p>| Men's Checkered Long Sleeve Button Shirt </p>
+                        <img src="https://i.pinimg.com/736x/55/56/b9/5556b9ab637eae7a6816c20460af5189.jpg" width={'380px'} height={'480px'} alt="" />
+                        <p>| Red Striped Shirt </p>
                         <div className="star-detail">
                             <div className="star">
                                 <p id="rate"><i className="fa-solid fa-star"></i></p>

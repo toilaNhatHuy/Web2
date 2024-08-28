@@ -1,7 +1,7 @@
 import './FeaturedHomePage.css'
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel';
-
+import {Route, Routes, Link} from 'react-router-dom'
 function Featured() {
 
 
@@ -34,9 +34,15 @@ function Featured() {
         <Carousel data-bs-theme="dark">
           <Carousel.Item>
             <div className="Attire-1">
-              <div className="attire-1">Hoodies</div>
-              <div className="attire-2">Tank Tops</div>
-              <div className="attire-3">Sweaters</div>        
+              <Link id = "attire-1" to = "/products2">
+                Hoodie
+              </Link>
+              <Link id = "attire-2" to = "/products4">
+                Tank Tops
+              </Link>
+              <Link id = "attire-3" to = "/products3">
+                Sweater
+              </Link>       
             </div>
             <Carousel.Caption>
               {/* <h5>First slide label</h5> */}
@@ -44,9 +50,11 @@ function Featured() {
           </Carousel.Item>
           <Carousel.Item>
             <div className="Attire-2">
-              <div className="attire-4">Jacket</div>
-              <div className="attire-5">Blazers</div>
-              <div className="attire-6">T-Shirt</div>
+              <Link id = "attire-4" to = "/products">
+                Shirts
+              </Link>
+              <div className="attire-5"></div>
+              <div className="attire-6"></div>
             </div>
             <Carousel.Caption>
               {/* <h5>Second slide label</h5> */}

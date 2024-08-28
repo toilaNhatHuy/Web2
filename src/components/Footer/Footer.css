@@ -6,10 +6,7 @@
     color: white;
     font-family: "Righteous", sans-serif;
 }
-li{
-    text-decoration: none;
-    color: white;
-}
+
 .nav-footer {
     list-style: none;
     display: flex;
@@ -66,6 +63,23 @@ li{
 
 #contact-icon {
     font-size: 35px;
+}
+
+#homef,
+#productsf,
+#about-usf,
+#sign-inf,
+#sign-upf {
+    text-decoration: none;
+    color: white
+}
+
+#homef:hover,
+#productsf:hover,
+#about-usf:hover,
+#sign-inf:hover,
+#sign-upf:hover {
+    text-decoration: underline;
 }
 
 

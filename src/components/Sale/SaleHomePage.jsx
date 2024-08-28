@@ -1,5 +1,6 @@
 import'./SaleHomePage.css';
 import React  from 'react';
+import {Link} from 'react-router-dom'
 function Sale() {
   return (
     
@@ -13,19 +14,22 @@ function Sale() {
             <button id = "shop-btn">Shop</button>
           </div>
           <div className="sale-2-3-4">
-            <div className="sale-2">
-              <label id = "shirts" htmlFor="shopbtn">Sale 30% for shirts</label>
-              <button id = "shop-btn">Shop</button>
-            </div>
+            <Link className="sale-2" to = "/products">
+                
+                  <label id = "shirts" htmlFor="shopbtn">Sale 30% for shirts</label>
+                  <button id = "shop-btn">Shop</button>
+                
+
+            </Link>
             <div className="sale-3-4">
-            <div className="sale-3">
-              <p id = "hoodies" htmlFor="shopbtn">Sale 50% for hoodies</p>
-              <button id = "shop-btn">Shop</button>
-            </div>
-            <div className="sale-4">
-              <p id = "sweaters" htmlFor="shopbtn">Sale 20% for sweaters</p>
-              <button id = "shop-btn">Shop</button>
-            </div> 
+              <Link className="sale-3" to = "/products2">
+                <p id = "hoodies" htmlFor="shopbtn">Sale 50% for hoodies</p>
+                <button id = "shop-btn">Shop</button>
+              </Link>
+              <Link className="sale-4" to = "/products3">
+                <p id = "sweaters" htmlFor="shopbtn">Sale 20% for sweaters</p>
+                <button id = "shop-btn">Shop</button>
+              </Link> 
             </div>
             
         </div>

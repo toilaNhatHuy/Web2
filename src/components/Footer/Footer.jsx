@@ -6,11 +6,11 @@ function Footer(){
     return(
             <div className="Footer">
                 <div className="nav-footer">
-                    <li><Link id="home" to="/">HOME</Link></li>
-                    <li><Link id = "products" to="/products">PRODUCTS</Link></li>
-                    <li><Link id = "about-us" to="/aboutus">ABOUT US</Link></li>
-                    <li><Link id = "sign-in" to="/signin">SIGN IN</Link></li>
-                    <li><Link id = "sign-up" to="/signup">SIGN UP</Link></li>
+                    <li><Link id="homef" to="/">HOME</Link></li>
+                    <li><Link id = "productsf" to="/products">PRODUCTS</Link></li>
+                    <li><Link id = "about-usf" to="/aboutus">ABOUT US</Link></li>
+                    <li><Link id = "sign-inf" to="/signin">SIGN IN</Link></li>
+                    <li><Link id = "sign-upf" to="/signup">SIGN UP</Link></li>
                 </div>
                 <div className="footer-info">
                     <div className="footer-slogan">

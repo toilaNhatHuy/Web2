@@ -1,6 +1,6 @@
 import './NameproductHomePage.css'
 import React from 'react';
-
+import {Link} from 'react-router-dom'
 function Nameproduct() {
   return (
     <div className="Nameproduct">
@@ -12,9 +12,9 @@ function Nameproduct() {
             <p>Introducing our new local brand collection: chic, high-quality shirts crafted for comfort and style.</p>
         </div>
 
-        <div className="np-button">
+        <Link to = "/products" className="np-button">
             <button id ="np-btn">Shop</button>
-        </div>
+        </Link>
     </div>
   )
 }

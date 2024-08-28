@@ -19,8 +19,8 @@ function Categoies4() {
         <div className="All-Categories4">
             <div className="Categories-1">
                 <div className="img-des">
-                    <img src="https://i.pinimg.com/474x/1f/0d/4f/1f0d4fae8d75a57a3a495ed09c085fef.jpg" width={'380px'} height={'480px'} alt="" />
-                    <p>| Men's Checkered Long Sleeve Button Shirt </p>
+                    <img src="https://i.pinimg.com/736x/98/b1/63/98b1636d8fc2af22e8a2a60591ff7977.jpg" width={'380px'} height={'480px'} alt="" />
+                    <p>| Men's Kristina Ribbed Brami  </p>
                     <div className="star-detail">
                         <div className="star">
                             <p id="rate"><i className="fa-solid fa-star"></i></p>
@@ -49,8 +49,8 @@ function Categoies4() {
             </div>
             <div className="Categories-2">
                 <div className="img-des">
-                        <img src="https://i.pinimg.com/474x/1f/0d/4f/1f0d4fae8d75a57a3a495ed09c085fef.jpg" width={'380px'} height={'480px'} alt="" />
-                        <p>| Men's Checkered Long Sleeve Button Shirt </p>
+                        <img src="https://i.pinimg.com/736x/db/c1/f2/dbc1f2abe98647b4fd0929f18cd2a9ef.jpg" width={'380px'} height={'480px'} alt="" />
+                        <p>| Unique Tank Top </p>
                         <div className="star-detail">
                             <div className="star">
                                 <p id="rate"><i className="fa-solid fa-star"></i></p>
@@ -78,8 +78,8 @@ function Categoies4() {
                 </div>
             <div className="Categories-3">
                 <div className="img-des">
-                        <img src="https://i.pinimg.com/474x/1f/0d/4f/1f0d4fae8d75a57a3a495ed09c085fef.jpg" width={'380px'} height={'480px'} alt="" />
-                        <p>| Men's Checkered Long Sleeve Button Shirt </p>
+                        <img src="https://i.pinimg.com/736x/c8/93/49/c89349195dc5d82123fd6c7cfe966385.jpg" width={'380px'} height={'480px'} alt="" />
+                        <p>| Popular Tank Top </p>
                         <div className="star-detail">
                             <div className="star">
                                 <p id="rate"><i className="fa-solid fa-star"></i></p>
@@ -111,8 +111,8 @@ function Categoies4() {
             <div className="All-Categories4">
                     <div className="Categories-1">
                         <div className="img-des">
-                            <img src="https://i.pinimg.com/474x/1f/0d/4f/1f0d4fae8d75a57a3a495ed09c085fef.jpg" width={'380px'} height={'480px'} alt="" />
-                            <p>| Men's Checkered Long Sleeve Button Shirt </p>
+                            <img src="https://i.pinimg.com/736x/64/71/4c/64714c37d5a0588a76667686c381450d.jpg" width={'380px'} height={'480px'} alt="" />
+                            <p>| Our Brand New Tank Top </p>
                             <div className="star-detail">
                                 <div className="star">
                                     <p id="rate"><i className="fa-solid fa-star"></i></p>
@@ -141,8 +141,8 @@ function Categoies4() {
                     </div>
                     <div className="Categories-2">
                         <div className="img-des">
-                                <img src="https://i.pinimg.com/474x/1f/0d/4f/1f0d4fae8d75a57a3a495ed09c085fef.jpg" width={'380px'} height={'480px'} alt="" />
-                                <p>| Men's Checkered Long Sleeve Button Shirt </p>
+                                <img src="https://i.pinimg.com/736x/65/e3/3f/65e33f819e6b60ff3e124a6093b698aa.jpg" width={'380px'} height={'480px'} alt="" />
+                                <p>| BASIQUINHAS  </p>
                                 <div className="star-detail">
                                     <div className="star">
                                         <p id="rate"><i className="fa-solid fa-star"></i></p>
@@ -170,8 +170,8 @@ function Categoies4() {
                         </div>
                     <div className="Categories-3">
                         <div className="img-des">
-                                <img src="https://i.pinimg.com/474x/1f/0d/4f/1f0d4fae8d75a57a3a495ed09c085fef.jpg" width={'380px'} height={'480px'} alt="" />
-                                <p>| Men's Checkered Long Sleeve Button Shirt </p>
+                                <img src="https://i.pinimg.com/736x/d1/2d/51/d12d51b4af060da7ad673d225e028db7.jpg" width={'380px'} height={'480px'} alt="" />
+                                <p>| Body Duda </p>
                                 <div className="star-detail">
                                     <div className="star">
                                         <p id="rate"><i className="fa-solid fa-star"></i></p>

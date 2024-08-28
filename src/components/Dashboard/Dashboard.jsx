@@ -5,7 +5,7 @@ function Dashboard() {
   return (
     <div className="Dashboard">
         <div className="dashboard-title">
-            <h1>CREATE A NOW PRODUCT</h1>
+            <h1>CREATE A NEW PRODUCT</h1>
         </div>
         <div className="Create-Part"> {/* css cho width va height lam khung cho cho tao sp */}
             <div className="Product-DS"> {/* cho hien san pham */}
