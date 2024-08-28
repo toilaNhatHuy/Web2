@@ -1,15 +1,16 @@
-import Navbar from "../components/Navbar"
-import Home from "../components/Home_HomePage"
-import Slideshow from "../components/SlideShow_HomePage"
-import Slogan from "../components/Slogan_HomePage"
-import Popular from "../components/Popular_HomePage"
-import Sale from "../components/Sale_HomePage"
-import NewArrivals from "../components/NewArrivals_HomePage"
-import Featured from "../components/Featured_HomePage"
-import Nameproduct from "../components/Nameproduct_HomePage"
-import Note from "../components/Note_HomePage"
-import Footer from "../components/Footer"
-import React from 'react';
+import Navbar from "../components/Navbar/Navbar"
+import Home from "../components/Homepage/HomeHomePage"
+import Slideshow from "../components/Slideshow/SlideShowHomePage"
+import Slogan from "../components/Slogan/SloganHomePage"
+import Popular from "../components/Popular/PopularHomePage"
+import Sale from "../components/Sale/SaleHomePage"
+import NewArrivals from "../components/Newarrivals/NewArrivalsHomePage"
+import Featured from "../components/Featured/FeaturedHomePage"
+import Nameproduct from "../components/Nameproduct/NameproductHomePage"
+import Note from "../components/Note/NoteHomePage"
+import Footer from "../components/Footer/Footer"
+import React from 'react'
+
 
 function HomePage() {
     return (

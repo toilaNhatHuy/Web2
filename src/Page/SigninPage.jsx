@@ -1,6 +1,6 @@
 import React from 'react'
-import SignIn from '../components/SignIn_SigninPage'
-import Signup from '../components/Signup_SignupPage'
+import SignIn from '../components/Signin/SignInSigninPage'
+
 
 function Signin() {
   return (

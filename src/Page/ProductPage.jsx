@@ -1,11 +1,10 @@
-import Featured from "../components/Featured_ProductPage"
-import Navbar from "../components/Navbar"
-import Product from "../components/Product_ProductPage"
-import Attire from "../components/Attire_ProductPage"
-import Categoies from "../components/Categoies_ProductPage"
-import Footer from "../components/Footer"
-import React  from 'react';
-
+import Featured from "../components/Featured/FeaturedProductPage"
+import Navbar from "../components/Navbar/Navbar"
+import Product from "../components/Products/ProductProductPage"
+import Attire from "../components/Attire/AttireProductPage"
+import Categoies from "../components/Categories/CategoiesProductPage"
+import Footer from "../components/Footer/Footer"
+import React from 'react'
 function ProductPage(){
     return(
         <>

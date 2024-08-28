@@ -2,12 +2,10 @@ import {Routes, Route} from 'react-router-dom';
 import {useEffect} from 'react';
 import axios from 'axios';
 import Home from "./Page/HomePage.jsx";
-import "./components/Footer.css"
-import "./components/Navbar.css"
 import Product from './Page/ProductPage.jsx';
 import AboutUs from './Page/AboutusPage.jsx';
 import Signin from './Page/SigninPage.jsx';
-import Signup from './components/Signup_SignupPage.jsx'
+import Signup from './components/Signup/SignupSignupPage.jsx';
 import ProductPage from './Page/ProductPage.jsx';
 import Product2Page from './Page/Product2Page.jsx';
 import Product3Page from './Page/Product3Page.jsx';
