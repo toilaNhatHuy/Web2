@@ -73,3 +73,51 @@
     background-size: 100%;
     object-fit: cover;
 }
+
+.container-ppl {
+    animation: appear2 linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+
+@keyframes appear2 {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+
+
+
+.Popular-1 {
+    display: flex;
+    gap: 150px;
+    justify-content: center;
+}
+
+.Popular-2 {
+    display: flex;
+    gap: 150px;
+    justify-content: center;
+}
+
+.right-ft {
+    margin-left: 100px;
+}
+
+.left-ft {
+    margin-right: 100px;
+}
+
+.container-ppl-2 {
+    margin-bottom: 200px;
+}
+
+
+
+

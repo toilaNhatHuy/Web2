@@ -11,8 +11,6 @@
     animation: appear2 linear;
     animation-timeline: view();
     animation-range: entry 0 cover 40%;
-    width: 1530px;
-    height: 550px;
 }
 
 @keyframes appear2 {
@@ -72,41 +70,30 @@
 
 
 
-
-
-
-a.carousel-control-prev {
-    transform: translate(-30px, -23px);
+.container-ctgr-2 .carousel-control-prev {
+    transform: translate(0, -40px);
 }
 
 a.carousel-control-next {
-    transform: translate(30px, -23px);
+    transform: translate(0, -40px);
 }
 
-.Attire-1 {
+.Attire-ctgr-1 {
     display: flex;
     gap: 100px; 
+    justify-content: center;
 }
 
-.Attire-2 {
+.Attire-ctgr-2 {
     display: flex;
     gap: 100px;
-    margin-left: 100px;
-}
-
-.container-2 {
-    width: 1230px;
-    display: flex;
-    transform: translate(50px,0);
-    overflow-x: hidden;
-    margin-bottom: 200px;
-    margin-right: 180px;
+    justify-content: center;
 }
 
 
 #attire-1, #attire-2, #attire-3, #attire-4  {
-    width: 310px;
-    height: 280px;
+    width: 300px;
+    height: 300px;
     font-size: 2em;
     font-weight: 500;
     display: flex;
@@ -120,10 +107,9 @@ a.carousel-control-next {
     background-color:rgb(208, 208, 208);
 }
 
-.attire-5, .attire-6 {
-    width: 310px;
-    height: 280px;
-    /* background-color:rgb(208, 208, 208); */
+.attire-5-k, .attire-6-k {
+    width: 300px;
+    height: 300px;
     font-size: 2em;
     font-weight: 500;
     display: flex;
@@ -134,9 +120,11 @@ a.carousel-control-next {
     color: rgb(0, 0, 0)
 }
 
-#attire-1 {
-    margin-left: 100px;
+.container-ep-2 {
+    margin-bottom: 200px;
 }
+
+
 
 
 

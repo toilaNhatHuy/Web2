@@ -38,8 +38,8 @@ function Categoies4() {
                     </div>
                     <div className="price">
                         <div className="original-price">
-                            <span id = "price1">$27.6</span>
-                            <span id = "price2">$20.3</span>
+                            <span id = "price1">$11.6</span>
+                            <span id = "price2">$7.8</span>
 
                         </div>
                     </div>
@@ -68,8 +68,8 @@ function Categoies4() {
                         </div>
                         <div className="price">
                             <div className="original-price">
-                                <span id = "price1">$27.6</span>
-                                <span id = "price2">$20.3</span>
+                                <span id = "price1">$14.6</span>
+                                <span id = "price2">$10.1</span>
 
                             </div>
                         </div>
@@ -97,8 +97,8 @@ function Categoies4() {
                         </div>
                         <div className="price">
                             <div className="original-price">
-                                <span id = "price1">$27.6</span>
-                                <span id = "price2">$20.3</span>
+                                <span id = "price1">$9.8</span>
+                                <span id = "price2">$5.9</span>
 
                             </div>
                         </div>
@@ -130,8 +130,8 @@ function Categoies4() {
                             </div>
                             <div className="price">
                                 <div className="original-price">
-                                    <span id = "price1">$27.6</span>
-                                    <span id = "price2">$20.3</span>
+                                    <span id = "price1">$8.7</span>
+                                    <span id = "price2">$4.3</span>
 
                                 </div>
                             </div>
@@ -160,8 +160,8 @@ function Categoies4() {
                                 </div>
                                 <div className="price">
                                     <div className="original-price">
-                                        <span id = "price1">$27.6</span>
-                                        <span id = "price2">$20.3</span>
+                                        <span id = "price1">$9.2</span>
+                                        <span id = "price2">$5.1</span>
 
                                     </div>
                                 </div>
@@ -189,8 +189,8 @@ function Categoies4() {
                                 </div>
                                 <div className="price">
                                     <div className="original-price">
-                                        <span id = "price1">$27.6</span>
-                                        <span id = "price2">$20.3</span>
+                                        <span id = "price1">$7.4</span>
+                                        <span id = "price2">$4.9</span>
 
                                     </div>
                                 </div>

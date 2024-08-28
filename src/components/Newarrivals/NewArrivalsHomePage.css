@@ -37,6 +37,23 @@
     width: 400px
 }
 
+.hot-tag::after {
+    position: absolute;
+    content: "NEW!!";
+    width:100px;
+    height: 40px;
+    font-weight: bolder;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: Red;
+    transform: translate(450px,0);
+    
+
+}
+
 #wis {
     font-size: 4em;
     font-family: "Righteous", sans-serif;

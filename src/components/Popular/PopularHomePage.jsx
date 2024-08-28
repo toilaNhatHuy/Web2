@@ -4,7 +4,7 @@ import React from 'react'
 
 function Popular() {
   return (
-    <div className="container">
+    <div className="container-ppl">
       <div className="Featured">
         <div className="right-ft">
           <h3 id = "h3-1">Popular right now</h3>
@@ -15,13 +15,13 @@ function Popular() {
         </div>
       </div>
 
-      <div className="container-2">
+      <div className="container-ppl-2">
         
         <Carousel data-bs-theme="dark">
           <Carousel.Item>
-            <div className="Attire-1">
+            <div className="Popular-1">
               <div className="pl-1">
-                <img id = "pl-img1" src="https://cdn.shopify.com/s/files/1/0300/1493/1082/files/men-s-long-sleeve-checkered-button-shirt-anotherchill-1_400x.png?v=1694763099" width={'310px'} height={'400px'} alt="" />
+                <img id = "pl-img1" src="https://i.pinimg.com/736x/ab/44/73/ab44736245c77fe9bd1e88ed3c659f6a.jpg" width={'310px'} height={'400px'} alt="" />
                 <div className="content-haha">
                   <div className="second-bg"></div>
                   <button>More Detail</button>
@@ -29,14 +29,14 @@ function Popular() {
                 
               </div>
               <div className="pl-2">
-                <img id = "pl-img2" src="https://cdn.shopify.com/s/files/1/0300/1493/1082/files/men-s-checkered-print-button-down-shirt-anotherchill-1-32061016441066_400x.png?v=1694761230" width={'310px'}  alt="" />
+                <img id = "pl-img2" src="https://i.pinimg.com/736x/05/06/14/050614405263341552bd1a7d9fc7466c.jpg" width={'310px'}  alt="" />
                 <div className="content-haha">
                   <div className="second-bg"></div>
                   <button>More Detail</button>
                 </div>
               </div>
               <div className="pl-3">
-                <img id = "pl-img3" src="https://cdn.shopify.com/s/files/1/0300/1493/1082/files/men-s-long-sleeve-checkered-shirt-anotherchill-1-32060968468714_400x.jpg?v=1721978939" width={'310px'}  alt="" />
+                <img id = "pl-img3" src="https://i.pinimg.com/736x/e1/3f/17/e13f1765e6560f9749d312100026834e.jpg" width={'310px'}  alt="" />
                 <div className="content-haha">
                   <div className="second-bg"></div>
                   <button>More Detail</button>
@@ -48,23 +48,23 @@ function Popular() {
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <div className="Attire-2">
+            <div className="Popular-2">
               <div className="pl-4">
-                <img id = "pl-img4" src="https://i.pinimg.com/736x/31/4b/d1/314bd17996b0a27188f3a71b80b09050.jpg" width={'310px'} height={'400px'} alt="" />
+                <img id = "pl-img4" src="https://i.pinimg.com/736x/31/92/d4/3192d43791a6b5c0eea11327b2a17446.jpg" width={'310px'} height={'400px'} alt="" />
                 <div className="content-haha">
                   <div className="second-bg"></div>
                   <button>More Detail</button>
                 </div>
               </div>
               <div className="pl-5">
-                <img id = "pl-img5" src="https://i.pinimg.com/736x/d1/69/05/d169059a83222c1677da806fdc307cd9.jpg" width={'310px'} height={'400px'} alt="" />
+                <img id = "pl-img5" src="https://i.pinimg.com/736x/1e/49/08/1e490818c8c2dfa6e7196d70081f5e80.jpg" width={'310px'} height={'400px'} alt="" />
                 <div className="content-haha">
                   <div className="second-bg"></div>
                   <button>More Detail</button>
                 </div>
               </div>
               <div className="pl-6">
-                <img id = "pl-img6" src="https://i.pinimg.com/736x/85/bc/3e/85bc3e5fbd17d040a172102736fa4c4e.jpg" width={'310px'} height={'400px'} alt="" />
+                <img id = "pl-img6" src="https://i.pinimg.com/736x/11/cb/44/11cb445863666f6e300d54d1738f63a5.jpg" width={'310px'} height={'400px'} alt="" />
                 <div className="content-haha">
                   <div className="second-bg"></div>
                   <button>More Detail</button>

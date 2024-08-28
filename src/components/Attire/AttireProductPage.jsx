@@ -1,6 +1,6 @@
 import './AttireProductPage.css'
 import Carousel from 'react-bootstrap/Carousel';
-
+import {Link} from 'react-router-dom'
 import React from 'react'
 
 function Attire() {
@@ -18,7 +18,7 @@ function Attire() {
         </div>
       </div> */}
 
-      <div className="container-2">
+      <div className="container-at-2">
         {/* <div className="Attire-1">
           <div className="attire-1">Hoodies</div>
           <div className="attire-1">Tank Tops</div>
@@ -32,12 +32,14 @@ function Attire() {
         </div> */}
         <Carousel data-bs-theme="dark">
           <Carousel.Item>
-            <div className="Attire-1">
+            <div className="Attire-at-1">
               <div className="attire-category1">
                 <div className="attire-category1-in">
                     <div className="attire-category1-in-in">
                         <h1>HOODIES</h1>
-                        <button>SEE MORE</button>
+                        <Link to = '/products2'>
+                          <button >SEE MORE</button>
+                        </Link>
                     </div>
                 </div>
                 
@@ -46,7 +48,9 @@ function Attire() {
               <div className="attire-category1-in">
                     <div className="attire-category1-in-in">
                         <h1>TANK TOPS</h1>
-                        <button>SEE MORE</button>
+                        <Link to = '/products4'>
+                          <button >SEE MORE</button>
+                        </Link>
                     </div>
                 </div>
                 </div>    
@@ -56,20 +60,24 @@ function Attire() {
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <div className="Attire-2">
+            <div className="Attire-at-2">
               <div className="attire-category3">
                 <div className="attire-category1-in">
                         <div className="attire-category1-in-in">
                             <h1>T-SHIRTS</h1>
-                            <button>SWEATERS</button>
+                            <Link to = '/products'>
+                              <button >SEE MORE</button>
+                            </Link>
                         </div>
                     </div>
                 </div>
               <div className="attire-category4">
                 <div className="attire-category1-in">
                         <div className="attire-category1-in-in">
-                            <h1>HOODIES</h1>
-                            <button>SEE MORE</button>
+                            <h1>SWEATERS</h1>
+                            <Link to = '/products3'>
+                              <button >SEE MORE</button>
+                            </Link>
                         </div>
                     </div>
               </div>

@@ -72,3 +72,19 @@
 .attire-category1-in-in {
     margin-top: 100px;
 }
+
+.Attire-at-1 {
+    display: flex;
+    gap: 150px;
+    justify-content: center;
+}
+
+.Attire-at-2 {
+    display: flex;
+    gap: 150px;
+    justify-content: center;
+}
+
+.container-at-2 a.carousel-control-prev {
+    transform: translate(0,-40px);
+}
