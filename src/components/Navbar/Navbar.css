@@ -129,6 +129,10 @@ ul.sidebar a {
   display: flex;
 }
 
+#search {
+  margin-top: 5px;
+}
+
 #cart {
   transition: 0.3s;
 }
