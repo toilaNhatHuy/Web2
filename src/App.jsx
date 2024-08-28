@@ -2,7 +2,7 @@ import React from 'react'
 import {Routes, Route} from 'react-router-dom';
 import {useEffect} from 'react';
 import axios from 'axios';
-import mongodb from "../src/mongodb.js"
+import mongodb from "./mongodb.js"
 import Home from "./Page/HomePage.jsx";
 import "./components/Footer.css";
 import Product from './Page/ProductPage.jsx';
