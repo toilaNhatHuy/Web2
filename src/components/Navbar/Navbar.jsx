@@ -68,7 +68,7 @@ function Navbar() {
                                 ))}
                             </ul>
                         ) : (
-                            <p>No results found.</p>
+                            <p></p>
                         )}
                     </div>
                 </form>
