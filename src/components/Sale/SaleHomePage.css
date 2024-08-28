@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Righteous&family=Staatliches&display=swap');
+.Sale {
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.Sale-All {
+    animation: appear3 linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+    margin-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.right-sl {
+    width: 61%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#h3-1{
+    width: 100%;
+    font-size: 50px;
+    font-family: "Righteous", sans-serif;
+}
+@keyframes appear3 {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+
+.sale-1 {
+    width: 500px;
+    height: 500px;
+    background-image: url('https://i.pinimg.com/474x/0b/a6/e4/0ba6e4756afb10324871753d8c95c59b.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-size: 2em;
+    font-weight: 500;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+#bts {
+    color: white
+}
+
+#shirts {
+    color: white
+}
+
+#hoodies {
+    color: white
+}
+
+#sweaters {
+    color: white;
+}
+
+.sale-1:hover {
+    filter:contrast(1.4);
+    transform: translate(-5px, -10px);
+    box-shadow: 4px 5px 14px 0px rgba(114,114,114,0.75);
+-webkit-box-shadow: 4px 5px 14px 0px rgba(114,114,114,0.75);
+-moz-box-shadow: 4px 5px 14px 0px rgba(114,114,114,0.75);
+    transition: 0.3s;
+}
+
+.sale-2:hover {
+    filter:contrast(1.4);
+    transform: translate(-5px, -10px);
+    box-shadow: 4px 5px 14px 0px rgba(114,114,114,0.75);
+-webkit-box-shadow: 4px 5px 14px 0px rgba(114,114,114,0.75);
+-moz-box-shadow: 4px 5px 14px 0px rgba(114,114,114,0.75);
+    transition: 0.3s;
+}
+
+.sale-3:hover {
+    filter:contrast(1.4);
+    transform: translate(-5px, -10px);
+    box-shadow: 4px 5px 14px 0px rgba(114,114,114,0.75);
+-webkit-box-shadow: 4px 5px 14px 0px rgba(114,114,114,0.75);
+-moz-box-shadow: 4px 5px 14px 0px rgba(114,114,114,0.75);
+    transition: 0.3s;
+}
+
+.sale-4:hover {
+    filter:contrast(1.4);
+    transform: translate(-5px, -10px);
+    box-shadow: 4px 5px 14px 0px rgba(114,114,114,0.75);
+-webkit-box-shadow: 4px 5px 14px 0px rgba(114,114,114,0.75);
+-moz-box-shadow: 4px 5px 14px 0px rgba(114,114,114,0.75);
+    transition: 0.3s;
+}
+
+.sale-2 {
+    width: 500px;
+    height: 220px;
+    background-image: url('https://i.pinimg.com/736x/64/6a/82/646a82e9010245c380766f4503b712ca.jpg');
+    font-size: 2em;
+    font-weight: 500;
+    padding: 20px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.sale-3 {
+    width: 235px;
+    height: 250px;
+    margin-top: 30px;
+    background-image: url('https://i.pinimg.com/736x/e9/65/31/e9653148065b0ced8918755d7fd9ffa8.jpg');
+    font-size: 2em;
+    font-weight: 500;
+    padding: 20px;
+    margin-left: 30px;
+    display: block;
+    text-align: center;
+    align-items: flex-end;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.sale-4 {
+    width: 235px;
+    height: 250px;
+    margin-top: 30px;
+    background-image: url('https://i.pinimg.com/736x/da/07/96/da0796e787aac8cf605f06fc022d19ed.jpg');
+    font-size: 2em;
+    font-weight: 500;
+    padding: 20px;
+    margin-left: 30px;
+    display: block;
+    text-align: center;
+    align-items: flex-end;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.sale-3-4 {
+    display: flex;
+}
+
+#shop-btn {
+    border: none;
+    padding: 0px 20px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+#bts, #shirts {
+    margin-right: 40px;
+}
+
+#hoodies, #sweaters {
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+
+.sale-2 {
+    text-decoration: none;
+  }
+  
+.sale-2 label {
+    text-decoration: none;
+}
+  
+.sale-2 button {
+    text-decoration: none;
+  }
+.sale-3,
+.sale-4 {
+  text-decoration: none;
+}
+
+.sale-3 p,
+.sale-4 p {
+  text-decoration: none;
+}
+
+.sale-3 button,
+.sale-4 button {
+  text-decoration: none;
+}

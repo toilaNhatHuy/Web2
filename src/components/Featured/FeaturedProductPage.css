@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Righteous&family=Staatliches&display=swap');
+.Featured {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Righteous", sans-serif;
+}
+
+.container {
+    animation: appear2 linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+    margin-top: 50px;
+}
+
+@keyframes appear2 {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+
+
+.attire-1, .attire-2, .attire-3, .attire-4, .attire-5, .attire-6 {
+    width: 310px;
+    height: 280px;
+    background-color:rgb(208, 208, 208);
+    font-size: 2em;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+a.carousel-control-prev {
+    transform: translate(0, -40px);
+}
+
+.Attire-ep-1 {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+}
+
+.Attire-ep-2 {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+}
+

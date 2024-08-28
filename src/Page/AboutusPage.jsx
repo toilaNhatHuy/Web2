@@ -1,10 +1,12 @@
 import React from 'react'
-import AboutUsTitle from '../components/AboutUs_AboutusPage'
-import Mission from '../components/Mission_AboutusPage'
-import Member from '../components/Member_AboutusPage'
-import Contactus from '../components/Contactus_AboutusPage'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
+import AboutUsTitle from '../components/AboutUs/AboutUsAboutusPage'
+import Mission from '../components/Mission/MissionAboutusPage'
+import Member from '../components/Member/MemberAboutusPage'
+import Contactus from '../components/Contactus/ContactusAboutusPage'
+import Navbar from '../components/Navbar/Navbar'
+import Footer from '../components/Footer/Footer'
+// import Navbar from '../components/Home/Navbar'
+// import Footer from '../components/Footer'
 
 function AboutusPage() {
   return (

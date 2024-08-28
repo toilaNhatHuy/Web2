@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Righteous&family=Staatliches&display=swap');
+#na-title {
+    font-size: 10em;
+    font-weight: lighter;
+    text-align: center;
+    font-family: "Righteous", sans-serif;
+}
+
+.Introduce {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.introduce-1 {
+    width: 600px;
+    height: 450px;
+    background-image: url('https://i.pinimg.com/564x/86/32/3e/86323eeb2965c571c1a85c97d6d38b46.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 30%;
+    background-size: 65%;
+}
+
+.introduce-2 {
+    font-weight: bolder;
+    text-align: center;
+    padding: 29px;
+}
+
+.introduce-3 {
+    width: 500px;
+    height: 220px;
+    background-image: url('https://png.pngtree.com/png-vector/20220705/ourmid/pngtree-new-product-in-banner-style-png-image_5687254.png');
+    background-position: 50%;
+    background-repeat: no-repeat;
+    width: 400px
+}
+
+.hot-tag::after {
+    position: absolute;
+    content: "NEW!!";
+    width:100px;
+    height: 40px;
+    font-weight: bolder;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: Red;
+    transform: translate(450px,0);
+    
+
+}
+
+#wis {
+    font-size: 4em;
+    font-family: "Righteous", sans-serif;
+}
+
+.NewArrivals {
+    
+    animation: appear4 linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+    margin-bottom: 100px;
+}
+
+@keyframes appear4 {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+

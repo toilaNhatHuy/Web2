@@ -1,20 +1,20 @@
-import Featured from "../components/Featured/FeaturedProductPage"
-import Navbar from "../components/Navbar/Navbar"
+import FeaturedProduct3 from "../components/Featured/FeaturedProduct3Page"
 import Product from "../components/Products/ProductProductPage"
+import Navbar from "../components/Navbar/Navbar"
 import Attire from "../components/Attire/AttireProductPage"
-import Categoies from "../components/Categories/CategoiesProductPage"
+import Categories3 from "../components/Categories/CategoiesProductPage-3"
 import Footer from "../components/Footer/Footer"
 import React from 'react'
-function ProductPage(){
+function Product3Page(){
     return(
         <>
             <Navbar/>
             <Product/>
-            <Featured/>
+            <FeaturedProduct3/>
             <Attire/>
-            <Categoies/>
+            <Categories3/>
             <Footer/>
         </>
     )
 }
-export default ProductPage
+export default Product3Page
