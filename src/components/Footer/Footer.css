@@ -6,7 +6,10 @@
     color: white;
     font-family: "Righteous", sans-serif;
 }
-
+li{
+    text-decoration: none;
+    color: white;
+}
 .nav-footer {
     list-style: none;
     display: flex;
