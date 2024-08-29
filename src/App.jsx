@@ -14,7 +14,6 @@ import Product2Page from './Page/Product2Page.jsx';
 import Product3Page from './Page/Product3Page.jsx';
 import Product4Page from './Page/Product4Page.jsx';
 import DetailPage from './Page/DetailPage.jsx';
-import React from 'react';
 
 function App() {
     useEffect(()=>{
