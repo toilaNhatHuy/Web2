@@ -10,6 +10,7 @@ import Product2Page from './Page/Product2Page.jsx';
 import Product3Page from './Page/Product3Page.jsx';
 import Product4Page from './Page/Product4Page.jsx';
 import DetailPage from './Page/DetailPage.jsx';
+import CartPage from './Page/CartPage.jsx';
 
 function App() {
     return (
@@ -26,6 +27,7 @@ function App() {
                 <Route path="/products3" element={<Product3Page/>}/>
                 <Route path="/products4" element={<Product4Page/>}/>
                 <Route path="/detail" element={<DetailPage/>}/>
+                <Route path="/cart" element={<CartPage/>}/>
             </Routes>
         </div>
     )
