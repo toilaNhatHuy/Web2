@@ -2,9 +2,8 @@ import React from 'react'
 import {Routes, Route} from 'react-router-dom';
 import {useEffect} from 'react';
 import axios from 'axios';
-import mongodb from "../src/mongodb.js"
+// import mongodb from "../mongodb.js"
 import Home from "./Page/HomePage.jsx";
-import "./components/Footer.css";
 import Product from './Page/ProductPage.jsx';
 import AboutUs from './Page/AboutusPage.jsx';
 import Signin from './Page/SigninPage.jsx';
@@ -14,7 +13,6 @@ import Product2Page from './Page/Product2Page.jsx';
 import Product3Page from './Page/Product3Page.jsx';
 import Product4Page from './Page/Product4Page.jsx';
 import DetailPage from './Page/DetailPage.jsx';
-import React from 'react';
 
 function App() {
     useEffect(()=>{
