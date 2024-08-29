@@ -11,7 +11,10 @@ const app = express()
 const port = process.env.PORT
 
 app.use(bodyParser.json())
-app.use(cors())
+app.use(express.json({extended: true}))
+app.use(express.urlencoded({ extended: true }))
+app.use(cors({credentials: true, origin: 'https://localhost:3000'}))
+// app.use(upload())
 app.use(morgan("common"))
 routes(app)
 
