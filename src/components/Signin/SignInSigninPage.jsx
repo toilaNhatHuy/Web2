@@ -2,20 +2,25 @@ import "./SignInSigninPage.css"
 import React, {useState} from 'react'
 import {Link} from 'react-router-dom'
 import InputForm from '../Inputform/Inputform'
-
+import * as UserServicesFE from "../servicesFE/UserServicesFE"
 function SignIn() {
 
     const [email,setEmail] = useState('')
     const [password,setPassword] = useState('')
-
+    
     const handleOnchangeEmail =(value) =>{
         setEmail(value)
     }
     const handleOnchangePassword =(value) =>{
         setPassword(value)
     }
-    const handleSignIn=()=>{
-        console.log("email,pass",email,password)
+    const handleSignIn = async () => {
+        try {
+            const res = await UserServicesFE.loginUser({email, password })
+            console.log('Login success:', res);
+          } catch (error) {
+            console.error('Login failed:', error);
+          }
     }
   return (
     <div className="SignIn">
