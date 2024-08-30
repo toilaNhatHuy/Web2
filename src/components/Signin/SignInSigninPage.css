@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Righteous&family=Staatliches&display=swap');
+
 /* The switch - the box around the slider */
 .switch {
     font-size: 17px;
@@ -63,6 +65,7 @@
   .sign-in-title {
     margin-bottom: 40px;
     text-align: center;
+    font-family: "Righteous", sans-serif;
   }
 
   #si-tt {
@@ -87,7 +90,7 @@
   
   .create {
     text-decoration: underline;
-    color: black;
+    color: rgb(0, 128, 255);
     transition : 0.3s;
     font-size: 1.2em;
   }
@@ -109,30 +112,55 @@
 
   #btnsn {
     width: 400px;
-    height: 50px;
+    height: 60px;
     font-size: 1.5em;
     color: white;
+    border: none;
     background-color: black;
     border-radius: 100px;
     margin-bottom: 30px;
+    font-family: "Righteous", sans-serif;
+    
+  }
+  #btnsn:hover{
+    background-color: rgb(93, 93, 93);
+    transform: 0.1s;
+    font-family: "Righteous", sans-serif;
   }
 
   #crtbtn {
     font-size: 1.5em;
     color: rgb(0, 0, 0);
-    
-    margin-bottom: 30px;
+    height: 60px;
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #crtbtn:hover{
+    color: rgb(0, 128, 255);
   }
 
   .create-an-account {
     background-color: rgb(255, 255, 255);
     width: 400px;
-    height: 50px;
+    height: 60px;
     border: 1px solid ;
     border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    font-family: "Righteous", sans-serif;
     padding: 5px;
+  }
+  .create-an-account:hover{
+    color: rgb(0, 128, 255);
+    border: 1px solid rgb(0, 128, 255);
+    transform: 0.1s;
+    font-family: "Righteous", sans-serif;
+
   }
 
 

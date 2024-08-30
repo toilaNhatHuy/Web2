@@ -1,19 +1,21 @@
 import "./SignInSigninPage.css"
 import React, {useState} from 'react'
 import {Link} from 'react-router-dom'
-
+import InputForm from '../Inputform/Inputform'
 
 function SignIn() {
 
-    const [userData, setUserData] = useState({
-        email: '',
-        password: ''
-    })
+    const [email,setEmail] = useState('')
+    const [password,setPassword] = useState('')
 
-    const changeInputHandle = (e) => {
-        setUserData(prevState => {
-            return { ...prevState, [e.target.name]: e.target.value }
-        })
+    const handleOnchangeEmail =(value) =>{
+        setEmail(value)
+    }
+    const handleOnchangePassword =(value) =>{
+        setPassword(value)
+    }
+    const handleSignIn=()=>{
+        console.log("email,pass",email,password)
     }
   return (
     <div className="SignIn">
@@ -24,11 +26,11 @@ function SignIn() {
             <form className="sign-in-info">
                 <div className="sign-in-email">
                     <h6 id="label">Email</h6>
-                    <input type="text" id="inputyouremail" placeholder="Email" name='email' value={userData.email} onChange={changeInputHandle}/>
+                    <InputForm type="text" id="inputyouremail" placeholder="Email" name='email' value={email} onChange={handleOnchangeEmail}/>
                 </div>
                 <div className="sing-in-password">
                     <h6 id="label">Password</h6>
-                    <input type="password" id="inputyourpassword" placeholder="Password" name='password' value={userData.password} onChange={changeInputHandle}/>
+                    <InputForm type="password" id="inputyourpassword" placeholder="Password" name='password' value={password} onChange={handleOnchangePassword}/>
                 </div>
                 <div className="remember-create">
                     <div className="remember-me">
@@ -41,14 +43,14 @@ function SignIn() {
 
                     <Link to = "/signup" className="create">Create an account</Link>
                 </div>
-                <div className="sign-in-btn">
-                    <button type="submit" id = "btnsn">SIGN IN</button><br/>
+            </form>
+            <div className="sign-in-btn">
+                    <button onClick={handleSignIn} type="submit" id = "btnsn">SIGN IN</button><br/>
                     <div className="create-an-account">
                         <Link to = "/signup" id = "crtbtn">CREATE AN ACCOUNT</Link>
                     </div>
                     
                 </div>
-            </form>
                 
         </div>
         <div className="all-sign-in-images">

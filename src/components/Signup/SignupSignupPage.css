@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Righteous&family=Staatliches&display=swap');
+
 .SignUp {
     display: flex;
     gap: 100px;
@@ -15,6 +17,7 @@
 .sign-up-title {
     margin-bottom: 40px;
     text-align: center;
+    font-family: "Righteous", sans-serif;
   }
 
 .remember-have {
@@ -25,7 +28,7 @@
 
 .have {
     text-decoration: none;
-    color: black;
+    color: rgb(0, 128, 255);
     transition : 0.3s;
     font-size: 1.2em;
     text-decoration: underline;
@@ -47,17 +50,21 @@
     text-decoration: none;
   }
 
-.sign-in-please {
-    background-color: rgb(255, 255, 255);
-    width: 400px;
-    height: 50px;
-    border: 1px solid ;
-    border-radius: 100px;
-    text-align: center;
-    padding: 5px;
+#btnSU{
+  border: none;
+  width: 100%;
+  height: 60px;
+  border-radius: 50px;
+  color: white;
+  background-color: black;
+  font-size: 30px;
+  font-family: "Righteous", sans-serif;
 }
-
-
+#btnSU:hover{
+  background-color: rgb(93, 93, 93);
+  transform: 0.1s;
+  font-family: "Righteous", sans-serif;
+}
 
 
 

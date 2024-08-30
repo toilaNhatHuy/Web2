@@ -1,7 +1,8 @@
 import './SignupSignupPage.css'
 import { Link } from 'react-router-dom'
-import { Input } from "antd";
+// import { Input } from "antd";
 import React , { useState } from 'react'
+import InputForm from '../Inputform/Inputform'
 
 function Signup() {
 
@@ -9,21 +10,6 @@ function Signup() {
     const [email,setEmail] = useState('')
     const [password,setPassword] = useState('')
     const [confirmPassword,setConfirmPassword] = useState('')
-
-
-    const InputForm=(props)=>{
-
-        const {placeholder="Input",value,handleOnchange, ...rests} = props
-
-        const handleOnchangeInput = (e) => {
-            const newValue = e.target.value;
-            handleOnchange(newValue)
-            console.log(newValue)
-        }
-        return (
-            <Input placeholder={placeholder} value={value} {...rests} onChange={handleOnchangeInput}/>
-        )
-    }
 
 
 
@@ -41,6 +27,9 @@ function Signup() {
     }
 
 
+    const handleSignUp =() => {
+        console.log("name,email,pass,confirm",name,email,password,confirmPassword)
+    }
 
     return (
         <div className="SignUp">
@@ -63,19 +52,19 @@ function Signup() {
                 <form className="sign-up-info">
                     <div className="sign-up-name">
                         <h6 id="label">Username</h6>
-                        <InputForm type="text" id="inputyourname" placeholder="Name" name='name' value={name} handleOnchange={handleOnchangeName}/>
+                        <InputForm type="text" id="inputyourname" placeholder="Name" name='name' value={name} onChange={handleOnchangeName}/>
                     </div>
                     <div className="sign-up-email">
                         <h6 id="label">Email</h6>
-                        <InputForm type="text" id="inputyouremail" placeholder="Email" name='email' value={email} handleOnchange={handleOnchangeEmail}/>
+                        <InputForm type="text" id="inputyouremail" placeholder="Email" name='email' value={email} onChange={handleOnchangeEmail}/>
                     </div>
                     <div className="sign-up-password">
                         <h6 id="label">Password</h6>
-                        <InputForm  id="inputyourpassword" placeholder="Password" name='password' value={password} handleOnchange={handleOnchangePassword}/>
+                        <InputForm  id="inputyourpassword" placeholder="Password" name='password' value={password} onChange={handleOnchangePassword}/>
                     </div>
                     <div className="confirm-sign-up-password">
                         <h6 id="label">Confirm password</h6>
-                        <InputForm  id="inputyourpassword" placeholder="Confirm Password" name='confirmPassword' value={confirmPassword} handleOnchange={handleOnchangeConfirmPassword}/>
+                        <InputForm  id="inputyourpassword" placeholder="Confirm Password" name='confirmPassword' value={confirmPassword} onChange={handleOnchangeConfirmPassword}/>
                     </div>
                     
                     <div className="remember-have">
@@ -89,14 +78,8 @@ function Signup() {
 
                         <Link to="/signin" className="have">Already have an account?</Link>
                     </div>
-                    <div className="sign-in-btn">
-                        <button type='submit' id="btnsn">SIGN UP</button><br />
-                        <div className="sign-in-please">
-                            <Link to="/signin" id="havebtn">SIGN IN</Link>
-                        </div>
-                    </div>
                 </form>
-                
+                <button disabled={!name.length || !email.length || !password.length || !confirmPassword.length} onClick={handleSignUp} id='btnSU'>SIGN UP</button>
             </div>
         </div>
     )
