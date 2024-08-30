@@ -10,23 +10,23 @@ function Detail() {
         setDes1(url); // Nếu không có URL, đặt giá trị rỗng
     }
 
-    const [des2, setDes2] = useState('');
+    // const [des2, setDes2] = useState('');
 
-    const updateDes2 = (url) => {
-        setDes2(url || '')
-    }
+    // const updateDes2 = (url) => {
+    //     setDes2(url || '')
+    // }
 
-    const [des3, setDes3] = useState('');
+    // const [des3, setDes3] = useState('');
 
-    const updateDes3 = (url) => {
-        setDes3(url || '')
-    }
+    // const updateDes3 = (url) => {
+    //     setDes3(url || '')
+    // }
 
-    const [des4, setDes4] = useState('');
+    // const [des4, setDes4] = useState('');
 
-    const updateDes4 = (url) => {
-        setDes4(url || '')
-    }
+    // const updateDes4 = (url) => {
+    //     setDes4(url || '')
+    // }
 
 
 

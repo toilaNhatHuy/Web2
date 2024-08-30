@@ -14,6 +14,8 @@ app.use(bodyParser.json())
 app.use(cors())
 app.use(morgan("common"))
 routes(app)
+const productRoutes = require('../routes/ProductRouter')
+app.use(`/api/product`,productRoutes)
 
 //CONNECT TO DATABASE
 mongoose.set("strictQuery", false);

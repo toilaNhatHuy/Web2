@@ -1,7 +1,7 @@
 import './FeaturedHomePage.css'
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel';
-import {Route, Routes, Link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 function Featured() {
 
 
