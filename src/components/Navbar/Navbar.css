@@ -113,14 +113,15 @@ ul.sidebar a {
   padding: 3px 20px;
   border: 2px solid black;
   background: transparent;
+  width: 200px;
 }
 
 #search-icon {
   border:none;
   background-color: white;
   position: absolute;
-  top: 20px;
-  right: 125px;
+  top: 18px;
+  right: 100px;
   z-index: 100;
   border-radius: 50%;
 }

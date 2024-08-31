@@ -49,6 +49,7 @@
     border-radius: 10px;
     transition: 0.3s;
     position: relative;
+    cursor: pointer;
 }
 
 #ctgr-tt {
@@ -231,7 +232,9 @@
     font-weight: bold;
     border-radius: 10px;
 }
-
+.Categories-1 button:hover{
+    background-color: rgb(68, 250, 99);
+}
 .Categories-2 button {
     width: 250px;
     height: 50px;
@@ -240,7 +243,9 @@
     font-weight: bold;
     border-radius: 10px;
 }
-
+.Categories-2 button:hover{
+    background-color: rgb(68, 250, 99);
+}
 .Categories-3 button {
     width: 250px;
     height: 50px;
@@ -249,7 +254,9 @@
     font-weight: bold;
     border-radius: 10px;
 }
-
+.Categories-3 button:hover{
+    background-color: rgb(68, 250, 99);
+}
 
 .img-des {
     text-align: center;

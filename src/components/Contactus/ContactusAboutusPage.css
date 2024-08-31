@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Righteous&family=Staatliches&display=swap');
+
 #ctus {
     text-align: center;
     font-size: 4em;
     margin-bottom: 20px;
+    font-family: "Righteous", sans-serif;
 }
 
 .ContactUs {
@@ -113,8 +116,15 @@
     border-radius: 50px;
     font-size: 30px;
 }
+#submit-send:hover{
+    background-color: rgb(119, 119, 119);
+    transform: 0.3s;
+}
 
 #pn, #em, #lc {
     font-weight: bold;
     font-size: 20px;
+}
+h1{
+    font-family: "Righteous", sans-serif;
 }
