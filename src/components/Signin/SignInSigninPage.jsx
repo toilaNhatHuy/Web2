@@ -7,7 +7,10 @@ function SignIn() {
 
     const [email,setEmail] = useState('')
     const [password,setPassword] = useState('')
-    
+    const [isPending, setIsPending] = useState(false);
+    const [error, setError] = useState(null); // Trạng thái để lưu lỗi
+    const [data, setData] = useState(null); // Trạng thái để lưu dữ liệu từ API
+
     const handleOnchangeEmail =(value) =>{
         setEmail(value)
     }
@@ -17,11 +20,21 @@ function SignIn() {
     const handleSignIn = async () => {
         try {
             const res = await UserServicesFE.loginUser({email, password })
-            console.log('Login success:', res);
-          } catch (error) {
-            console.error('Login failed:', error);
+            console.log(res.data)
+            setData(res.data); // Lưu dữ liệu từ API
+            if (res.data.status === "ERR") {
+                setError(res.data); // Lưu lỗi nếu có
+            } else{
+                setError(null); // Xóa lỗi nếu thành công
+            }if(res.data.status === "OK"){
+                setError(res.data)
+            }
+          }catch (error) {
+            setError({ status: 'ERR', message: 'An error occurred' }); 
+            setError({ status: 'OK', message: 'An error occurred' })// Cập nhật lỗi nếu có ngoại lệ
           }
     }
+
   return (
     <div className="SignIn">
         <div className="sign-in">
@@ -48,15 +61,22 @@ function SignIn() {
 
                     <Link to = "/signup" className="create">Create an account</Link>
                 </div>
+                {error && error.status === "ERR" && (
+                        <span id="err">{error.message}</span>
+                )}
+                {error && error.status === "OK" && (
+                        <span id="success">{error.message}</span>
+                )}
             </form>
+            
             <div className="sign-in-btn">
-                    <button onClick={handleSignIn} type="submit" id = "btnsn">SIGN IN</button><br/>
+                        <button onClick={handleSignIn} type="submit" id = "btnsn">SIGN IN</button>
+
                     <div className="create-an-account">
                         <Link to = "/signup" id = "crtbtn">CREATE AN ACCOUNT</Link>
                     </div>
-                    
                 </div>
-                
+             
         </div>
         <div className="all-sign-in-images">
             <div className="sign-in-images">

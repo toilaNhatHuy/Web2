@@ -4,26 +4,26 @@ const JwtService = require("../services/JwtService")
 const createUser = async (req,res) => {
     try{
         console.log(req.body)
-        const {name, email, password, confirmPassword, phone} = req.body
+        const {name, email, password, confirmPassword} = req.body
         const reg = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
         const isCheckEmail = reg.test(email)
 
-        if( !name || !email || !password || !confirmPassword || !phone){
+        if( !name || !email || !password || !confirmPassword){
             return res.status(200).json({
                 status: "ERR",
-                message: "The input is required,err"
+                message: "ENTER YOUR EMAIL AND PASSWORD"
             })
         } 
         else if(!isCheckEmail){
             return res.status(200).json({
                 status: "ERR",
-                message: "The input is email"
+                message: "EMAIL IS INCORRECT"
             })
         }
         else if(password != confirmPassword){
             return res.status(200).json({
                 status: "ERR",
-                message: "The password is equal confirmPassword"
+                message: "PASSWORD DO NOT MATCH"
             })
         };
         console.log(isCheckEmail)
@@ -47,13 +47,13 @@ const loginUser = async (req,res) => {
         if(!email || !password){
             return res.status(200).json({
                 status: "ERR",
-                message: "The input is required,err"
+                message: "ENTER YOUR EMAIL AND PASSWORD"
             })
         } 
         else if(!isCheckEmail){
             return res.status(200).json({
                 status: "ERR",
-                message: "The input is email"
+                message: "EMAIL IS INCORRECT"
             })
         }
         console.log(isCheckEmail)
