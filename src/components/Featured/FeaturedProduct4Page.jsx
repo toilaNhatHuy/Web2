@@ -5,7 +5,7 @@ function Featured_Product4() {
     <div className="container">
       <div className="Featured">
         <div className="right-ft">
-          <h3 id = "h3-1">SALE ..% FOR TANK TOPS</h3>
+          <h3 id = "h3-1">SALE 10% FOR TANK TOPS</h3>
         </div>
 
         <div className="left-ft">

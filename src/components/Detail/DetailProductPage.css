@@ -5,32 +5,10 @@
 }
 
 .Back {
-    padding: 20px
+    padding: 40px 80px;
 }
 
-.side1 {
-    width: 120px;
-    height: 120px;
-    background-color: rgb(208, 208, 208);
-}
 
-.side2 {
-    width: 120px;
-    height: 120px;
-    background-color: rgb(208, 208, 208);
-}
-
-.side3 {
-    width: 120px;
-    height: 120px;
-    background-color: rgb(208, 208, 208);
-}
-
-.side4 {
-    width: 120px;
-    height: 120px;
-    background-color: rgb(208, 208, 208);
-}
 
 .Clothes {
     display: flex;
@@ -41,14 +19,13 @@
 .left-side {
     display: flex;
     flex-direction: column;
-    gap: 20px
+    gap: 40px;
 }
 
-#des1 {
-    width: 450px;
-    height: 540px;
-    background-color: rgb(208, 208, 208);
+.left-side img {
+    object-fit: cover;
 }
+
 
 #ds-price {
     text-decoration: line-through;
@@ -148,35 +125,46 @@
     margin-bottom: 50px;
 }
 
-.dt-img1{
-    margin-bottom: 20px;
+
+.side1 img{
     width: 100px;
-    height: 100px;
-    background-color: rgb(208, 208, 208);
+    height: 130px;
+    border: 2px solid black;
+    cursor: pointer;
 }
 
-.dt-img2 {
-    margin-bottom: 20px;
+.side2 img{
     width: 100px;
-    height: 100px;
-    background-color: rgb(208, 208, 208);
+    height: 130px;
+    border: 2px solid black;
+    cursor: pointer;
 }
 
-.dt-img3 {
-    margin-bottom: 20px;
+.side3 img{
     width: 100px;
-    height: 100px;
-    background-color: rgb(208, 208, 208);
+    height: 130px;
+    border: 2px solid black;
+    cursor: pointer;
 }
 
-.dt-img4 {
-    margin-bottom: 20px;
+.side4 img{
     width: 100px;
-    height: 100px;
-    background-color: rgb(208, 208, 208);
+    height: 130px;
+    border: 2px solid black;
+    cursor: pointer;
 }
 
+.des1 img {
+    width: 500px;
+    height: 640px;
+    margin-left: 50px;
+    border: 2px solid black;
+    object-fit: cover;
+    background-position: 100%;
+}
 
-
+.Description h1 {
+    font-size: 2em;
+}
 
 

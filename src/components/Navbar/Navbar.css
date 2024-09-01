@@ -152,13 +152,7 @@ ul.sidebar a {
   transition: 0.3s;
 }
 
-#home:hover::before {
-  content: "";
-  width: 49px;
-  transition: 0.3s;
-}
-
-#products::before {
+#dashboard::before {
   content: "";
   position: absolute;
   width:0px;
@@ -168,11 +162,19 @@ ul.sidebar a {
   transition: 0.3s;
 }
 
-#products:hover::before {
+#dashboard:hover::before {
   content: "";
-  width: 82px;
+  width: 100px;
   transition: 0.3s;
 }
+
+#home:hover::before {
+  content: "";
+  width: 49px;
+  transition: 0.3s;
+}
+
+
 
 #about-us::before {
   content: "";
@@ -224,6 +226,49 @@ ul.sidebar a {
 
 
 
+
+
+.navbar ul {
+  list-style-type: none;
+
+}
+
+.navbar li {
+  
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  
+  background-color: rgb(245, 245, 245);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-menu li {
+  display: flex;
+  justify-content: center ;
+}
+
+.dropdown-menu li:hover {
+  display: flex;
+  justify-content: center;
+}
+
+#products .dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center ;
+  text-align: center ;
+  gap:15px;
+  position: absolute;
+  height: 250px;
+}
+
+#dropdown-tshirt {
+  margin-left: 15px;
+}
 
 
 

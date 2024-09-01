@@ -1,9 +1,14 @@
 import React from 'react'
-import cart from '../components/Cart/cart'
+import Navbar from '../components/Navbar/Navbar'
+import Cart from '../components/Cart/cart'
+
 
 function CartPage() {
   return (
-    <div>CartPage</div>
+    <>
+        <Navbar/>
+        <Cart/>
+    </>
   )
 }
 
