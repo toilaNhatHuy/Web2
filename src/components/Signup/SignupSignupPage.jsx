@@ -1,10 +1,11 @@
 import './SignupSignupPage.css'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import React , { useState } from 'react'
 import * as UserServicesFE from "../servicesFE/UserServicesFE"
 import InputForm from '../Inputform/Inputform'
 
 function Signup() {
+    const navigate = useNavigate()
 
     const [name,setName] = useState('')
     const [email,setEmail] = useState('')
@@ -27,7 +28,9 @@ function Signup() {
         setConfirmPassword(value)
     }
 
-
+    const handleNavigateSignIn = () => {
+        navigate("/signin")
+    }
     const handleSignUp =async() => {
         try {
             const res = await UserServicesFE.signupUser({name,email, password,confirmPassword })
@@ -38,6 +41,7 @@ function Signup() {
             }
             if(res.data.status === "OK"){
                 setError(res.data)
+                handleNavigateSignIn()
             }
           }catch (error) {
             setError({ status: 'ERR', message: 'An error occurred' }); 

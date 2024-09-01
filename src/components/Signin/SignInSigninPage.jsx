@@ -1,9 +1,10 @@
 import "./SignInSigninPage.css"
 import React, {useState} from 'react'
-import {Link} from 'react-router-dom'
+import {Link, useNavigate} from 'react-router-dom'
 import InputForm from '../Inputform/Inputform'
 import * as UserServicesFE from "../servicesFE/UserServicesFE"
 function SignIn() {
+    const navigate = useNavigate()
 
     const [email,setEmail] = useState('')
     const [password,setPassword] = useState('')
@@ -17,6 +18,9 @@ function SignIn() {
     const handleOnchangePassword =(value) =>{
         setPassword(value)
     }
+    const handleNavigateHome= () => {
+        navigate("/")
+    }
     const handleSignIn = async () => {
         try {
             const res = await UserServicesFE.loginUser({email, password })
@@ -28,6 +32,7 @@ function SignIn() {
                 setError(null); // Xóa lỗi nếu thành công
             }if(res.data.status === "OK"){
                 setError(res.data)
+                handleNavigateHome()
             }
           }catch (error) {
             setError({ status: 'ERR', message: 'An error occurred' }); 
