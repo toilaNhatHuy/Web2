@@ -1,14 +1,9 @@
 import "./CategoiesProductPage-4.css";
 import { Link } from 'react-router-dom';
-import React, { useContext } from 'react';
-import { CartContext } from '../CartContext/CartContext';
+
+
 
 function Categories4() {
-    const { addToCart } = useContext(CartContext);
-
-    const handleAddToCart = (product) => {
-        addToCart(product);
-    }
 
   const products = [
     { id: 19, name: "Men's Kristina Ribbed Brami", price: 11.6, salePrice: 7.8, imageUrl: "https://i.pinimg.com/736x/98/b1/63/98b1636d8fc2af22e8a2a60591ff7977.jpg" },
@@ -57,7 +52,8 @@ function Categories4() {
                                 <span id="price2">${product.salePrice.toFixed(2)}</span>
                             </div>
                         </div>
-                        <button onClick={() => handleAddToCart(product)}>BUY NOW</button>
+                        {/* <button onClick={() => handleAddToCart(product)}>BUY NOW</button> */}
+                        <Link id = "hellobaby" to = {`/detail/${product.id}`}><button> BUY NOW</button> </Link>
                     </div>
                 </div>
             ))}

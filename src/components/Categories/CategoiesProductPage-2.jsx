@@ -1,14 +1,7 @@
 import "./CategoiesProductPage-2.css";
 import { Link } from 'react-router-dom';
-import React, { useContext } from 'react';
-import { CartContext } from '../CartContext/CartContext';
 
 function Categories2() {
-    const { addToCart } = useContext(CartContext);
-
-    const handleAddToCart = (product) => {
-        addToCart(product);
-    }
 
   const products = [
     { id: 7, name: "Hombres Capucha térmica", price: 20.1, salePrice: 16, imageUrl: "https://i.pinimg.com/736x/e1/3f/17/e13f1765e6560f9749d312100026834e.jpg" },
@@ -59,7 +52,8 @@ function Categories2() {
                                     <span id="price2">${product.salePrice.toFixed(2)}</span>
                                 </div>
                             </div>
-                            <button onClick={() => handleAddToCart(product)}>BUY NOW</button>
+                            {/* <button onClick={() => handleAddToCart(product)}>BUY NOW</button> */}
+                            <button><Link id = "hellobaby" to = {`/detail/${product.id}`}> BUY NOW </Link></button>
                         </div>
                     </div>
                 ))}

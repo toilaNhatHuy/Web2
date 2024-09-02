@@ -1,11 +1,25 @@
 import "./DetailProductPage.css";
 import { Link, useParams } from 'react-router-dom';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
+
+import { CartContext } from '../CartContext/CartContext';
 
 function Detail() {
     const { id } = useParams(); 
     const [product, setProduct] = useState(null);
     const [selectedImage, setSelectedImage] = useState('');
+
+    const [selectedSize, setSelectedSize] = useState('');
+    const [quantity, setQuantity] = useState(1);
+    
+
+    const handleSizeChange = (size) => {
+        setSelectedSize(size);
+      };
+    
+    const handleQuantityChange = (change) => {
+        setQuantity(prevQuantity => Math.max(1, prevQuantity + change)); 
+      };
 
     useEffect(() => {
         const products = [
@@ -13,6 +27,7 @@ function Detail() {
                 name: "Men's Checkered Long Sleeve Button Shirt",
                 price: 27.6,
                 salePrice: 22.8,
+                mainImg: "https://i.pinimg.com/736x/ab/44/73/ab44736245c77fe9bd1e88ed3c659f6a.jpg",
                 images: [
                     "https://i.pinimg.com/736x/ab/44/73/ab44736245c77fe9bd1e88ed3c659f6a.jpg",
                     "https://omcne.com/cdn/shop/products/men-s-checkered-long-sleeve-button-shirt-anotherchill-3_01d8fb9a-f2ac-4ce0-8ba3-11bdf125b4a8_large.jpg?v=1687096415",
@@ -25,6 +40,7 @@ function Detail() {
                 name: "Aelfric Eden Corduroy Plaid Fake Two Jacket",
                 price: 17.2,
                 salePrice: 14.1,
+                mainImg: "https://www.aelfriceden.com/cdn/shop/files/ff2e5330fbded4e46a9c51e24fe9d487_0d5bbd92-e32c-4934-bca3-c38fd6344bca.jpg?v=1716550710&width=700",
                 images: [
                     "https://www.aelfriceden.com/cdn/shop/files/ff2e5330fbded4e46a9c51e24fe9d487_0d5bbd92-e32c-4934-bca3-c38fd6344bca.jpg?v=1716550710&width=700",
                     "https://www.aelfriceden.com/cdn/shop/products/2_3d6e5f46-1779-4d94-a7d3-6d23b1843ef1.jpg?v=1716550688&width=700",
@@ -37,6 +53,7 @@ function Detail() {
                 name: "Minaka Long Sleeve Button Shirt",
                 price: 21.9,
                 salePrice: 18.3,
+                mainImg: "https://i.pinimg.com/736x/11/cb/44/11cb445863666f6e300d54d1738f63a5.jpg?fbclid=IwZXh0bgNhZW0CMTEAAR03o4qasdK78rvyQ8Dw-DEB9sN-XRLCtMUYSOhPl2bywdpcHlT3J2EC11A_aem_5q19ckyflqDb52uiYVLr8A",
                 images: [
                     "https://i.pinimg.com/736x/11/cb/44/11cb445863666f6e300d54d1738f63a5.jpg?fbclid=IwZXh0bgNhZW0CMTEAAR03o4qasdK78rvyQ8Dw-DEB9sN-XRLCtMUYSOhPl2bywdpcHlT3J2EC11A_aem_5q19ckyflqDb52uiYVLr8A",
                     "https://img.lazcdn.com/g/p/4baf3e991b9f5cbfe188cc052c232e9f.jpg_720x720q80.jpg_.webp",
@@ -49,6 +66,7 @@ function Detail() {
                 name: "White Striped T-shirt",
                 price: 11.3,
                 salePrice: 8.8,
+                mainImg: "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lqu9g3mcfp21e5",
                 images: [
                     "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lqu9g3mcfp21e5",
                     "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lqu9g3mvzfkpe0",
@@ -61,6 +79,7 @@ function Detail() {
                 name: "Aqua Checkered Long Sleeve Button Shirt",
                 price: 26.5,
                 salePrice: 21.4,
+                mainImg: "https://i.pinimg.com/736x/05/06/14/050614405263341552bd1a7d9fc7466c.jpg?fbclid=IwZXh0bgNhZW0CMTEAAR0wjfJ4am7eJURuJDZfVBRJON4Qb9dp2DxMZ_rIMc3ATNnhD3OAqEBtMv0_aem_6jU93gZyXEvldFe6KKjtig",
                 images: [
                     "https://i.pinimg.com/736x/05/06/14/050614405263341552bd1a7d9fc7466c.jpg?fbclid=IwZXh0bgNhZW0CMTEAAR0wjfJ4am7eJURuJDZfVBRJON4Qb9dp2DxMZ_rIMc3ATNnhD3OAqEBtMv0_aem_6jU93gZyXEvldFe6KKjtig",
                     "https://gloimg.zafcdn.com/zaful/pdm-product-pic/Clothing/2019/10/14/source-img/20191014113357_85293.jpg?impolicy=high",
@@ -73,6 +92,7 @@ function Detail() {
                 name: "Red Striped Shirt",
                 price: 24.6,
                 salePrice: 19.7,
+                mainImg: "https://i.pinimg.com/736x/55/56/b9/5556b9ab637eae7a6816c20460af5189.jpg?fbclid=IwZXh0bgNhZW0CMTEAAR22HN_d9NURHlczbxVB6N2rTH3IHZrJoMRTILwbZyYUEZoVS57xshEFbS8_aem_tP8Q0Ujq57XkiyzbX8jfvw",
                 images: [
                     "https://i.pinimg.com/736x/55/56/b9/5556b9ab637eae7a6816c20460af5189.jpg?fbclid=IwZXh0bgNhZW0CMTEAAR22HN_d9NURHlczbxVB6N2rTH3IHZrJoMRTILwbZyYUEZoVS57xshEFbS8_aem_tP8Q0Ujq57XkiyzbX8jfvw",
                     "https://scontent.xx.fbcdn.net/v/t1.15752-9/456584767_1273995853569495_2955611457725609062_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=0024fc&_nc_ohc=o3M-g8v75KoQ7kNvgEvrV4b&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&_nc_gid=AdGPlUJ9MRpX8koLiOlsote&oh=03_Q7cD1QH5O-1fC4aohp3VEhTHnCoIDiNSFBNd3NXC-206O7YOZw&oe=66FADB29",
@@ -84,6 +104,7 @@ function Detail() {
                     name: "Hombres Capucha térmica",
                     price: 20.1,
                     salePrice: 16.0,
+                    mainImg: "https://i.pinimg.com/736x/e1/3f/17/e13f1765e6560f9749d312100026834e.jpg",
                     images: [
                         "https://i.pinimg.com/736x/e1/3f/17/e13f1765e6560f9749d312100026834e.jpg",
                         "https://scontent.xx.fbcdn.net/v/t1.15752-9/456925406_881183220564816_1568716079090569980_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=0024fc&_nc_ohc=juvrt3NoGpYQ7kNvgEDh-D2&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QED_VSlhbwBot2g6w9IG6ppwdLFVD1cBOuN5fS9NE2CGg&oe=66FB57A3",
@@ -96,6 +117,7 @@ function Detail() {
                     name: "Contrast Color Pullover Hoodie Mens",
                     price: 29.8,
                     salePrice: 23.8,
+                    mainImg: "https://i.pinimg.com/736x/12/88/63/128863c4c327c466728ebe7babd41196.jpg",
                     images: [
                         "https://i.pinimg.com/736x/12/88/63/128863c4c327c466728ebe7babd41196.jpg",
                         "https://images-na.ssl-images-amazon.com/images/I/71N3NmXtQzL.jpg?fbclid=IwZXh0bgNhZW0CMTEAAR1xrU7mu5XYGbe-sqifQQj1CcvRQNMNFTDf3Q1uO32bsi0uOpJXRAgoe7w_aem_SEylh8KvgF_4DnVijAQx4Q",
@@ -108,6 +130,7 @@ function Detail() {
                     name: "Waffle Pattern Hoodie",
                     price: 20.0,
                     salePrice: 16.0,
+                    mainImg: "https://i.pinimg.com/736x/42/41/f1/4241f1a00b71ef6159adbb02326c46a3.jpg",
                     images: [
                         "https://i.pinimg.com/736x/42/41/f1/4241f1a00b71ef6159adbb02326c46a3.jpg",
                         "https://img.ltwebstatic.com/images3_pi/2023/09/22/9f/16953653772f453bd5903b0077c44b4a29c79e1a62_thumbnail_720x.webp",
@@ -120,6 +143,7 @@ function Detail() {
                     name: "Men's New York Hoodies",
                     price: 17.6,
                     salePrice: 14.0,
+                    mainImg: "https://i.pinimg.com/736x/0e/25/1e/0e251e9e3f57d53b6d13a9c1e9be355b.jpg",
                     images: [
                         "https://i.pinimg.com/736x/0e/25/1e/0e251e9e3f57d53b6d13a9c1e9be355b.jpg",
                         "https://img.ltwebstatic.com/images3_spmp/2023/12/15/64/1702608297d7be7fa1df1ed82116d653174d735050_thumbnail_720x.webp?fbclid=IwZXh0bgNhZW0CMTEAAR1J_bTPS54bEhOSfzbKYFfEIF7apo6SqflEzS_1m3Ut5YJbmdiSa5_GGVY_aem_Q150DBQd4dUVAI11UsRU5g",
@@ -132,6 +156,7 @@ function Detail() {
                     name: "Color Block Sleeve Hoodies",
                     price: 24.2,
                     salePrice: 19.3,
+                    mainImg: "https://i.pinimg.com/736x/e0/73/37/e0733752f60f259cd3a47e35cfc1c3d5.jpg",
                     images: [
                         "https://i.pinimg.com/736x/e0/73/37/e0733752f60f259cd3a47e35cfc1c3d5.jpg",
                         "https://images-na.ssl-images-amazon.com/images/I/61bJkG1V82L.jpg",
@@ -144,6 +169,7 @@ function Detail() {
                     name: "Aonga - Hoodie for Men",
                     price: 20.4,
                     salePrice: 16.32,
+                    mainImg: "https://i.pinimg.com/736x/31/92/d4/3192d43791a6b5c0eea11327b2a17446.jpg",
                     images: [
                         "https://i.pinimg.com/736x/31/92/d4/3192d43791a6b5c0eea11327b2a17446.jpg",
                         "https://scontent.xx.fbcdn.net/v/t1.15752-9/457208594_527765536468637_3132902209712956793_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=0024fc&_nc_ohc=_Qxwg-nexCwQ7kNvgG6GZa0&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QEA7G-pBJfHlI1D-OX1Todfqb-2QgtjlYh8EgXqxZN89w&oe=66FB7E9E",
@@ -156,6 +182,7 @@ function Detail() {
                     name: "Pull Lapin Motifs Japonais 'Saitama'",
                     price: 17.2,
                     salePrice: 13.8,
+                    mainImg: "https://i.pinimg.com/736x/6d/d4/ee/6dd4eee674ddbf9c417d605061b94381.jpg",
                     images: [
                         "https://i.pinimg.com/736x/6d/d4/ee/6dd4eee674ddbf9c417d605061b94381.jpg",
                         "https://media-assets.grailed.com/prd/listing/19309526/246a2a1fea3b46c28ab70f76d5f1403c?w=1250",
@@ -168,6 +195,7 @@ function Detail() {
                     name: "Herren Strickpullover mit Katzenmuster",
                     price: 17.8,
                     salePrice: 14.24,
+                    mainImg: "https://i.pinimg.com/736x/1d/19/25/1d1925a7ab9a6abc6ec4c10430499e7a.jpg",
                     images: [
                         "https://i.pinimg.com/736x/1d/19/25/1d1925a7ab9a6abc6ec4c10430499e7a.jpg",
                         "https://scontent.xx.fbcdn.net/v/t1.15752-9/457253864_1714887305913994_7041744672025960850_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=0024fc&_nc_ohc=oDP6bz8RcDoQ7kNvgEChZH5&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QGC2P2n5-GxT_taTk1p42qeNjPJ3ENTJTLKgb_VgIJatg&oe=66FB665A",
@@ -180,6 +208,7 @@ function Detail() {
                     name: "Stylish Letter Knitted Sweater",
                     price: 26.9,
                     salePrice: 21.5,
+                    mainImg: "https://i.pinimg.com/736x/1e/49/08/1e490818c8c2dfa6e7196d70081f5e80.jpg",
                     images: [
                         "https://i.pinimg.com/736x/1e/49/08/1e490818c8c2dfa6e7196d70081f5e80.jpg",
                         "https://scontent.xx.fbcdn.net/v/t1.15752-9/457535018_514717054480225_4657510659908192382_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=0024fc&_nc_ohc=OcEZK0a6uHIQ7kNvgFN8H5G&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QHZ6XKrotnyZidF0BABTgC7DetD7Kr-ykGw31RoJdsbbg&oe=66FB63B2",
@@ -192,6 +221,7 @@ function Detail() {
                     name: "Oversized Skeleton Knit Sweater",
                     price: 15.7,
                     salePrice: 12.3,
+                    mainImg: "https://i.pinimg.com/736x/92/bf/81/92bf8187481ef3fa36c0fa81dbeb57c0.jpg",
                     images: [
                         "https://i.pinimg.com/736x/92/bf/81/92bf8187481ef3fa36c0fa81dbeb57c0.jpg",
                         "https://scontent.xx.fbcdn.net/v/t1.15752-9/456829614_1038762104012370_8453003655724394731_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=0024fc&_nc_ohc=hROL1KNDW-IQ7kNvgGj-FsB&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QHCfojIPsI-SXuiETFYcrx55vy2c94uUwo31WHDJGz8-g&oe=66FB5DA1",
@@ -204,6 +234,8 @@ function Detail() {
                     name: "Special Blue Sweater",
                     price: 17.6,
                     salePrice: 14.8,
+                    mainImg: "https://i.pinimg.com/736x/6b/17/16/6b17161cdc7b538ed89062f9c36c81f9.jpg",
+                    
                     images: [
                         "https://i.pinimg.com/736x/6b/17/16/6b17161cdc7b538ed89062f9c36c81f9.jpg",
                         "https://www.muotitrendit.com/catalog/a44543e5199d4412/syksyn-ja-talven-miesten-villapaita-sarjakuva-kirjonta-pyoereae-kaula-kansi-beige-3154fc03.jpg_.webp?fbclid=IwZXh0bgNhZW0CMTEAAR2tKFnC5EvtdNF39ruaXfN9HOhHhkKo_cQnzwu6mTTFgqqt_4dxMbLhcmM_aem_GyJBJnQ2CJWCLvM3RNNj-w",
@@ -216,6 +248,7 @@ function Detail() {
                     name: "Magnificent colorful sweater",
                     price: 30.6,
                     salePrice: 24.5,
+                    mainImg: "https://i.pinimg.com/736x/79/e3/3e/79e33e59ecb2c928f73df3b92bc829f6.jpg",
                     images: [
                         "https://i.pinimg.com/736x/79/e3/3e/79e33e59ecb2c928f73df3b92bc829f6.jpg",
                         "https://down-vn.img.susercontent.com/file/9ae871485d7f488f65a7308169f565ad",
@@ -228,6 +261,7 @@ function Detail() {
                     name: "Men's Kristina Ribbed Brami",
                     price: 11.6,
                     salePrice: 7.8,
+                    mainImg: "https://i.pinimg.com/736x/98/b1/63/98b1636d8fc2af22e8a2a60591ff7977.jpg",
                     images: [
                         "https://i.pinimg.com/736x/98/b1/63/98b1636d8fc2af22e8a2a60591ff7977.jpg",
                         "https://i.pinimg.com/736x/98/b1/63/98b1636d8fc2af22e8a2a60591ff7977.jpg",
@@ -240,6 +274,7 @@ function Detail() {
                     name: "Unique Tank Top",
                     price: 14.6,
                     salePrice: 10.1,
+                    mainImg: "https://i.pinimg.com/736x/db/c1/f2/dbc1f2abe98647b4fd0929f18cd2a9ef.jpg",
                     images: [
                         "https://i.pinimg.com/736x/db/c1/f2/dbc1f2abe98647b4fd0929f18cd2a9ef.jpg",
                         "https://i.pinimg.com/736x/db/c1/f2/dbc1f2abe98647b4fd0929f18cd2a9ef.jpg",
@@ -252,6 +287,7 @@ function Detail() {
                     name: "Popular Tank Top",
                     price: 9.8,
                     salePrice: 5.9,
+                    mainImg: "https://i.pinimg.com/736x/c8/93/49/c89349195dc5d82123fd6c7cfe966385.jpg",
                     images: [
                         "https://i.pinimg.com/736x/c8/93/49/c89349195dc5d82123fd6c7cfe966385.jpg",
                         "https://down-vn.img.susercontent.com/file/vn-11134211-7r98o-luyqbtaezg2tec",
@@ -264,6 +300,7 @@ function Detail() {
                     name: "Our Brand New Tank Top",
                     price: 8.7,
                     salePrice: 4.3,
+                    mainImg: "https://i.pinimg.com/736x/64/71/4c/64714c37d5a0588a76667686c381450d.jpg",
                     images: [
                         "https://i.pinimg.com/736x/64/71/4c/64714c37d5a0588a76667686c381450d.jpg",
                         "https://down-vn.img.susercontent.com/file/sg-11134201-22100-su15uyd7z6hv19",
@@ -276,6 +313,7 @@ function Detail() {
                     name: "BASIQUINHAS",
                     price: 9.2,
                     salePrice: 5.1,
+                    mainImg: "https://i.pinimg.com/736x/65/e3/3f/65e33f819e6b60ff3e124a6093b698aa.jpg",
                     images: [
                         "https://i.pinimg.com/736x/65/e3/3f/65e33f819e6b60ff3e124a6093b698aa.jpg",
                         "https://product.hstatic.net/200000041406/product/img_1276_926af41ace47431084038c2a27c1e2e0_master.jpg",
@@ -288,6 +326,7 @@ function Detail() {
                     name: "Body Duda",
                     price: 7.4,
                     salePrice: 4.9,
+                    mainImg: "https://i.pinimg.com/736x/d1/2d/51/d12d51b4af060da7ad673d225e028db7.jpg",
                     images: [
                         "https://i.pinimg.com/736x/d1/2d/51/d12d51b4af060da7ad673d225e028db7.jpg",
                         "https://i.pinimg.com/736x/d1/2d/51/d12d51b4af060da7ad673d225e028db7.jpg",
@@ -302,8 +341,27 @@ function Detail() {
         setProduct(selectedProduct);
         if (selectedProduct) {
             setSelectedImage(selectedProduct.images[0]);
+            }
+        }, [id]);
+
+    const { addToCart } = useContext(CartContext);
+
+    const handleAddToCart = () => {
+        if (selectedSize) {
+            const cartItem = {
+                ...product,
+                selectedSize, 
+                quantity
+            };
+            addToCart(cartItem);
+        } else {
+            alert('Please select a size.');
         }
-    }, [id]);
+    };
+
+    const handleSizeSelect = (size) => {
+        setSelectedSize(size);
+    };
 
     if (!product) return <div>Loading...</div>;
 
@@ -342,20 +400,21 @@ function Detail() {
                             <h2>Select size</h2>
                         </div>
                         <div className="size">
-                            <button>S</button>
-                            <button>M</button>
-                            <button>L</button>
-                            <button>XL</button>
+                            <button onClick={() => setSelectedSize('S')} style={{ backgroundColor: selectedSize === 'S' ? 'lightgray' : '' }}>S</button>
+                            <button onClick={() => setSelectedSize('M')} style={{ backgroundColor: selectedSize === 'M' ? 'lightgray' : '' }}>M</button>
+                            <button onClick={() => setSelectedSize('L')} style={{ backgroundColor: selectedSize === 'L' ? 'lightgray' : '' }}>L</button>
+                            <button onClick={() => setSelectedSize('XL')} style={{ backgroundColor: selectedSize === 'XL' ? 'lightgray' : '' }}>XL</button>
                         </div>
+                        
                         <div className="amount">
-                            <button>-</button>
-                            <div className="amount-product">
-                                <label>1</label>
-                            </div>
-                            <button>+</button>
+                        {/* <button onClick={() => handleQuantityChange(-1)}>-</button>
+                        <div className="amount-product">
+                            <label>{quantity}</label>
+                        </div>
+                        <button onClick={() => handleQuantityChange(1)}>+</button> */}
                         </div>
                         <div className="add-to-cart">
-                            <button>ADD TO CART</button>
+                            <button onClick={() => handleAddToCart(product)}>ADD TO CART</button>
                         </div>
                     </div>
                 </div>

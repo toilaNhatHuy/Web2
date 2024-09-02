@@ -119,8 +119,8 @@ ul.sidebar a {
   border:none;
   background-color: white;
   position: absolute;
-  top: 20px;
-  right: 125px;
+  top: 25px;
+  right: 115px;
   z-index: 100;
   border-radius: 50%;
 }
@@ -270,6 +270,80 @@ ul.sidebar a {
   margin-left: 15px;
 }
 
+.search-results {
+    position: absolute; 
+    top: 100%; 
+    right: 0;
+    width: 350px;
+    background-color: white; 
+    border: 1px solid #e2e2e2; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    z-index: 1000; 
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    max-height: 400px;
+    overflow-y: auto;
+}
 
+
+
+.search-results ul {
+  list-style-type: none; 
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #ebebeb;
+  gap: 20px;
+  border: 2px solid rgb(195, 195, 195);
+  
+}
+
+.search-results li {
+  display: flex; 
+  align-items: center; 
+  padding: 10px; 
+  transition:  0.3s ; 
+  
+}
+
+.search-results li:hover {
+  background-color: #d5d5d5; 
+  transition: 0.3s;
+}
+
+.search-results img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px; 
+  border-radius: 4px; 
+  object-fit: cover; 
+}
+
+.search-results p {
+  margin: 0; 
+  font-size: 14px; 
+  color: #333; 
+  font-weight: 500; 
+}
+
+.search-results::-webkit-scrollbar {
+  width: 8px; 
+}
+
+.search-results::-webkit-scrollbar-thumb {
+  background-color: #bdbdbd; 
+  border-radius: 50px; 
+}
+
+.search-results::-webkit-scrollbar-thumb:hover {
+  background-color: #979797;
+}
+
+.search-results::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 50px; 
+}
 
 

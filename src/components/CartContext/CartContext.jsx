@@ -7,10 +7,10 @@ export const CartProvider = ({ children }) => {
 
     const addToCart = (product) => {
         setCart(prevCart => {
-            const existingProduct = prevCart.find(item => item.id === product.id);
+            const existingProduct = prevCart.find(item => item.id === product.id && item.selectedSize === product.selectedSize);
             if (existingProduct) {
                 return prevCart.map(item =>
-                    item.id === product.id
+                    item.id === product.id && item.selectedSize === product.selectedSize
                         ? { ...item, quantity: item.quantity + 1 }
                         : item
                 );
@@ -19,25 +19,25 @@ export const CartProvider = ({ children }) => {
         });
     };
 
-    const removeFromCart = (id) => {
-        setCart(prevCart => prevCart.filter(product => product.id !== id));
+    const removeFromCart = (id, size) => {
+        setCart(prevCart => prevCart.filter(product => !(product.id === id && product.size === size)));
     };
 
-    const increaseQuantity = (id) => {
-        setCart(prevCart => 
+    const decreaseQuantity = (id, size) => {
+        setCart(prevCart =>
             prevCart.map(item =>
-                item.id === id
-                    ? { ...item, quantity: item.quantity + 1 }
+                item.id === id && item.size === size
+                    ? { ...item, quantity: Math.max(item.quantity - 1, 1) } // Đảm bảo số lượng không nhỏ hơn 1
                     : item
             )
         );
     };
-
-    const decreaseQuantity = (id) => {
-        setCart(prevCart => 
+    
+    const increaseQuantity = (id, size) => {
+        setCart(prevCart =>
             prevCart.map(item =>
-                item.id === id
-                    ? { ...item, quantity: Math.max(item.quantity - 1, 1) } 
+                item.id === id && item.size === size
+                    ? { ...item, quantity: item.quantity + 1 } 
                     : item
             )
         );
