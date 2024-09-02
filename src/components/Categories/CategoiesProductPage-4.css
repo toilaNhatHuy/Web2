@@ -85,7 +85,7 @@
     font-size: 1.2em;
 }
 
-.BN {
+#BN {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,15 +100,21 @@
     font-family: "Righteous", sans-serif;
    }
    
-   .BN:hover {
+   #BN:hover {
     box-shadow: 7px 5px 100px -7px rgb(68, 250, 99);
    }
    
-   .BN:active {
+   #BN:active {
     background-color: rgb(68, 250, 99);
     transform: scale(0.97);
     box-shadow: 7px 5px 56px -10px rgb(68, 250, 99);
    }
+   #p{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
 
 .img-des {
     text-align: center;

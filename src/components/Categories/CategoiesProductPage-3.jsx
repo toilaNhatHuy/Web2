@@ -1,14 +1,10 @@
 import "./CategoiesProductPage-3.css";
 import { Link } from 'react-router-dom';
-import React, { useContext } from 'react';
-import { CartContext } from '../CartContext/CartContext';
+
+
 
 function Categories3() {
-    const { addToCart } = useContext(CartContext);
-
-    const handleAddToCart = (product) => {
-        addToCart(product);
-    }
+    
 
     const products = [
         { id: 13, name: "Pull Lapin Motifs Japonais 'Saitama'", price: 17.2, salePrice: 13.8, imageUrl: "https://i.pinimg.com/736x/6d/d4/ee/6dd4eee674ddbf9c417d605061b94381.jpg" },
@@ -38,7 +34,7 @@ function Categories3() {
                     <div key={product.id} className={`Categories-${product.id}`}>
                         <div className="img-des">
                             <img src={product.imageUrl} width={'380px'} height={'480px'} alt={product.name} />
-                            <p><Link to = {`/detail/${product.id}`}> | {product.name}</Link></p>
+                            <Link id="p" to = {`/detail/${product.id}`}> | {product.name}</Link>
                             <div className="star-detail">
                                 <div className="star">
                                     {[...Array(5)].map((_, index) => (
@@ -57,7 +53,8 @@ function Categories3() {
                                     <span id="price2">${product.salePrice.toFixed(2)}</span>
                                 </div>
                             </div>
-                            <button onClick={() => handleAddToCart(product)} className="BN">BUY NOW</button>
+                            {/* <button onClick={() => handleAddToCart(product)}>BUY NOW</button> */}
+                           <Link id = "BN" to = {`/detail/${product.id}`}> BUY NOW </Link>
                         </div>
                     </div>
                 ))}
