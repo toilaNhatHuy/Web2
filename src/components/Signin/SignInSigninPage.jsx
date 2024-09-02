@@ -3,14 +3,17 @@ import React, {useState} from 'react'
 import {Link, useNavigate} from 'react-router-dom'
 import InputForm from '../Inputform/Inputform'
 import * as UserServicesFE from "../servicesFE/UserServicesFE"
+import { jwtDecode } from "jwt-decode";
+import {useDispatch} from "react-redux"
+import { updateUser } from "../redux/slides/userSlide"
 function SignIn() {
     const navigate = useNavigate()
 
     const [email,setEmail] = useState('')
     const [password,setPassword] = useState('')
-    const [isPending, setIsPending] = useState(false);
     const [error, setError] = useState(null); // Trạng thái để lưu lỗi
     const [data, setData] = useState(null); // Trạng thái để lưu dữ liệu từ API
+    const dispatch = useDispatch();
 
     const handleOnchangeEmail =(value) =>{
         setEmail(value)
@@ -23,21 +26,34 @@ function SignIn() {
     }
     const handleSignIn = async () => {
         try {
-            const res = await UserServicesFE.loginUser({email, password })
-            console.log(res.data)
+            const res = await UserServicesFE.loginUser({email, password})
+            console.log("res",res.data)
             setData(res.data); // Lưu dữ liệu từ API
             if (res.data.status === "ERR") {
                 setError(res.data); // Lưu lỗi nếu có
             } else{
                 setError(null); // Xóa lỗi nếu thành công
-            }if(res.data.status === "OK"){
-                setError(res.data)
-                handleNavigateHome()
+                if(res.data.status === "OK"){
+                    setError(res.data)
+                    handleNavigateHome()
+                    localStorage.setItem('access_token',res.data.access_token)
+                    if(res.data.access_token){
+                        const decoded = jwtDecode(res.data.access_token)
+                        console.log("decoded",decoded)
+                        if(decoded?.id){
+                            handleGetDetailsUser(decoded?.id,res.data.access_token)
+                        }
+                    }
+                }
             }
           }catch (error) {
             setError({ status: 'ERR', message: 'An error occurred' }); 
             setError({ status: 'OK', message: 'An error occurred' })// Cập nhật lỗi nếu có ngoại lệ
           }
+    }
+    const handleGetDetailsUser = async (id, token) => {
+        const res = await UserServicesFE.getDetailsUser(id,token)
+        dispatch(updateUser({...res?.data,access_token: token}))
     }
 
   return (

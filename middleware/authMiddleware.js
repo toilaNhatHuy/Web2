@@ -13,9 +13,8 @@ const authMiddleWare = (req, res,next) => {
                 message: "The authentication"
             })
         }
-        const {payload} = user
-        console.log(payload)
-        if(payload?.isAdmin){
+        console.log("user",user)
+        if(user?.isAdmin){
             next()
         }else{
             return res.status(404).json({
@@ -36,9 +35,8 @@ const authUserMiddleWare = (req, res,next) => {
                 message: "The authentication"
             })
         }
-        const {payload} = user
-        console.log(payload)
-        if(payload?.isAdmin || payload?.id === userId){
+        console.log("user",user)
+        if(user?.isAdmin || user?.id === userId){
             next()
         }else{
             return res.status(404).json({

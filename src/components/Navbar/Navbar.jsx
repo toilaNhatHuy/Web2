@@ -1,5 +1,6 @@
 import './Navbar.css';
 import React, { useState } from 'react';
+import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 function Navbar({ products }) {
@@ -128,7 +129,8 @@ function Navbar({ products }) {
         }]
 
 
-
+    const user = useSelector((state)=>state.user)
+    console.log("userNAV",user)
     const [query, setQuery] = useState('');
     const [results, setResults] = useState([]);
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -178,8 +180,14 @@ function Navbar({ products }) {
                     )}
                 </li>
                 <li><Link id="about-us" to="/aboutus">ABOUT US</Link></li>
-                <li><Link id="sign-in" to="/signin">SIGN IN</Link></li>
-                <li><Link id="sign-up" to="/signup">SIGN UP</Link></li>
+                {user?.name ? (
+                    <div>{user.name}</div>
+                ):(
+                    <>
+                    <li><Link id="sign-in" to="/signin">SIGN IN</Link></li>
+                    <li><Link id="sign-up" to="/signup">SIGN UP</Link></li>
+                    </>
+                )}
                 <form className="search-bar" onSubmit={handleSearch}>
                     <input 
                         id="search" 

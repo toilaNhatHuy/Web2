@@ -72,7 +72,6 @@ const loginUser = (userLogin) => {
                 access_token,
                 refresh_token
             })
-            // }
         }catch(e){
             reject(e)
         }

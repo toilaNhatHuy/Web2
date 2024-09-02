@@ -7,3 +7,11 @@ export const signupUser = async (data) => {
     const res = await axios.post(`http://localhost:3001/api/user/sign-up`,data)
     return res
 }
+export const getDetailsUser = async (id,access_token) => {
+    const res = await axios.get(`http://localhost:3001/api/user/get-details/${id}`,{
+        headers:{
+            token: `Bearer ${access_token}`,
+        }
+    })
+    return res
+}
