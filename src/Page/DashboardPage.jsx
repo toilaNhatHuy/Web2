@@ -1,9 +1,14 @@
 import React from 'react'
+import Navbar from '../components/Navbar/Navbar'
 import Dashboard from '../components/Dashboard/Dashboard'
 
 function DashboardPage() {
   return (
-    <Dashboard/>
+    <>
+      <Navbar/>
+      <Dashboard/>
+    </>
+    
   )
 }
 

@@ -1,0 +1,120 @@
+.Dashboard {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.dashboard-title h1 {
+    font-size: 3em;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.Create-Part {
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 3px 1px 5px 0px rgba(0,0,0,0.44);
+-webkit-box-shadow: 3px 1px 5px 0px rgba(0,0,0,0.44);
+-moz-box-shadow: 3px 1px 5px 0px rgba(0,0,0,0.44);
+}
+
+.Product-DS {
+    flex: 1;
+    width: 200px;
+    height: 320px;
+    background-color: rgb(230, 230, 230);
+    border: 1px solid rgb(209, 209, 209);
+}
+
+.Input-DS {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Input-DS input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.Input-DS input[type="text"]:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-color: #333;
+}
+
+.size-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.size-s, .size-m, .size-l, .size-xl {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.size-container input[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #f0f0f0; 
+    border: 2px solid #ccc; 
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.size-container input[type="checkbox"]:checked {
+    background-color: #333; 
+    border-color: #333; 
+}
+
+.size-container input[type="checkbox"]:checked::before {
+    content: "\2713";
+    color: white;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.size-container p {
+    margin: 0;
+    font-weight: bold;
+    color: #333; 
+}
+
+.create-DS-btn {
+    border-radius: 5px;
+    border: none;
+    background-color: black;
+    color: white;
+    width: 90px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.create-DS-btn:hover {
+    background-color: rgb(56, 56, 56);
+    transition: 0.3s;
+}

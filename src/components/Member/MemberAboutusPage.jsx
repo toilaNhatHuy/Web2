@@ -1,8 +1,11 @@
 import './MemberAboutusPage.css'
-
-import React from 'react'
+import React from 'react';
+// import Dialog from '@mui/material/Dialog';
+// import DialogTitle from '@mui/material/DialogTitle';
+// import Button from '@mui/material/Button';
 
 function Member() {
+    
   return (
     <div className="Member">
         <div className="member-title">
@@ -10,9 +13,9 @@ function Member() {
         </div>
         <div className="all-member">
             <div className="member1">
-                <div className="member1-img">
+                    <div className="member1-img">
 
-                </div>
+                    </div>
                 <div className="member1-info">
                     <p id = "name1">Nguyễn Hoàng Phúc</p>
                     <div className="ctu-icon2">

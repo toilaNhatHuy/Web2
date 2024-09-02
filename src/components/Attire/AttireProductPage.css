@@ -1,8 +1,11 @@
 .attire-category1 {
     width: 500px;
     height: 420px;
-    background-color:rgb(208, 208, 208);
-    border: 2px solid rgb(198, 198, 198);
+    background-image: url("../Image/AttireHoodies.jpg");
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position: 100%;
+    border: 5px solid rgb(0, 0, 0);
     font-size: 2em;
     font-weight: 500;
     display: flex;
@@ -14,8 +17,11 @@
 .attire-category2 {
     width: 500px;
     height: 420px;
-    background-color:rgb(208, 208, 208);
-    border: 2px solid rgb(198, 198, 198);
+    background-image: url("../Image/AttireTTops.jpg");
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position: 100%;
+    border: 5px solid rgb(0, 0, 0);
     font-size: 2em;
     font-weight: 500;
     display: flex;
@@ -27,8 +33,11 @@
 .attire-category3 {
     width: 500px;
     height: 420px;
-    background-color:rgb(208, 208, 208);
-    border: 2px solid rgb(198, 198, 198);
+    background-image: url("../Image/AttireTees.jpg");
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position: 100%;
+    border: 5px solid rgb(0, 0, 0);
     font-size: 2em;
     font-weight: 500;
     display: flex;
@@ -40,8 +49,11 @@
 .attire-category4 {
     width: 500px;
     height: 420px;
-    background-color:rgb(208, 208, 208);
-    border: 2px solid rgb(198, 198, 198);
+    background-image: url("../Image/AttireSweaters.jpg");
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position: 100%;
+    border: 5px solid rgb(0, 0, 0);
     font-size: 2em;
     font-weight: 500;
     display: flex;
@@ -66,7 +78,7 @@
     text-align: center;
     width: 420px;
     height: 350px;
-    border: 1px solid black;
+    border: 3px solid black;
 }
 
 .attire-category1-in-in {
@@ -88,3 +100,46 @@
 .container-at-2 a.carousel-control-prev {
     transform: translate(0,-40px);
 }
+.SM {
+    position: relative;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1em 2.5em;
+    display: inline-block;
+    border-radius: 6em;
+    transition: all .2s;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    color: white;
+    background-color: #000000;
+   }
+   
+   .SM:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+   }
+   
+   .SM:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px white
+   }
+   
+   .SM::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+   }
+   
+   .SM:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+   }

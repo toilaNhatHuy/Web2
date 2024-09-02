@@ -34,14 +34,9 @@
 }
 
 
-
-
-
 /* css cho cac san pham */
 
-
-
-.Categories-1, .Categories-2, .Categories-3{
+.Categories-7, .Categories-8, .Categories-9, .Categories-10, .Categories-11, .Categories-12{
     width: 400px;
     height: 750px;
     background-color: black;
@@ -52,62 +47,28 @@
     cursor: pointer;
 }
 
-#ctgr-tt {
-    text-align: center;
-    margin-top: 100px;
-    font-size: 8em;
-}
-
-.Categories-nav {
-    display: flex;
-    justify-content: space-around;
-    font-size :2em;
-}
-
-#ctgr-nav2, #ctgr-nav3, #ctgr-nav4  {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    margin-top: 50px;
-}
-
-#ctgr-nav1 {
-    text-decoration:underline;
-    color: black;
-    font-weight: bold;
-    margin-top: 50px;
-}
-
-.all-product-tag {
-    margin-left: 160px;
-    margin-top: 60px;
-}
-
-.all-product-tag h1 {
-    font-weight: lighter;
-}
 
 
-
-
-
-/* css cho cac san pham */
-
-
-
-.Categories-1, .Categories-2, .Categories-3{
-    width: 400px;
-    height: 750px;
-    background-color: black;
-    border: 1px solid black;
-    border-radius: 10px;
-    transition: 0.3s;
-    position: relative;
-}
-
-.Categories-1::before {
+.Categories-7::before {
     position: absolute;
-    content: 'SALE 30%';
+    content: 'SALE 50%';
+    transform: rotate(-90deg);
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    border-radius: 10px 0 0 0;
+    top: 5.4%;
+    right: -5.5%;
+    z-index: 1000;
+}
+
+.Categories-8::before {
+    position: absolute;
+    content: 'SALE 50%';
     transform: rotate(-90deg);
     width: 100px;
     height: 40px;
@@ -123,9 +84,9 @@
     z-index: 1000;
 }
 
-.Categories-2::before {
+.Categories-9::before {
     position: absolute;
-    content: 'SALE 30%';
+    content: 'SALE 50%';
     transform: rotate(-90deg);
     width: 100px;
     height: 40px;
@@ -141,9 +102,9 @@
     z-index: 1000;
 }
 
-.Categories-3::before {
+.Categories-10::before {
     position: absolute;
-    content: 'SALE 30%';
+    content: 'SALE 50%';
     transform: rotate(-90deg);
     width: 100px;
     height: 40px;
@@ -158,7 +119,6 @@
     right: -5.5%;
     z-index: 1000;
 }
-
 .Categories-1:hover {
     transition: 0.3s;
     transform: translate(-10px, -10px);
@@ -223,41 +183,31 @@
     color: white;
     font-size: 1.2em;
 }
-
-.Categories-1 button {
+.BN {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 250px;
     height: 50px;
+    margin-left: 73px;
+    border-radius: 9px;
+    background: white;
     border: none;
-    background-color: rgb(255, 255, 255);
-    font-weight: bold;
-    border-radius: 10px;
-}
-.Categories-1 button:hover{
+    font-family: inherit;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.4s;
+   }
+   
+   .BN:hover {
+    box-shadow: 7px 5px 100px -7px rgb(68, 250, 99);
+   }
+   
+   .BN:active {
     background-color: rgb(68, 250, 99);
-}
-.Categories-2 button {
-    width: 250px;
-    height: 50px;
-    border: none;
-    background-color: rgb(255, 255, 255);
-    font-weight: bold;
-    border-radius: 10px;
-}
-.Categories-2 button:hover{
-    background-color: rgb(68, 250, 99);
-}
-.Categories-3 button {
-    width: 250px;
-    height: 50px;
-    border: none;
-    background-color: rgb(255, 255, 255);
-    font-weight: bold;
-    border-radius: 10px;
-}
-.Categories-3 button:hover{
-    background-color: rgb(68, 250, 99);
-}
-
+    transform: scale(0.97);
+    box-shadow: 7px 5px 56px -10px rgb(68, 250, 99);
+   }
 .img-des {
     text-align: center;
 }
@@ -330,7 +280,7 @@
     z-index: 1000;
 }
 
-.All-Categories2 .Categories-2::before {
+.Categories-11::before {
     position: absolute;
     content: 'SALE 50%';
     transform: rotate(-90deg);
@@ -348,7 +298,7 @@
     z-index: 1000;
 }
 
-.All-Categories2 .Categories-3::before {
+.Categories-12::before {
     position: absolute;
     content: 'SALE 50%';
     transform: rotate(-90deg);
@@ -366,7 +316,7 @@
     z-index: 1000;
 }
 
-.Categories-1:hover {
+.Categories-7:hover {
     transition: 0.3s;
     transform: translate(-10px, -10px);
     box-shadow: 4px 5px 14px 0px rgba(114,114,114,0.75);
@@ -375,7 +325,7 @@
     transition: 0.3s;
 }
 
-.Categories-2:hover {
+.Categories-8:hover {
     transition: 0.3s;
     transform: translate(-10px, -10px);
     box-shadow: 4px 5px 14px 0px rgba(114,114,114,0.75);
@@ -384,7 +334,34 @@
     transition: 0.3s;
 } 
 
-.Categories-3:hover {
+.Categories-9:hover {
+    transition: 0.3s;
+    transform: translate(-10px, -10px);
+    box-shadow: 4px 5px 14px 0px rgba(114,114,114,0.75);
+-webkit-box-shadow: 4px 5px 14px 0px rgba(114,114,114,0.75);
+-moz-box-shadow: 4px 5px 14px 0px rgba(114,114,114,0.75);
+    transition: 0.3s;
+}
+
+.Categories-10:hover {
+    transition: 0.3s;
+    transform: translate(-10px, -10px);
+    box-shadow: 4px 5px 14px 0px rgba(114,114,114,0.75);
+-webkit-box-shadow: 4px 5px 14px 0px rgba(114,114,114,0.75);
+-moz-box-shadow: 4px 5px 14px 0px rgba(114,114,114,0.75);
+    transition: 0.3s;
+}
+
+.Categories-11:hover {
+    transition: 0.3s;
+    transform: translate(-10px, -10px);
+    box-shadow: 4px 5px 14px 0px rgba(114,114,114,0.75);
+-webkit-box-shadow: 4px 5px 14px 0px rgba(114,114,114,0.75);
+-moz-box-shadow: 4px 5px 14px 0px rgba(114,114,114,0.75);
+    transition: 0.3s;
+}
+
+.Categories-12:hover {
     transition: 0.3s;
     transform: translate(-10px, -10px);
     box-shadow: 4px 5px 14px 0px rgba(114,114,114,0.75);
@@ -394,44 +371,85 @@
 }
 
 
-
-.Categories-1 img {
+.Categories-7 img {
     margin-top: 10px;
     background-size: contain;
     background-position: 100%;
     margin-bottom: 20px;
+    object-fit: cover;
 }
 
-.Categories-2 img {
+.Categories-8 img {
     margin-top: 10px;
     background-size: contain;
     background-position: 100%;
     margin-bottom: 20px;
+    object-fit: cover;
 }
 
-.Categories-3 img {
+.Categories-9 img {
     margin-top: 10px;
     background-size: contain;
     background-position: 100%;
     margin-bottom: 20px;
+    object-fit: cover;
 }
 
-.Categories-1 p{
+.Categories-10 img {
+    margin-top: 10px;
+    background-size: contain;
+    background-position: 100%;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.Categories-11 img {
+    margin-top: 10px;
+    background-size: contain;
+    background-position: 100%;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.Categories-12 img {
+    margin-top: 10px;
+    background-size: contain;
+    background-position: 100%;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.Categories-7 p{
     color: white;
     font-size: 1.2em;
 }
 
-.Categories-2 p {
+.Categories-8 p {
     color: white;
     font-size: 1.2em;
 }
 
-.Categories-3 p {
+.Categories-9 p {
     color: white;
     font-size: 1.2em;
 }
 
-.Categories-1 button {
+.Categories-10 p{
+    color: white;
+    font-size: 1.2em;
+}
+
+.Categories-11 p{
+    color: white;
+    font-size: 1.2em;
+}
+
+.Categories-12 p{
+    color: white;
+    font-size: 1.2em;
+}
+
+.Categories-7 button {
     width: 250px;
     height: 50px;
     border: none;
@@ -440,7 +458,7 @@
     border-radius: 10px;
 }
 
-.Categories-2 button {
+.Categories-8 button {
     width: 250px;
     height: 50px;
     border: none;
@@ -449,7 +467,34 @@
     border-radius: 10px;
 }
 
-.Categories-3 button {
+.Categories-9 button {
+    width: 250px;
+    height: 50px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.Categories-10 button {
+    width: 250px;
+    height: 50px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.Categories-11 button {
+    width: 250px;
+    height: 50px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.Categories-12 button {
     width: 250px;
     height: 50px;
     border: none;
@@ -461,6 +506,10 @@
 
 .img-des {
     text-align: center;
+}
+
+.img-des img {
+    background-position: 100%;
 }
 
 .star {
@@ -497,19 +546,30 @@
     font-size: 1em;
 }
 
+
+
+#link {
+    color:white;
+
+}
+
 .All-Categories2 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 200px;
+    gap: 200px; 
     margin-top: 50px;
     margin-bottom: 100px;
 }
 
-.All-Categories-2 {
-    display: flex;
-    justify-content: center;
-    gap: 200px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+.Categories-7, .Categories-8, .Categories-9, .Categories-10, .Categories-11, .Categories-12 {
+    flex: 1 1 calc(33.33% - 50px);
+    max-width: 400px; 
+    height: 750px;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: 0.3s;
 }
+
 

@@ -37,8 +37,8 @@ function Attire() {
                 <div className="attire-category1-in">
                     <div className="attire-category1-in-in">
                         <h1>HOODIES</h1>
-                        <Link to = '/products2'>
-                          <button >SEE MORE</button>
+                        <Link to = '/products2'className='SM'>
+                              SEE MORE
                         </Link>
                     </div>
                 </div>
@@ -48,8 +48,8 @@ function Attire() {
               <div className="attire-category1-in">
                     <div className="attire-category1-in-in">
                         <h1>TANK TOPS</h1>
-                        <Link to = '/products4'>
-                          <button >SEE MORE</button>
+                        <Link to = '/products4'className='SM'>
+                              SEE MORE
                         </Link>
                     </div>
                 </div>
@@ -65,8 +65,8 @@ function Attire() {
                 <div className="attire-category1-in">
                         <div className="attire-category1-in-in">
                             <h1>T-SHIRTS</h1>
-                            <Link to = '/products'>
-                              <button >SEE MORE</button>
+                            <Link to = '/products'className='SM'>
+                              SEE MORE
                             </Link>
                         </div>
                     </div>
@@ -75,8 +75,8 @@ function Attire() {
                 <div className="attire-category1-in">
                         <div className="attire-category1-in-in">
                             <h1>SWEATERS</h1>
-                            <Link to = '/products3'>
-                              <button >SEE MORE</button>
+                            <Link to = '/products3'className='SM'>
+                              SEE MORE
                             </Link>
                         </div>
                     </div>
