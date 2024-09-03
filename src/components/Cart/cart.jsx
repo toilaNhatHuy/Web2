@@ -4,8 +4,6 @@ import { CartContext } from '../CartContext/CartContext';
 
 function Cart() {
     const { cart, removeFromCart, increaseQuantity, decreaseQuantity } = useContext(CartContext);
-    
-    
 
     const handleIncrease = (id, size) => {
         increaseQuantity(id, size);
@@ -32,12 +30,12 @@ function Cart() {
                             <img src={product.mainImg} alt={product.name} />
                         </div>
                         <div className="add-to-cart-inf">
-                            <h2>{product.name} </h2>
+                            <h2>{product.name}</h2>
                             <p id="price">${product.salePrice.toFixed(2)}</p>
                             <p><b>SIZE</b> | {product.selectedSize}</p>
                             <div className="amount-2">
                                 <button 
-                                    onClick={() => handleDecrease(product.id, product.size)} 
+                                    onClick={() => handleDecrease(product.id, product.selectedSize)} 
                                     disabled={product.quantity <= 1}
                                 >
                                     -
@@ -45,11 +43,11 @@ function Cart() {
                                 <div className="amount-product">
                                     <label>{product.quantity}</label>
                                 </div>
-                                <button onClick={() => handleIncrease(product.id, product.size)}>+</button>
+                                <button onClick={() => handleIncrease(product.id, product.selectedSize)}>+</button>
                             </div>
                         </div>
                         <div className="delete-button">
-                            <button onClick={() => handleDelete(product.id, product.size)}>
+                            <button onClick={() => handleDelete(product.id, product.selectedSize)}>
                                 <i className="fa-solid fa-x"></i>
                             </button>
                         </div>
@@ -67,12 +65,12 @@ function Cart() {
                             <div className="left-right-items">
                                 <div className="left-item">
                                     {cart.map(product => (
-                                        <p key={`${product.id}-${product.selectedSizesize}`}>{product.name} ({product.selectedSize})</p>
+                                        <p key={`${product.id}-${product.selectedSize}`}>{product.name} ({product.selectedSize})</p>
                                     ))}
                                 </div>
                                 <div className="right-item">
                                     {cart.map(product => (
-                                        <p key={`${product.id}-${product.size}`}>${(product.salePrice * product.quantity).toFixed(2)}</p>
+                                        <p key={`${product.id}-${product.selectedSize}`}>${(product.salePrice * product.quantity).toFixed(2)}</p>
                                     ))}
                                 </div>
                             </div>
@@ -81,9 +79,7 @@ function Cart() {
                             <h2>- Total: <span>${calculateTotalPrice().toFixed(2)}</span></h2>
                         </div>
                         <div className="button-buy">
-                        
-                            <button class="boton-elegante">ADD TO CART</button>
-
+                            <button className="boton-elegante">ADD TO CART</button>
                         </div>
                     </div>
                 </div>

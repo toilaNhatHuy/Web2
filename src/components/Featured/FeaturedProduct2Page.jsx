@@ -1,6 +1,20 @@
-import React from 'react'
+
 import Carousel from 'react-bootstrap/Carousel';
+import React, { useRef } from 'react'
 function Featured_Product2() {
+  const carouselRef = useRef(null);
+
+  const handlePrev = () => {
+    if (carouselRef.current) {
+      carouselRef.current.prev();
+    }
+  };
+
+  const handleNext = () => {
+    if (carouselRef.current) {
+      carouselRef.current.next();
+    }
+  };
   return (
     <div className="container">
       <div className="Featured">
@@ -10,12 +24,12 @@ function Featured_Product2() {
 
         <div className="left-ft">
           <h3 id = "h3-2">Shop</h3>
-          {/* <button id = "prev-ft">{'<'}</button>
-          <button id = "next-ft">{'>'}</button> */}
+          <button id="prev-ft" onClick={handlePrev}>{'<'}</button>
+          <button id="next-ft" onClick={handleNext}>{'>'}</button>
         </div>
       </div>
 
-      <div className="container-ctgr-2">
+      <div className="container-ep-2">
         {/* <div className="Attire-1">
           <div className="attire-1">Hoodies</div>
           <div className="attire-1">Tank Tops</div>
@@ -27,7 +41,7 @@ function Featured_Product2() {
           <div className="attire-2">Blazers</div>
           <div className="attire-2">T-Shirt</div>
         </div> */}
-        <Carousel data-bs-theme="dark">
+        <Carousel data-bs-theme="dark" ref={carouselRef}>
           <Carousel.Item>
             <div className="Attire-ctgr-1">
               <div className="attire-1">Product 1</div>
@@ -35,7 +49,7 @@ function Featured_Product2() {
               <div className="attire-3">Product 3</div>        
             </div>
             <Carousel.Caption>
-              {/* <h5>First slide label</h5> */}
+    
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -45,7 +59,7 @@ function Featured_Product2() {
               <div className="attire-6">Product 6</div>
             </div>
             <Carousel.Caption>
-              {/* <h5>Second slide label</h5> */}
+
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>

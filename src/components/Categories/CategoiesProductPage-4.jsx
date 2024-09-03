@@ -32,7 +32,9 @@ function Categories4() {
             {products.map((product) => (
                 <div key={product.id} className={`Categories-${product.id}`}>
                     <div className="img-des">
-                        <img src={product.imageUrl} width={'380px'} height={'480px'} alt={product.name} />
+                        <Link to={`/detail/${product.id}`}>
+                            <img src={product.imageUrl} width={'380px'} height={'480px'} alt={product.name} />
+                        </Link>
                         <p><Link to = {`/detail/${product.id}`}>| {product.name}</Link></p> 
                         <div className="star-detail">
                             <div className="star">

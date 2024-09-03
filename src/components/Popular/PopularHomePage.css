@@ -118,6 +118,11 @@
     margin-bottom: 200px;
 }
 
+.container-ppl-2 a.carousel-control-next {
+    display: none;
+}
 
-
+.container-ppl-2 a.carousel-control-prev {
+    display: none;
+}
 

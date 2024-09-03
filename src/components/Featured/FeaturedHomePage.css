@@ -124,8 +124,38 @@ a.carousel-control-next {
     margin-bottom: 200px;
 }
 
+.left-ft {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 40px;
+}
 
+.left-ft #prev-ft {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    background-color: rgb(208,208,208);
+    color: black;
+    border: none;
+}
 
+.left-ft #next-ft {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+}
+
+.container-ep-2 a.carousel-control-next {
+    display: none;
+}
+
+.container-ep-2 a.carousel-control-prev {
+    display: none;
+}
 
 
 
