@@ -3,33 +3,26 @@ const Product = require("../model/ProductModel")
 
 const createProduct = (newProduct) => {
     return new Promise(async (resolve, reject)=>{
-        const {img, name, price, type, details, form, material, color,rating,review} = newProduct
+        const {name, price,color,sizeS,sizeM,sizeL,sizeXl} = newProduct
         try{
             const checkProduct = await Product.findOne({
                 name: name
             })
             if(checkProduct !== null){
                 resolve({
-                    status:"OK",
+                    status:"ERR",
                     message:"The name of product is already"
                 })
             }
             const newProduct = await Product.create({
-                img,
                 name, 
                 price, 
-                type, 
-                details, 
-                form, 
-                material, 
-                color,
-                rating,
-                review
+                color
             })
             if(newProduct){
                 resolve({
                     status: "OK",
-                    message: "SUCCESS!",
+                    message: "CREATE PRODUCT SUCCESS!",
                     data: newProduct
                 })
             }

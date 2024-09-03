@@ -28,7 +28,7 @@ function SignIn() {
         try {
             const res = await UserServicesFE.loginUser({email, password})
             console.log("res",res.data)
-            setData(res.data); // Lưu dữ liệu từ API
+            setData(res.data.data); // Lưu dữ liệu từ API
             if (res.data.status === "ERR") {
                 setError(res.data); // Lưu lỗi nếu có
             } else{
@@ -52,9 +52,18 @@ function SignIn() {
           }
     }
     const handleGetDetailsUser = async (id, token) => {
-        const res = await UserServicesFE.getDetailsUser(id,token)
-        dispatch(updateUser({...res?.data,access_token: token}))
-    }
+        const res = await UserServicesFE.getDetailsUser(id, token);
+        const userData = { ...res?.data.data, access_token: token };
+        
+        // Check if email is admin and update the isAdmin field
+        if (userData.email === "admin@gmail.com") {
+            userData.isAdmin = true;
+        } else {
+            userData.isAdmin = false;
+        }
+
+        dispatch(updateUser(userData));
+    };
 
   return (
     <div className="SignIn">

@@ -3,9 +3,9 @@ const ProductService = require("../services/ProductService")
 const createProduct = async (req,res) => {
     try{
         console.log(req.body)
-        const {img, name, price, type, details, form, material, color,rating,review} = req.body
+        const {name, price,color,sizeS,sizeM,sizeL,sizeXl} = req.body
 
-        if( !img || !name || !price || !type || !details || !form ||!material || !color || !rating){
+        if(!name || !price || !color){
             return res.status(200).json({
                 status: "ERR",
                 message: "The input is required,err"
@@ -91,9 +91,6 @@ const deleteProduct = async (req,res) => {
         })
     }
 }
-
-
-
 
 module.exports = {
     createProduct,
