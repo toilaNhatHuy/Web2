@@ -4,7 +4,7 @@ import { CartContext } from '../CartContext/CartContext';
 
 function Cart() {
     const { cart, removeFromCart, increaseQuantity, decreaseQuantity } = useContext(CartContext);
-
+    
     
 
     const handleIncrease = (id, size) => {
@@ -81,7 +81,9 @@ function Cart() {
                             <h2>- Total: <span>${calculateTotalPrice().toFixed(2)}</span></h2>
                         </div>
                         <div className="button-buy">
-                            <button>CONTINUE</button>
+                        
+                            <button class="boton-elegante">ADD TO CART</button>
+
                         </div>
                     </div>
                 </div>

@@ -333,6 +333,84 @@ function Detail() {
                         "https://i.pinimg.com/736x/d1/2d/51/d12d51b4af060da7ad673d225e028db7.jpg",
                         "https://i.pinimg.com/736x/d1/2d/51/d12d51b4af060da7ad673d225e028db7.jpg"
                     ]
+                },
+                {
+                    id: 25,
+                    name: "Fleece-Lined Teddy",
+                    price: 20.0,
+                    salePrice: 11.5,
+                    mainImg: "https://i.pinimg.com/564x/17/a3/d6/17a3d6685156d9df94f6126035d5713e.jpg?fbclid=IwZXh0bgNhZW0CMTEAAR0zb0bJNh-ofBEkXJomJtvfD-zYvZ9MptIcUe6tWME48012xpf7enE0VEY_aem_6252b1iORroFQFaEmRQvTg",
+                    images: [
+                        "https://i.pinimg.com/564x/17/a3/d6/17a3d6685156d9df94f6126035d5713e.jpg?fbclid=IwZXh0bgNhZW0CMTEAAR0zb0bJNh-ofBEkXJomJtvfD-zYvZ9MptIcUe6tWME48012xpf7enE0VEY_aem_6252b1iORroFQFaEmRQvTg",
+                        "https://img.ltwebstatic.com/images3_spmp/2023/12/30/28/1703913801a1dee6ce9fe9043d5699e7442168efe0_thumbnail_720x.webp?fbclid=IwZXh0bgNhZW0CMTEAAR0ENCX20VW6gVNDn69Bcaoo4UB11Fd4asjfNfQdbU32YUg9NvOtdEBoCxc_aem_HldkctHKK_9YasyCby7V0Q",
+                        "https://img.ltwebstatic.com/images3_spmp/2023/12/30/28/1703913801b1cfc7a300b818c4f83a087c811878c6_thumbnail_720x.webp?fbclid=IwZXh0bgNhZW0CMTEAAR0BxiU4rUyV8tXesCO4GdGdwLPRLtyk1Y24g5MmBMctNhi7nz7qd1lSE1U_aem_OiXdUgQXV_nhnYfbPx-EUQ",
+                        "https://img.ltwebstatic.com/images3_spmp/2023/12/30/28/1703913801185c1216e7285dbb15103b72638914b9_thumbnail_720x.webp?fbclid=IwZXh0bgNhZW0CMTEAAR3ii7fu6sLLEwmNorNXGcAilVHfkOKT855XDgxn4L3L51wYhQtLNUvGeFw_aem_hlFygTYcBlrbbPVJF81e_Q"
+                    ]
+                },
+                {
+                    id: 26,
+                    name: "Unisex Windbreaker Jacket",
+                    price: 25.0,
+                    salePrice: 20.0,
+                    mainImg: "https://i.pinimg.com/564x/90/a0/68/90a0680234773627bde728fe3c269852.jpg",
+                    images: [
+                        "https://i.pinimg.com/564x/90/a0/68/90a0680234773627bde728fe3c269852.jpg",
+                        "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lniq7v5tgosa59",
+                        "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lfcxwhplrp1g9b",
+                        "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lfcxwhplt3lw2d"
+                    ]
+                },
+                {
+                    id: 27,
+                    name: "Long-Sleeve Striped Shirt",
+                    price: 15.0,
+                    salePrice: 12.0,
+                    mainImg: "https://i.pinimg.com/564x/be/31/b4/be31b4eeaf0aa9a55c8e96d9f0cf1f6d.jpg?fbclid=IwZXh0bgNhZW0CMTEAAR3UacouJrnXTgqR_pMYP3A4fb_WrHdXLeQwJRsKdZSpY3sxSOOeojcBv3Y_aem_-WGdSNpSmvgRghR6xkSJYQ",
+                    images: [
+                        "https://i.pinimg.com/564x/be/31/b4/be31b4eeaf0aa9a55c8e96d9f0cf1f6d.jpg?fbclid=IwZXh0bgNhZW0CMTEAAR3UacouJrnXTgqR_pMYP3A4fb_WrHdXLeQwJRsKdZSpY3sxSOOeojcBv3Y_aem_-WGdSNpSmvgRghR6xkSJYQ",
+                        "https://down-vn.img.susercontent.com/file/b07784bf944c9aee639dc8410890a316",
+                        "https://down-vn.img.susercontent.com/file/b4c332907d578833d5a5d5bdd111efce",
+                        "https://down-vn.img.susercontent.com/file/75d9e6aefeb091208e55c5f36a4875f0"
+                    ]
+                },
+                {
+                    id: 28,
+                    name: "Charmkpr Men Tops 2023",
+                    price: 30.0,
+                    salePrice: 25.0,
+                    mainImg: "https://i.pinimg.com/564x/54/84/64/54846432b91b0814bd1720f1088d162c.jpg?fbclid=IwZXh0bgNhZW0CMTEAAR3gPHad05w9ntwuY1THNrNRSiLA61sHvLQIBXJCBOOdDsVH6MkQRdMZ-XU_aem_dwXXze-IobDYkFsVDbrvag",
+                    images: [
+                        "https://i.pinimg.com/564x/54/84/64/54846432b91b0814bd1720f1088d162c.jpg?fbclid=IwZXh0bgNhZW0CMTEAAR3gPHad05w9ntwuY1THNrNRSiLA61sHvLQIBXJCBOOdDsVH6MkQRdMZ-XU_aem_dwXXze-IobDYkFsVDbrvag",
+                        "https://ae-pic-a1.aliexpress-media.com/kf/Sec49feb80adc4d76adc5d19a2495cbf0k/Charmkpr-Men-Tops-2023-Fashion-Corduroy-Color-Pattern-Blouse-Casual-Streetwear-Male-Hot-Sale-Stitching-Long.jpg_.webp",
+                        "https://ae-pic-a1.aliexpress-media.com/kf/S590e7d7d9a01487e9269e91f9a5bbf4dN/Charmkpr-Men-Tops-2023-Fashion-Corduroy-Color-Pattern-Blouse-Casual-Streetwear-Male-Hot-Sale-Stitching-Long.jpg_.webp",
+                        "https://ae-pic-a1.aliexpress-media.com/kf/S376a32c072e54bd08e3e01fc3116d4b7c.jpg_120x120.jpg_.webp"
+                    ]
+                },
+                {
+                    id: 29,
+                    name: "Sweater Cool",
+                    price: 40.0,
+                    salePrice: 35.0,
+                    mainImg: "https://i.pinimg.com/564x/eb/b5/4e/ebb54e6fbc2ff1012e022ddbb0c30d29.jpg?fbclid=IwZXh0bgNhZW0CMTEAAR34NLDyyh58_yA6LfY6bTW07twt65opbQnFERm76JFQXNRzwZ7owW1KvCE_aem_Mu7sQ3WTue94HZY5uAvDXg",
+                    images: [
+                        "https://i.pinimg.com/564x/eb/b5/4e/ebb54e6fbc2ff1012e022ddbb0c30d29.jpg?fbclid=IwZXh0bgNhZW0CMTEAAR34NLDyyh58_yA6LfY6bTW07twt65opbQnFERm76JFQXNRzwZ7owW1KvCE_aem_Mu7sQ3WTue94HZY5uAvDXg",
+                        "https://i.pinimg.com/736x/7a/8d/76/7a8d76d3b37b6d8d04f62d6b229b8f7b.jpg",
+                        "https://i.pinimg.com/736x/7a/8d/76/7a8d76d3b37b6d8d04f62d6b229b8f7b.jpg",
+                        "https://i.pinimg.com/736x/7a/8d/76/7a8d76d3b37b6d8d04f62d6b229b8f7b.jpg"
+                    ]
+                },
+                {
+                    id: 30,
+                    name: "Shorts Summer",
+                    price: 18.0,
+                    salePrice: 15.0,
+                    mainImg: "https://i.pinimg.com/564x/6e/87/b3/6e87b3498074e90123c35f5ed744e55b.jpg?fbclid=IwZXh0bgNhZW0CMTEAAR3nOERhF_BUm9JhBmUNixSfXGd3X1sQ1JBTPCmEHX_4P8Ht0tMWCbCVf9Q_aem_0H0zQC0uczW8tuwOHNKI7A",
+                    images: [
+                        "https://i.pinimg.com/564x/6e/87/b3/6e87b3498074e90123c35f5ed744e55b.jpg?fbclid=IwZXh0bgNhZW0CMTEAAR3nOERhF_BUm9JhBmUNixSfXGd3X1sQ1JBTPCmEHX_4P8Ht0tMWCbCVf9Q_aem_0H0zQC0uczW8tuwOHNKI7A",
+                        "https://down-vn.img.susercontent.com/file/9af4636c9ec88e669c590538856fc520",
+                        "https://down-vn.img.susercontent.com/file/c76b0c782774b50b2144f8851830c93c",
+                        "https://down-vn.img.susercontent.com/file/eff1aba407627d1e9e0c17dcae8d452a"
+                    ]
                 }
                 
         ];
@@ -407,14 +485,19 @@ function Detail() {
                         </div>
                         
                         <div className="amount">
-                        {/* <button onClick={() => handleQuantityChange(-1)}>-</button>
-                        <div className="amount-product">
-                            <label>{quantity}</label>
-                        </div>
-                        <button onClick={() => handleQuantityChange(1)}>+</button> */}
+                            <button onClick={() => handleQuantityChange(-1)}>-</button>
+                            <div className="amount-product">
+                                <label>{quantity}</label>
+                            </div>
+                            <button onClick={() => handleQuantityChange(1)}>+</button>
                         </div>
                         <div className="add-to-cart">
-                            <button onClick={() => handleAddToCart(product)}>ADD TO CART</button>
+                            <button className="pushable"  onClick={() => handleAddToCart(product)} >
+                            <span className="shadow"></span>
+                            <span className="edge"></span>
+                            <span className="front">
+                                ADD TO CART
+                            </span></button>
                         </div>
                     </div>
                 </div>

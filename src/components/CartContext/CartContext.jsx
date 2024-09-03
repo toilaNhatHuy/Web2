@@ -23,20 +23,20 @@ export const CartProvider = ({ children }) => {
         setCart(prevCart => prevCart.filter(product => !(product.id === id && product.size === size)));
     };
 
-    const decreaseQuantity = (id, size) => {
+    const decreaseQuantity = (id, selectedSize) => {
         setCart(prevCart =>
             prevCart.map(item =>
-                item.id === id && item.size === size
-                    ? { ...item, quantity: Math.max(item.quantity - 1, 1) } // Đảm bảo số lượng không nhỏ hơn 1
+                item.id === id && item.selectedSize === selectedSize && item.quamtity > 1
+                    ? { ...item, quantity: Math.max(item.quantity - 1, 1) } 
                     : item
             )
         );
     };
     
-    const increaseQuantity = (id, size) => {
+    const increaseQuantity = (id, selectedSize) => {
         setCart(prevCart =>
             prevCart.map(item =>
-                item.id === id && item.size === size
+                item.id === id && item.selectedSize === selectedSize && item.quantity
                     ? { ...item, quantity: item.quantity + 1 } 
                     : item
             )

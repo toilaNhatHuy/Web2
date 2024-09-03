@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from '../components/Navbar/Navbar'
 import Product from '../components/Products/ProductProductPage'
+import Credibility from '../components/Credibidity/Credibility'
 import FeaturedProduct2 from '../components/Featured/FeaturedProduct2Page'
 import Attire from '../components/Attire/AttireProductPage'
 import Categories2 from '../components/Categories/CategoiesProductPage-2'
@@ -12,6 +13,7 @@ function Product2Page() {
         <Product/>
         <FeaturedProduct2/>
         <Attire/>
+        <Credibility/>
         <Categories2/>
         <Footer/>
     </>
