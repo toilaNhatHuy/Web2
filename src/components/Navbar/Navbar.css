@@ -16,6 +16,8 @@ body {
   animation: Pageanimation 1s linear 1 forwards;
 }
 
+
+
 @keyframes Pageanimation {
   from {
       opacity: 0;

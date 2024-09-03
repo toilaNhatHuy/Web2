@@ -1,0 +1,50 @@
+.Credibility img {
+    width: 150px;
+}
+
+.Credibility {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.Credibility p {
+    font-weight: bold;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.Cr-Shop img {
+    width: 300px;
+}
+
+.Cr-Shop {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.Cr-Guarantee img {
+    margin-left: 20px;
+}
+
+.Cr-Guarantee {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.Cr-Flash img {
+    margin-left: 20px;
+}
+
+.Cr-Flash {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}

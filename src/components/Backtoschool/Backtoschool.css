@@ -1,0 +1,174 @@
+.countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 200px;
+    background-color: black;
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.countdown h2 {
+    font-size: 5em;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.countdown-all {
+    display: flex;
+    justify-content: center;
+}
+
+.Categories-25, .Categories-26, .Categories-27, .Categories-28, .Categories-29, .Categories-30 {
+    width: 400px;
+    height: 750px;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: 0.3s;
+    position: relative;
+}
+
+.Categories-25::before, .Categories-26::before, .Categories-27::before, .Categories-28::before, .Categories-29::before, .Categories-30::before {
+    position: absolute;
+    content: 'SALE 30%';
+    transform: rotate(-90deg);
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    background-color: rgb(68, 250, 99);
+    border-radius: 10px 0 0 0;
+    top: 5.4%;
+    right: -5.5%;
+    z-index: 1000;
+}
+
+.Categories-25:hover, .Categories-26:hover, .Categories-27:hover, .Categories-28:hover, .Categories-29:hover, .Categories-30:hover {
+    transition: 0.3s;
+    transform: translate(-10px, -10px);
+    box-shadow: 4px 5px 14px 0px rgba(114,114,114,0.75);
+    -webkit-box-shadow: 4px 5px 14px 0px rgba(114,114,114,0.75);
+    -moz-box-shadow: 4px 5px 14px 0px rgba(114,114,114,0.75);
+}
+
+.Categories-25 img, .Categories-26 img, .Categories-27 img, .Categories-28 img, .Categories-29 img, .Categories-30 img {
+    margin-top: 10px;
+    background-size: contain;
+    background-position: 100%;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+.Categories-25 p, .Categories-26 p, .Categories-27 p, .Categories-28 p, .Categories-29 p, .Categories-30 p {
+    color: white;
+    font-size: 1.2em;
+}
+
+.Categories-25 button, .Categories-26 button, .Categories-27 button, .Categories-28 button, .Categories-29 button, .Categories-30 button {
+    width: 250px;
+    height: 50px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.img-des p {
+    text-align: center;
+}
+
+.img-des a {
+    color: white;
+}
+
+.img-des img {
+    background-position: 100%;
+}
+
+.star {
+    display: flex;
+    gap: 7px;
+    margin-left: 20px;
+}
+
+.detail {
+    margin-right: 20px;
+}
+
+.star-detail {
+    display: flex;
+    justify-content: space-between;
+}
+
+.original-price {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.original-price #price1 {
+    color: rgb(73, 197, 68);
+    text-decoration: line-through;
+    font-size: 1em;
+}
+
+.original-price #price2 {
+    color: white;
+    font-size: 1em;
+}
+
+#link {
+    color: white;
+}
+
+.All-Categories5 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 200px; 
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.Categories-25 {
+    flex: 1 1 calc(33.33% - 50px);
+    max-width: 400px; 
+    height: 750px;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    transition: 0.3s;
+    
+    
+}
+
+.Categories5 {
+    animation: categories5 ease-in-out 2s forwards;
+}
+
+@keyframes categories5 {
+    from {
+        filter: blur(33px);
+        transform: translate(100px,100px);
+        opacity: 0;
+    }
+
+    to {
+        filter: blur(0);
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+#hellobaby {
+    color: black;
+    text-decoration: none;
+}

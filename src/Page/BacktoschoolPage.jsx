@@ -1,22 +1,22 @@
 import FeaturedProduct4 from "../components/Featured/FeaturedProduct4Page"
-import Product from "../components/Products/ProductProductPage"
 import Navbar from "../components/Navbar/Navbar"
 import Attire from "../components/Attire/AttireProductPage"
 import Credibility from "../components/Credibidity/Credibility"
-import Categories4 from "../components/Categories/CategoiesProductPage-4"
+import Backtoschool from "../components/Backtoschool/Backtoschool"
 import Footer from "../components/Footer/Footer"
+import BacktoschoolTitle from "../components/BacktoschoolTitle/BacktoschoolTitle"
 import React from 'react'
-function Product4Page(){
-    return(
-        <>
+function BacktoschoolPage() {
+  return (
+    <>
             <Navbar/>
-            <Product/>
-            <FeaturedProduct4/>
+            <BacktoschoolTitle/>
             <Attire/>
             <Credibility/>
-            <Categories4/>
+            <Backtoschool/>
             <Footer/>
-        </>
-    )
+    </>
+  )
 }
-export default Product4Page
+
+export default BacktoschoolPage

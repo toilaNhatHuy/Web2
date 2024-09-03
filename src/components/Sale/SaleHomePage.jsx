@@ -9,10 +9,10 @@ function Sale() {
           <h3 id = "h3-1">Sale</h3>
         </div>
         <div className="Sale">
-          <div className="sale-1">
+          <Link className="sale-1" to = "/backtoschool">
             <label id = "bts" htmlFor="shop-btn">Back To School</label>
             <button id = "shop-btn">Shop</button>
-          </div>
+          </Link>
           <div className="sale-2-3-4">
             <Link className="sale-2" to = "/products">
                 

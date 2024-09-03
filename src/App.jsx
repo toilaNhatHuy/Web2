@@ -12,7 +12,9 @@ import Product4Page from './Page/Product4Page.jsx';
 import DetailPage from './Page/DetailPage.jsx';
 import DashboardPage from './Page/DashboardPage.jsx';
 import CartPage from './Page/CartPage.jsx';
-import { CartProvider } from './components/CartContext/CartContext.jsx'; // Nhập CartProvider
+import { CartProvider } from './components/CartContext/CartContext.jsx'; 
+import BacktoschoolPage from './Page/BacktoschoolPage.jsx';
+
 
 function App() {
     return (
@@ -31,6 +33,7 @@ function App() {
                     <Route path="/detail/:id" element={<DetailPage />} />
                     <Route path="/cart" element={<CartPage />} />
                     <Route path="/dashboard" element={<DashboardPage />} />
+                    <Route path="/backtoschool" element={<BacktoschoolPage />} />
                 </Routes>
             </div>
         </CartProvider>
