@@ -13,7 +13,6 @@ const authMiddleWare = (req, res,next) => {
                 message: "The authentication"
             })
         }
-        console.log("user",user)
         if(user?.isAdmin){
             next()
         }else{
@@ -35,7 +34,6 @@ const authUserMiddleWare = (req, res,next) => {
                 message: "The authentication"
             })
         }
-        console.log("user",user)
         if(user?.isAdmin || user?.id === userId){
             next()
         }else{
