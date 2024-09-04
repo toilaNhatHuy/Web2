@@ -158,3 +158,19 @@
     height: 220px;
     opacity: 1;
 }
+
+
+
+
+.relevant-products a.carousel-control-next {
+    display: none;
+}
+
+.relevant-products a.carousel-control-prev {
+    display: none;
+}
+
+.Relevant .right-ft {
+    display: flex;
+    align-items: center;
+}
