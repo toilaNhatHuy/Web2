@@ -15,7 +15,7 @@ function Categories2() {
   return (
     <div className="Categories">
         <div className="Categoriesd-title">
-            <h1 id="ctgr-tt">PRODUCTS</h1>
+            <h1 id="ctgr-tt">HOODIES</h1>
         </div>
         <div className="Categories-nav">
             <Link to="/products" id="ctgr-nav2">SHIRTS</Link>
@@ -33,7 +33,7 @@ function Categories2() {
                             <Link to={`/detail/${product.id}`}>
                                 <img src={product.imageUrl} width={'380px'} height={'480px'} alt={product.name} />
                             </Link>
-                            <p>| <Link to={`/detail/${product.id}`}>{product.name}</Link></p>
+                            <Link id="p" to={`/detail/${product.id}`}>{product.name}</Link>
                             <div className="star-detail">
                                 <div className="star">
                                     {[...Array(5)].map((_, index) => (
@@ -53,7 +53,7 @@ function Categories2() {
                                 </div>
                             </div>
                             {/* <button onClick={() => handleAddToCart(product)}>BUY NOW</button> */}
-                            <button><Link id = "hellobaby" to = {`/detail/${product.id}`}> BUY NOW </Link></button>
+                            <Link id = "BN" to = {`/detail/${product.id}`}> BUY NOW </Link>
                         </div>
                     </div>
                 ))}

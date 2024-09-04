@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Righteous&family=Staatliches&display=swap');
 #ctgr-tt {
     text-align: center;
     margin-top: 100px;
@@ -84,13 +85,35 @@
     font-size: 1.2em;
 }
 
-.Categories-19 button, .Categories-20 button, .Categories-21 button, .Categories-22 button, .Categories-23 button, .Categories-24 button {
-    width: 250px;
-    height: 50px;
+#BN {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 73px;
+    border-radius: 9px;
+    background: white;
     border: none;
-    background-color: rgb(255, 255, 255);
-    font-weight: bold;
-    border-radius: 10px;
+    font-family: inherit;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.4s;
+    font-family: "Righteous", sans-serif;
+   }
+   
+   #BN:hover {
+    box-shadow: 7px 5px 100px -7px rgb(68, 250, 99);
+   }
+   
+   #BN:active {
+    background-color: rgb(68, 250, 99);
+    transform: scale(0.97);
+    box-shadow: 7px 5px 56px -10px rgb(68, 250, 99);
+   }
+   #p{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
 }
 
 .img-des {

@@ -1,5 +1,6 @@
 import './Navbar.css';
 import React, { useState } from 'react';
+import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 function Navbar({ products }) {
@@ -128,7 +129,8 @@ function Navbar({ products }) {
         }]
 
 
-
+    const user = useSelector((state)=>state.user)
+    console.log("userNAV",user)
     const [query, setQuery] = useState('');
     const [results, setResults] = useState([]);
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -159,7 +161,9 @@ function Navbar({ products }) {
         <div className="navbar">
             <ul>
                 <li><img id="logo" src='https://scontent.xx.fbcdn.net/v/t1.15752-9/454887513_342717868807516_7391926271869795433_n.png?_nc_cat=110&ccb=1-7&_nc_sid=0024fc&_nc_ohc=uqyQ829PEaIQ7kNvgGl9zLP&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_Q7cD1QHZVtdk3G4Mk768T6KJ888D3HTYJdLQ6vcV2PsTRril7w&oe=66F561E2' alt="Logo" /></li>
-                <li><Link id="dashboard" to="/dashboard">DASHBOARD</Link></li>
+                {user?.isAdmin && (
+                    <li><Link id="dashboard" to="/dashboard">DASHBOARD</Link></li>
+                )}
                 <li><Link id="home" to="/">HOME</Link></li>
                 <li 
                     id="products" 
@@ -178,8 +182,14 @@ function Navbar({ products }) {
                     )}
                 </li>
                 <li><Link id="about-us" to="/aboutus">ABOUT US</Link></li>
-                <li><Link id="sign-in" to="/signin">SIGN IN</Link></li>
-                <li><Link id="sign-up" to="/signup">SIGN UP</Link></li>
+                {user?.name ? (
+                    <div id="User">USER: {user.name}</div>
+                ):(
+                    <>
+                    <li><Link id="sign-in" to="/signin">SIGN IN</Link></li>
+                    <li><Link id="sign-up" to="/signup">SIGN UP</Link></li>
+                    </>
+                )}
                 <form className="search-bar" onSubmit={handleSearch}>
                     <input 
                         id="search" 

@@ -1,6 +1,5 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import axios from 'axios';
 import Home from './Page/HomePage.jsx';
 import Product from './Page/ProductPage.jsx';
 import AboutUs from './Page/AboutusPage.jsx';
@@ -18,19 +17,6 @@ import BacktoschoolPage from './Page/BacktoschoolPage.jsx';
 
 
 function App() {
-    useEffect(() => {
-        fetchApi();
-    }, []);
-
-    const fetchApi = async () => {
-        try {
-            const res = await axios.get('http://localhost:3000/api/product/get-all');
-            console.log("res", res);
-        } catch (error) {
-            console.error("Error fetching data:", error);
-        }
-    };
-
     return (
         <CartProvider>
             <div className="Main">

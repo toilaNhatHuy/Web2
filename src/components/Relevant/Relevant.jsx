@@ -87,13 +87,13 @@ function Relevant() {
                   <div className="rlv-detail">
                       <p>| {randomProducts[0].name} </p>
                       
-                      <Link to = {`/detail/${randomProducts[0].id}`} className="animated-button">
+                      <Link to = {`/detail/${randomProducts[0].id}`} className="animate-button">
                       <svg viewBox="0 0 24 24" className="arr-2" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
                         ></path>
                       </svg>
-                      <span className="text">Modern Button</span>
+                      <span className="text">Details</span>
                       <span className="circle"></span>
                       <svg viewBox="0 0 24 24" className="arr-1" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -109,13 +109,13 @@ function Relevant() {
                   <img src={randomProducts[1].imageUrl} width={'230px'} alt={randomProducts[1].name} />
                   <div className="rlv-detail">
                       <p>| {randomProducts[1].name} </p>
-                      <Link to = {`/detail/${randomProducts[1].id}`} className="animated-button">
+                      <Link to = {`/detail/${randomProducts[1].id}`} className="animate-button">
                       <svg viewBox="0 0 24 24" className="arr-2" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
                         ></path>
                       </svg>
-                      <span className="text">Modern Button</span>
+                      <span className="text">Details</span>
                       <span className="circle"></span>
                       <svg viewBox="0 0 24 24" className="arr-1" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -137,13 +137,13 @@ function Relevant() {
                   <img src={randomProducts[2].imageUrl} width={'230px'} alt={randomProducts[2].name} />
                   <div className="rlv-detail">
                       <p>| {randomProducts[2].name} </p>
-                      <Link to = {`/detail/${randomProducts[2].id}`} className="animated-button">
+                      <Link to = {`/detail/${randomProducts[2].id}`} className="animate-button">
                       <svg viewBox="0 0 24 24" className="arr-2" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
                         ></path>
                       </svg>
-                      <span className="text">Modern Button</span>
+                      <span className="text">Details</span>
                       <span className="circle"></span>
                       <svg viewBox="0 0 24 24" className="arr-1" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -159,13 +159,13 @@ function Relevant() {
                   <img src={randomProducts[3].imageUrl} width={'230px'} alt={randomProducts[3].name} />
                   <div className="rlv-detail">
                       <p>| {randomProducts[3].name} </p>
-                      <Link to = {`/detail/${randomProducts[3].id}`} className="animated-button">
+                      <Link to = {`/detail/${randomProducts[3].id}`} className="animate-button">
                       <svg viewBox="0 0 24 24" className="arr-2" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
                         ></path>
                       </svg>
-                      <span className="text">Modern Button</span>
+                      <span className="text">Details</span>
                       <span className="circle"></span>
                       <svg viewBox="0 0 24 24" className="arr-1" xmlns="http://www.w3.org/2000/svg">
                         <path

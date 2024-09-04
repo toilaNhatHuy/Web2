@@ -292,67 +292,40 @@
     font-size: 1.2em;
 }
 
-.Categories-1 button {
+#BN {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 250px;
     height: 50px;
+    margin-left: 73px;
+    border-radius: 9px;
+    background-color: #fff;
+    color: black;
     border: none;
-    background-color: rgb(255, 255, 255);
-    font-weight: bold;
-    border-radius: 10px;
-}
-
-.Categories-2 button {
-    width: 250px;
-    height: 50px;
-    border: none;
-    background-color: rgb(255, 255, 255);
-    font-weight: bold;
-    border-radius: 10px;
-}
-
-.Categories-3 button {
-    width: 250px;
-    height: 50px;
-    border: none;
-    background-color: rgb(255, 255, 255);
-    font-weight: bold;
-    border-radius: 10px;
-}
-
-.Categories-4 button {
-    width: 250px;
-    height: 50px;
-    border: none;
-    background-color: rgb(255, 255, 255);
-    font-weight: bold;
-    border-radius: 10px;
-}
-
-.Categories-5 button {
-    width: 250px;
-    height: 50px;
-    border: none;
-    background-color: rgb(255, 255, 255);
-    font-weight: bold;
-    border-radius: 10px;
-}
-
-.Categories-6 button {
-    width: 250px;
-    height: 50px;
-    border: none;
-    background-color: rgb(255, 255, 255);
-    font-weight: bold;
-    border-radius: 10px;
-}
-
-
-.img-des p{
+    font-family: inherit;
     text-align: center;
-}
+    cursor: pointer;
+    transition: 0.4s;
+    font-family: "Righteous", sans-serif;
+    text-decoration: none;
+   }
 
-.img-des a {
-    color: white; 
+   #BN:hover {
+    background-color: rgb(68, 250, 99);
+    box-shadow: 7px 5px 100px -7px rgb(68, 250, 99);
+   }
+
+   #BN:active {
+    background-color: rgb(68, 250, 99);
+    transform: scale(0.97);
+    box-shadow: 7px 5px 56px -10px rgb(68, 250, 99);
+   }
+ #p{
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
 }
 
 
@@ -383,6 +356,7 @@
     margin-left: 20px;
     gap: 20px;
     margin-bottom: 20px;
+    font-size: 35px;
 }
 
 .original-price #price1 {
@@ -398,7 +372,7 @@
 
 
 #link {
-    color:white;
+    color:rgb(0, 0, 0);
 
 }
 
@@ -421,9 +395,5 @@
     transition: 0.3s;
 }
 
-#hellobaby {
-    color: black;
-    text-decoration: none;
-}
 
 

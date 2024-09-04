@@ -47,7 +47,7 @@
 .sale-1 {
     width: 500px;
     height: 500px;
-    background-image: url('https://i.pinimg.com/474x/0b/a6/e4/0ba6e4756afb10324871753d8c95c59b.jpg');
+    background-image: url('../Image/BTS.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
     font-size: 2em;
@@ -61,19 +61,25 @@
 }
 
 #bts {
-    color: white
+    color: white;
+    font-family: "Righteous", sans-serif;
 }
 
 #shirts {
-    color: white
+    color: black;
+    font-family: "Righteous", sans-serif;
 }
 
 #hoodies {
-    color: white
+    color: black;
+    font-size:large;
+    font-family: "Righteous", sans-serif;
 }
 
 #sweaters {
     color: white;
+    font-size:large;
+    font-family: "Righteous", sans-serif;
 }
 
 .sale-1:hover {
@@ -115,7 +121,9 @@
 .sale-2 {
     width: 500px;
     height: 220px;
-    background-image: url('https://i.pinimg.com/736x/64/6a/82/646a82e9010245c380766f4503b712ca.jpg');
+    background-image: url('../Image/Tees.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;   
     font-size: 2em;
     font-weight: 500;
     padding: 20px;
@@ -131,7 +139,9 @@
     width: 235px;
     height: 250px;
     margin-top: 30px;
-    background-image: url('https://i.pinimg.com/736x/e9/65/31/e9653148065b0ced8918755d7fd9ffa8.jpg');
+    background-image: url('../Image/Hoodies.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
     font-size: 2em;
     font-weight: 500;
     padding: 20px;
@@ -147,7 +157,9 @@
     width: 235px;
     height: 250px;
     margin-top: 30px;
-    background-image: url('https://i.pinimg.com/736x/da/07/96/da0796e787aac8cf605f06fc022d19ed.jpg');
+    background-image: url('../Image/Sweaters.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%; 
     font-size: 2em;
     font-weight: 500;
     padding: 20px;
@@ -162,13 +174,29 @@
 .sale-3-4 {
     display: flex;
 }
-
-#shop-btn {
-    border: none;
-    padding: 0px 20px;
+#shop-btn{
+    font-family: "Righteous", sans-serif;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 20px;
     border-radius: 10px;
-    font-weight: 500;
-}
+    cursor: pointer;
+    transition: 0.1s ease;
+    border-width: 0;
+    box-shadow: 1px 5px 0 0 #000000;
+  }
+  
+  #shop-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 1px 9px 0 0 #000000;
+  }
+  
+  #shop-btn:active {
+    transform: translateY(4px);
+    box-shadow: 0px 0px 0 0 #000000
+  }
 
 #bts, #shirts {
     margin-right: 40px;

@@ -52,8 +52,8 @@ body {
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
   font-weight: bold;
   /* position:fixed; */
-  margin-top: 10px;
-  margin-top: 10px;
+  width: 100%;
+  z-index: 100;
   font-family: "Righteous", sans-serif;
 }
 
@@ -115,6 +115,7 @@ ul.sidebar a {
   padding: 3px 20px;
   border: 2px solid black;
   background: transparent;
+  width: 200px;
 }
 
 #search-icon {
@@ -177,7 +178,6 @@ ul.sidebar a {
 }
 
 
-
 #about-us::before {
   content: "";
   position: absolute;
@@ -227,7 +227,13 @@ ul.sidebar a {
 }
 
 
-
+#User{
+  width: auto;
+  height:100%;
+  margin-top: 13px;
+  margin-left: 20px;
+  margin-right: 30px;
+}
 
 
 .navbar ul {

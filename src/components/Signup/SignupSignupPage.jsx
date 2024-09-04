@@ -1,19 +1,52 @@
 import './SignupSignupPage.css'
-import { Link } from 'react-router-dom'
-import React, { useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
+import React , { useState } from 'react'
+import * as UserServicesFE from "../servicesFE/UserServicesFE"
+import InputForm from '../Inputform/Inputform'
 
 function Signup() {
-    const [userData, setUserData] = useState({
-        name: '',
-        email: '',
-        password1: '',
-        password2: ''
-    })
+    const navigate = useNavigate()
 
-    const changeInputHandle = (e) => {
-        setUserData(prevState => {
-            return { ...prevState, [e.target.name]: e.target.value }
-        })
+    const [name,setName] = useState('')
+    const [email,setEmail] = useState('')
+    const [password,setPassword] = useState('')
+    const [confirmPassword,setConfirmPassword] = useState('')
+    const [error, setError] = useState(null); // Trạng thái để lưu lỗi
+    const [data, setData] = useState(null); // Trạng thái để lưu dữ liệu từ API
+
+
+    const handleOnchangeName =(value) =>{
+        setName(value)
+    }
+    const handleOnchangeEmail =(value) =>{
+        setEmail(value)
+    }
+    const handleOnchangePassword =(value) =>{
+        setPassword(value)
+    }
+    const handleOnchangeConfirmPassword =(value) =>{
+        setConfirmPassword(value)
+    }
+
+    const handleNavigateSignIn = () => {
+        navigate("/signin")
+    }
+    const handleSignUp =async() => {
+        try {
+            const res = await UserServicesFE.signupUser({name,email, password,confirmPassword })
+            console.log(res.data)
+            setData(res.data); // Lưu dữ liệu từ API
+            if (res.data.status === "ERR") {
+                setError(res.data); // Lưu lỗi nếu có
+            }
+            if(res.data.status === "OK"){
+                setError(res.data)
+                handleNavigateSignIn()
+            }
+          }catch (error) {
+            setError({ status: 'ERR', message: 'An error occurred' }); 
+            setError({ status: 'OK', message: 'SIGN UP SUCCESS!' })// Cập nhật lỗi nếu có ngoại lệ
+          }
     }
 
     return (
@@ -37,19 +70,19 @@ function Signup() {
                 <form className="sign-up-info">
                     <div className="sign-up-name">
                         <h6 id="label">Username</h6>
-                        <input type="text" id="inputyourname" placeholder="Name" name='name' value={userData.name} onChange={changeInputHandle} />
+                        <InputForm type="text" id="inputyourname" placeholder="Name" name='name' value={name} onChange={handleOnchangeName}/>
                     </div>
                     <div className="sign-up-email">
                         <h6 id="label">Email</h6>
-                        <input type="text" id="inputyouremail" placeholder="Email" name='email' value={userData.email} onChange={changeInputHandle} />
+                        <InputForm type="text" id="inputyouremail" placeholder="Email" name='email' value={email} onChange={handleOnchangeEmail}/>
                     </div>
                     <div className="sign-up-password">
                         <h6 id="label">Password</h6>
-                        <input type="password" id="inputyourpassword" placeholder="Password" name='password1' value={userData.password1} onChange={changeInputHandle} />
+                        <InputForm  id="inputyourpassword" placeholder="Password" name='password' type="password"value={password} onChange={handleOnchangePassword}/>
                     </div>
                     <div className="confirm-sign-up-password">
                         <h6 id="label">Confirm password</h6>
-                        <input type="password" id="inputyourpassword" placeholder="Password" name='password2' value={userData.password2} onChange={changeInputHandle} />
+                        <InputForm  id="inputyourpassword" placeholder="Confirm Password" name='confirmPassword' type="password"value={confirmPassword} onChange={handleOnchangeConfirmPassword}/>
                     </div>
                     
                     <div className="remember-have">
@@ -63,14 +96,14 @@ function Signup() {
 
                         <Link to="/signin" className="have">Already have an account?</Link>
                     </div>
-                    <div className="sign-in-btn">
-                        <button type='submit' id="btnsn">SIGN UP</button><br />
-                        <div className="sign-in-please">
-                            <Link to="/signin" id="havebtn">SIGN IN</Link>
-                        </div>
-                    </div>
+                    {error && error.status === "ERR" && (
+                        <span id="err">{error.message}</span>
+                    )}
+                    {error && error.status === "OK" && (
+                        <span id="success">{error.message}</span>
+                    )}
                 </form>
-                
+                    <button onClick={handleSignUp} id='btnSU'>SIGN UP</button>
             </div>
         </div>
     )

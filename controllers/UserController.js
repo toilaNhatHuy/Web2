@@ -4,26 +4,26 @@ const JwtService = require("../services/JwtService")
 const createUser = async (req,res) => {
     try{
         console.log(req.body)
-        const {name, email, password, confirmPassword, phone} = req.body
+        const {name, email, password, confirmPassword} = req.body
         const reg = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
         const isCheckEmail = reg.test(email)
 
-        if( !name || !email || !password || !confirmPassword || !phone){
+        if( !name || !email || !password || !confirmPassword){
             return res.status(200).json({
                 status: "ERR",
-                message: "The input is required,err"
+                message: "ENTER YOUR EMAIL AND PASSWORD"
             })
         } 
         else if(!isCheckEmail){
             return res.status(200).json({
                 status: "ERR",
-                message: "The input is email"
+                message: "EMAIL IS INCORRECT"
             })
         }
         else if(password != confirmPassword){
             return res.status(200).json({
                 status: "ERR",
-                message: "The password is equal confirmPassword"
+                message: "PASSWORD DO NOT MATCH"
             })
         };
         console.log(isCheckEmail)
@@ -39,32 +39,30 @@ const createUser = async (req,res) => {
 
 const loginUser = async (req,res) => {
     try{
-        console.log(req.body)
-        const {name, email, password, confirmPassword, phone} = req.body
+        const {email, password} = req.body
         const reg = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
         const isCheckEmail = reg.test(email)
 
-        if( !name || !email || !password || !confirmPassword || !phone){
+        if(!email || !password){
             return res.status(200).json({
                 status: "ERR",
-                message: "The input is required,err"
+                message: "ENTER YOUR EMAIL AND PASSWORD"
             })
         } 
         else if(!isCheckEmail){
             return res.status(200).json({
                 status: "ERR",
-                message: "The input is email"
+                message: "EMAIL IS INCORRECT"
             })
         }
-        else if(password != confirmPassword){
-            return res.status(200).json({
-                status: "ERR",
-                message: "The password is equal confirmPassword"
-            })
-        };
-        console.log(isCheckEmail)
         const response = await UserService.loginUser(req.body)
-        return res.status(200).json(response)
+        const {refresh_token, ...newResponse} = response
+        res.cookie('refresh_token',refresh_token, {
+            HttpOnly:true,
+            Secure:false,
+            samesite:"strict"
+        })
+        return res.status(200).json(newResponse)
     }catch(e){
         return res.status(404).json({
             message: e.message
@@ -149,7 +147,7 @@ const getDetailsUser = async (req,res) => {
 
 const refreshToken = async (req,res) => {
     try{
-        const token = req.headers.token.split(' ')[1]
+        const token = req.cookies.refresh_token
         if(!token){
             return res.status(200).json({
                 status: "ERR",

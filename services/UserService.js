@@ -1,17 +1,19 @@
 const User = require("../model/userModel")
 const bcrypt = require("bcrypt")
 const { genneralAccessToken, genneralRefreshToken } = require("./JwtService")
+
+
 const createUser = (newUser) => {
     return new Promise(async (resolve, reject)=>{
-        const {name, email, password, confirmPassword, phone} = newUser
+        const {name, email, password, confirmPassword} = newUser
         try{
             const checkUser = await User.findOne({
                 email: email
             })
             if(checkUser !== null){
                 resolve({
-                    status:"OK",
-                    message:"The email is already"
+                    status:"ERR",
+                    message:"THE EMAIL IS ALREADY"
                 })
             }
             const hash = bcrypt.hashSync(password, 10)
@@ -19,7 +21,7 @@ const createUser = (newUser) => {
                 name, 
                 email, 
                 password: hash,  
-                phone
+                confirmPassword,
             })
             if(createdUser){
                 resolve({
@@ -37,23 +39,23 @@ const createUser = (newUser) => {
 
 const loginUser = (userLogin) => {
     return new Promise(async (resolve, reject)=>{
-        const {name, email, password, confirmPassword, phone} = userLogin
+        const {email, password} = userLogin
         try{
             const checkUser = await User.findOne({
                 email: email
             })
             if(checkUser === null){
                 resolve({
-                    status:"OK",
-                    message:"The user is not defined"
+                    status:"ERR",
+                    message:"THE USER IS NOT DEFINED, TRY AGAIN"
                 })
             }
             const comparePassword = bcrypt.compareSync(password, checkUser.password)
            
             if(!comparePassword){
                 resolve({
-                    status:"OK",
-                    message:"The password or user is incorrect"
+                    status:"ERR",
+                    message:"THE PASSWORD OR USER IS INCORRECT"
                 })
             }
             const access_token = await genneralAccessToken({
@@ -66,11 +68,10 @@ const loginUser = (userLogin) => {
             })
             resolve({
                 status: "OK",
-                message: "SUCCESS!",
+                message: "SIGN IN SUCCESS!",
                 access_token,
                 refresh_token
             })
-            // }
         }catch(e){
             reject(e)
         }
@@ -83,11 +84,10 @@ const updateUser = (id, data) => {
             const checkUser = await User.findOne({
                 _id: id
             })
-            console.log("checkUser",checkUser)
             if(checkUser === null){
                 resolve({
-                    status:"OK",
-                    message:"The user is not defined"
+                    status:"ERR",
+                    message:"THE USER IS NOT DEFINED"
                 })
             }
             const updatedUser = await User.findByIdAndUpdate(id,data,{new:true})
@@ -111,8 +111,8 @@ const deleteUser = (id) => {
             })
             if(checkUser === null){
                 resolve({
-                    status:"OK",
-                    message:"The user is not defined"
+                    status:"ERR",
+                    message:"THE USER IS NOT DEFINED"
                 })
             }
             await User.findByIdAndDelete(id)
@@ -149,8 +149,8 @@ const getDetailsUser = (id) => {
             })
             if(user === null){
                 resolve({
-                    status:"OK",
-                    message:"The user is not defined"
+                    status:"ERR",
+                    message:"THE USER IS NOT DEFINED"
                 })
             }
             resolve({

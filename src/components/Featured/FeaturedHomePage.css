@@ -35,7 +35,7 @@
     content: "";
     justify-content: center;
     align-items: center;
-    background-color: rgb(173, 173, 173);
+    background-color:black;
     font-size: 25px;
     font-weight: bold;
     transition: all 0.5s;
@@ -59,6 +59,7 @@
     height: 100%;
     border-radius: 5px;
     transition: all 0.7s;
+    background-color: rgb(0, 197, 75);
 }
 
 #attire-1:hover::after, #attire-2:hover::after, #attire-3:hover::after, #attire-4:hover::after{
@@ -139,7 +140,14 @@ a.carousel-control-next {
     color: black;
     border: none;
 }
-
+.left-ft #prev-ft:hover {
+    background-color: rgb(130, 130, 130);
+    color: white;
+    transition: 0.3s;
+}
+.left-ft #prev-ft:active{
+    background-color: rgb(208,208,208);
+}
 .left-ft #next-ft {
     width: 70px;
     height: 70px;
@@ -148,7 +156,14 @@ a.carousel-control-next {
     color: white;
     border: none;
 }
-
+.left-ft #next-ft:hover{
+    background-color: rgb(130, 130, 130);
+    color: white;
+    transition: 0.3s;
+}
+.left-ft #next-ft:active{
+    background-color: rgb(208,208,208);
+}
 .container-ep-2 a.carousel-control-next {
     display: none;
 }

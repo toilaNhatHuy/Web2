@@ -17,7 +17,7 @@ function Categories4() {
   return (
     <div className="Categories">
         <div className="Categoriesd-title">
-            <h1 id="ctgr-tt">PRODUCTS</h1>
+            <h1 id="ctgr-tt">TANK TOPS</h1>
         </div>
         <div className="Categories-nav">
             <Link to="/products" id="ctgr-nav2">SHIRTS</Link>
@@ -55,7 +55,7 @@ function Categories4() {
                             </div>
                         </div>
                         {/* <button onClick={() => handleAddToCart(product)}>BUY NOW</button> */}
-                        <Link id = "hellobaby" to = {`/detail/${product.id}`}><button> BUY NOW</button> </Link>
+                        <Link id = "BN" to = {`/detail/${product.id}`}>BUY NOW</Link>
                     </div>
                 </div>
             ))}

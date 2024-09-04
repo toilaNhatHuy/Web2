@@ -1,14 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Righteous&family=Staatliches&display=swap');
+
 .Member {
-    background-color: rgb(208,208,208);
+    background-image: url("../Image/WallMembers.jpg");
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position: 100%;
     width: 100vw;
-    height: 630px;
+    height: 700px;
     margin-bottom: 50px;
 }
 
 #meet {
     text-align: center;
     transform: translate(0, 30px);
-    font-size: 3em;
+    font-size: 70px;
+    font-family: "Righteous", sans-serif;
 }
 
 .all-member {

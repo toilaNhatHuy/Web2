@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Righteous&family=Staatliches&display=swap');
+
 .M-img-1 {
     width: 200px;
     height: 200px;
@@ -80,8 +82,9 @@
 
 
 #mission-1 {
-    font-size: 4em;
+    font-size: 70px;
     margin-bottom: 50px;
+    font-family: "Righteous", sans-serif;
 }
 
 #afterword {
@@ -92,6 +95,7 @@
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
+    font-family: "Righteous", sans-serif;
 }
 
 .M-img-1-2 {
@@ -142,8 +146,10 @@
 .Our-Mission {
     width: 90%;
     height: 100%;
-    background-color: #626262;
-    color: white;
+    background-image: url('../Image/WallOurmission.jpg');
+    background-repeat: no-repeat;
+    background-position: 50%;
+    color: rgb(0, 0, 0);
     display: flex;
     justify-content: space-around;
     align-items: center;

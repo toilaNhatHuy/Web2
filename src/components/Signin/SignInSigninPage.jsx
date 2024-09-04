@@ -1,20 +1,70 @@
 import "./SignInSigninPage.css"
 import React, {useState} from 'react'
-import {Link} from 'react-router-dom'
-
-
+import {Link, useNavigate} from 'react-router-dom'
+import InputForm from '../Inputform/Inputform'
+import * as UserServicesFE from "../servicesFE/UserServicesFE"
+import { jwtDecode } from "jwt-decode";
+import {useDispatch} from "react-redux"
+import { updateUser } from "../redux/slides/userSlide"
 function SignIn() {
+    const navigate = useNavigate()
 
-    const [userData, setUserData] = useState({
-        email: '',
-        password: ''
-    })
+    const [email,setEmail] = useState('')
+    const [password,setPassword] = useState('')
+    const [error, setError] = useState(null); // Trạng thái để lưu lỗi
+    const [data, setData] = useState(null); // Trạng thái để lưu dữ liệu từ API
+    const dispatch = useDispatch();
 
-    const changeInputHandle = (e) => {
-        setUserData(prevState => {
-            return { ...prevState, [e.target.name]: e.target.value }
-        })
+    const handleOnchangeEmail =(value) =>{
+        setEmail(value)
     }
+    const handleOnchangePassword =(value) =>{
+        setPassword(value)
+    }
+    const handleNavigateHome= () => {
+        navigate("/")
+    }
+    const handleSignIn = async () => {
+        try {
+            const res = await UserServicesFE.loginUser({email, password})
+            console.log("res",res.data)
+            setData(res.data.data); // Lưu dữ liệu từ API
+            if (res.data.status === "ERR") {
+                setError(res.data); // Lưu lỗi nếu có
+            } else{
+                setError(null); // Xóa lỗi nếu thành công
+                if(res.data.status === "OK"){
+                    setError(res.data)
+                    handleNavigateHome()
+                    localStorage.setItem('access_token',res.data.access_token)
+                    if(res.data.access_token){
+                        const decoded = jwtDecode(res.data.access_token)
+                        console.log("decoded",decoded)
+                        if(decoded?.id){
+                            handleGetDetailsUser(decoded?.id,res.data.access_token)
+                        }
+                    }
+                }
+            }
+          }catch (error) {
+            setError({ status: 'ERR', message: 'An error occurred' }); 
+            setError({ status: 'OK', message: 'An error occurred' })// Cập nhật lỗi nếu có ngoại lệ
+          }
+    }
+    const handleGetDetailsUser = async (id, token) => {
+        const res = await UserServicesFE.getDetailsUser(id, token);
+        const userData = { ...res?.data.data, access_token: token };
+        
+        // Check if email is admin and update the isAdmin field
+        if (userData.email === "admin@gmail.com") {
+            userData.isAdmin = true;
+        } else {
+            userData.isAdmin = false;
+        }
+
+        dispatch(updateUser(userData));
+    };
+
   return (
     <div className="SignIn">
         <div className="sign-in">
@@ -24,11 +74,11 @@ function SignIn() {
             <form className="sign-in-info">
                 <div className="sign-in-email">
                     <h6 id="label">Email</h6>
-                    <input type="text" id="inputyouremail" placeholder="Email" name='email' value={userData.email} onChange={changeInputHandle}/>
+                    <InputForm type="text" id="inputyouremail" placeholder="Email" name='email' value={email} onChange={handleOnchangeEmail}/>
                 </div>
                 <div className="sing-in-password">
                     <h6 id="label">Password</h6>
-                    <input type="password" id="inputyourpassword" placeholder="Password" name='password' value={userData.password} onChange={changeInputHandle}/>
+                    <InputForm type="password" id="inputyourpassword" placeholder="Password" name='password' value={password} onChange={handleOnchangePassword}/>
                 </div>
                 <div className="remember-create">
                     <div className="remember-me">
@@ -41,15 +91,22 @@ function SignIn() {
 
                     <Link to = "/signup" className="create">Create an account</Link>
                 </div>
-                <div className="sign-in-btn">
-                    <button type="submit" id = "btnsn">SIGN IN</button><br/>
+                {error && error.status === "ERR" && (
+                        <span id="err">{error.message}</span>
+                )}
+                {error && error.status === "OK" && (
+                        <span id="success">{error.message}</span>
+                )}
+            </form>
+            
+            <div className="sign-in-btn">
+                        <button onClick={handleSignIn} type="submit" id = "btnsn">SIGN IN</button>
+
                     <div className="create-an-account">
                         <Link to = "/signup" id = "crtbtn">CREATE AN ACCOUNT</Link>
                     </div>
-                    
                 </div>
-            </form>
-                
+             
         </div>
         <div className="all-sign-in-images">
             <div className="sign-in-images">
