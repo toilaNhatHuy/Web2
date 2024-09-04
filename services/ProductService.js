@@ -11,7 +11,7 @@ const createProduct = (newProduct) => {
             if(checkProduct !== null){
                 resolve({
                     status:"ERR",
-                    message:"The name of product is already"
+                    message:"THE NAME OF PRODUCT IS ALREADY"
                 })
             }
             const newProduct = await Product.create({

@@ -8,7 +8,7 @@ const createProduct = async (req,res) => {
         if(!name || !price || !color){
             return res.status(200).json({
                 status: "ERR",
-                message: "The input is required,err"
+                message: "PLEASE FILL THE INPUT"
             })
         } 
         const response = await ProductService.createProduct(req.body)

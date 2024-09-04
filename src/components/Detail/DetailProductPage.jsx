@@ -8,18 +8,31 @@ function Detail() {
     const { id } = useParams(); 
     const [product, setProduct] = useState(null);
     const [selectedImage, setSelectedImage] = useState('');
-
     const [selectedSize, setSelectedSize] = useState('');
     const [quantity, setQuantity] = useState(1);
-    
+    const { addToCart } = useContext(CartContext);
 
     const handleSizeChange = (size) => {
         setSelectedSize(size);
-      };
+    };
     
     const handleQuantityChange = (change) => {
         setQuantity(prevQuantity => Math.max(1, prevQuantity + change)); 
-      };
+    };
+
+
+    const handleAddToCart = () => {
+        if (selectedSize) {
+            const cartItem = {
+                ...product,
+                selectedSize, 
+                quantity
+            };
+            addToCart(cartItem);
+        } else {
+            alert('Please select a size.');
+        }
+    };
 
     useEffect(() => {
         const products = [
@@ -355,9 +368,9 @@ function Detail() {
                     mainImg: "https://i.pinimg.com/564x/90/a0/68/90a0680234773627bde728fe3c269852.jpg",
                     images: [
                         "https://i.pinimg.com/564x/90/a0/68/90a0680234773627bde728fe3c269852.jpg",
-                        "https://down-vn.img.susercontent.com/file/vn-11134207-7r98o-lniq7v5tgosa59",
-                        "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lfcxwhplrp1g9b",
-                        "https://down-vn.img.susercontent.com/file/vn-11134207-7qukw-lfcxwhplt3lw2d"
+                        "https://ae-pic-a1.aliexpress-media.com/kf/Sf6560573a6d44dd8beb445bff38f8de7k/Hip-Hop-Windproof-Men-s-Coat-Spliced-Reflective-Stand-Collar-Zipper-High-Street-Casual-Baggy-Thin.jpg_.webp",
+                        "https://ae-pic-a1.aliexpress-media.com/kf/S239a932f5e624784af0e19c0046813d3I/Hip-Hop-Windproof-Men-s-Coat-Spliced-Reflective-Stand-Collar-Zipper-High-Street-Casual-Baggy-Thin.jpg_.webp",
+                        "https://ae-pic-a1.aliexpress-media.com/kf/S8784484a614045cf8eefb032f626ca0dr/Hip-Hop-Windproof-Men-s-Coat-Spliced-Reflective-Stand-Collar-Zipper-High-Street-Casual-Baggy-Thin.jpg_.webp"
                     ]
                 },
                 {
@@ -422,20 +435,7 @@ function Detail() {
             }
         }, [id]);
 
-    const { addToCart } = useContext(CartContext);
-
-    const handleAddToCart = () => {
-        if (selectedSize) {
-            const cartItem = {
-                ...product,
-                selectedSize, 
-                quantity
-            };
-            addToCart(cartItem);
-        } else {
-            alert('Please select a size.');
-        }
-    };
+    
 
     const handleSizeSelect = (size) => {
         setSelectedSize(size);
@@ -445,84 +445,84 @@ function Detail() {
 
     return (
         <div className="Detail">
-            <div className="Back">
-                <Link id="back" to="/products">{'<'} BACK TO PRODUCTS</Link>
+    <div className="Back">
+        <Link id="back" to="/products">{'<'} BACK TO PRODUCTS</Link>
+    </div>
+    <div className="Clothes-Description">
+        <div className="Clothes">
+            <div className="left-side">
+                {product.images.map((img, index) => (
+                    <div
+                        key={index}
+                        className={`side${index + 1}`}
+                        onClick={() => setSelectedImage(img)}
+                    >
+                        <img src={img} alt={`Thumbnail ${index + 1}`} className={`dt-img${index + 1}`} />
+                    </div>
+                ))}
             </div>
-            <div className="Clothes-Description">
-                <div className="Clothes">
-                    <div className="left-side">
-                        {product.images.map((img, index) => (
-                            <div
-                                key={index}
-                                className={`side${index + 1}`}
-                                onClick={() => setSelectedImage(img)}
-                            >
-                                <img src={img} alt={`Thumbnail ${index + 1}`} className={`dt-img${index + 1}`} />
-                            </div>
-                        ))}
+            <div className="right-side">
+                {selectedImage && (
+                    <div className="des1">
+                        <img src={selectedImage} alt="" />
                     </div>
-                    <div className="right-side">
-                        {selectedImage && (
-                            <div className="des1">
-                                <img src={selectedImage} alt="" />
-                            </div>
-                        )}
-                    </div>
-                </div>
-                <div className="Description">
-                    <h1>{product.name}</h1>
-                    <span id="ds-price">${product.price.toFixed(2)}</span>
-                    <span id="ds2-price">${product.salePrice.toFixed(2)}</span>
-                    <div className="Select">
-                        <div className="size-title">
-                            <h2>Select size</h2>
-                        </div>
-                        <div className="size">
-                            <button onClick={() => setSelectedSize('S')} style={{ backgroundColor: selectedSize === 'S' ? 'lightgray' : '' }}>S</button>
-                            <button onClick={() => setSelectedSize('M')} style={{ backgroundColor: selectedSize === 'M' ? 'lightgray' : '' }}>M</button>
-                            <button onClick={() => setSelectedSize('L')} style={{ backgroundColor: selectedSize === 'L' ? 'lightgray' : '' }}>L</button>
-                            <button onClick={() => setSelectedSize('XL')} style={{ backgroundColor: selectedSize === 'XL' ? 'lightgray' : '' }}>XL</button>
-                        </div>
-                        
-                        <div className="amount">
-                            <button onClick={() => handleQuantityChange(-1)}>-</button>
-                            <div className="amount-product">
-                                <label>{quantity}</label>
-                            </div>
-                            <button onClick={() => handleQuantityChange(1)}>+</button>
-                        </div>
-                        <div className="add-to-cart">
-                            <button className="pushable"  onClick={() => handleAddToCart(product)} >
-                            <span className="shadow"></span>
-                            <span className="edge"></span>
-                            <span className="front">
-                                ADD TO CART
-                            </span></button>
-                        </div>
-                    </div>
-                </div>
+                )}
             </div>
-            <div className="More-Detail">
-                <div className="m-detail-title">
-                    <h1>Details</h1>
+        </div>
+        <div className="Description">
+            <h1>{product.name}</h1>
+            <span id="ds-price">${product.price.toFixed(2)}</span>
+            <span id="ds2-price">${product.salePrice.toFixed(2)}</span>
+            <div className="Select">
+                <div className="size-title">
+                    <h2>Select size</h2>
                 </div>
-                <div className="paragraph-detail">
-                    <p>
-                        It is a long established fact that a reader will be distracted by<br />
-                        the readable content of a page when looking at its layout. The<br />
-                        point of using Lorem Ipsum is that it has a more-or-less<br />
-                        normal distribution of letters, as opposed to using 'Content<br /> here, content here
-                    </p>
+                <div className="size">
+                    <button onClick={() => handleSizeChange('S')} style={{ backgroundColor: selectedSize === 'S' ? 'lightgray' : '' }}>S</button>
+                    <button onClick={() => handleSizeChange('M')} style={{ backgroundColor: selectedSize === 'M' ? 'lightgray' : '' }}>M</button>
+                    <button onClick={() => handleSizeChange('L')} style={{ backgroundColor: selectedSize === 'L' ? 'lightgray' : '' }}>L</button>
+                    <button onClick={() => handleSizeChange('XL')} style={{ backgroundColor: selectedSize === 'XL' ? 'lightgray' : '' }}>XL</button>
                 </div>
-                <div className="ul-detail">
-                    <ul>
-                        <li>Form: modern</li>
-                        <li>Material: 100% Cotton</li>
-                        <li>Color: White</li>
-                    </ul>
+                <div className="amount">
+                    <button onClick={() => handleQuantityChange(-1)} disabled={quantity <= 1}>-</button>
+                    <div className="amount-product">
+                        <label>{quantity}</label>
+                    </div>
+                    <button onClick={() => handleQuantityChange(1)}>+</button>
+                </div>
+                <div className="add-to-cart">
+                    <button className="pushable" onClick={handleAddToCart}>
+                        <span className="shadow"></span>
+                        <span className="edge"></span>
+                        <span className="front">
+                            ADD TO CART
+                        </span>
+                    </button>
                 </div>
             </div>
         </div>
+    </div>
+    <div className="More-Detail">
+        <div className="m-detail-title">
+            <h1>Details</h1>
+        </div>
+        <div className="paragraph-detail">
+            <p>
+                It is a long established fact that a reader will be distracted by<br />
+                the readable content of a page when looking at its layout. The<br />
+                point of using Lorem Ipsum is that it has a more-or-less<br />
+                normal distribution of letters, as opposed to using 'Content<br /> here, content here
+            </p>
+        </div>
+        <div className="ul-detail">
+            <ul>
+                <li>Form: modern</li>
+                <li>Material: 100% Cotton</li>
+                <li>Color: White</li>
+            </ul>
+        </div>
+    </div>
+</div>
     );
 }
 

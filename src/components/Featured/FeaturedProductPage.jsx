@@ -1,8 +1,21 @@
 import './FeaturedProductPage.css'
-import React from 'react'
 import Carousel from 'react-bootstrap/Carousel';
+import React, { useRef } from 'react'
 
 function Featured() {
+  const carouselRef = useRef(null);
+
+  const handlePrev = () => {
+    if (carouselRef.current) {
+      carouselRef.current.prev();
+    }
+  };
+
+  const handleNext = () => {
+    if (carouselRef.current) {
+      carouselRef.current.next();
+    }
+  };
   return (
     <div className="container">
       <div className="Featured">
@@ -12,8 +25,8 @@ function Featured() {
 
         <div className="left-ft">
           <h3 id = "h3-2">Shop</h3>
-          {/* <button id = "prev-ft">{'<'}</button>
-          <button id = "next-ft">{'>'}</button> */}
+          <button id="prev-ft" onClick={handlePrev}>{'<'}</button>
+          <button id="next-ft" onClick={handleNext}>{'>'}</button>
         </div>
       </div>
 
@@ -29,7 +42,7 @@ function Featured() {
           <div className="attire-2">Blazers</div>
           <div className="attire-2">T-Shirt</div>
         </div> */}
-        <Carousel data-bs-theme="dark">
+        <Carousel data-bs-theme="dark" ref={carouselRef}>
           <Carousel.Item>
             <div className="Attire-ep-1">
               <div className="attire-1">Product 1</div>

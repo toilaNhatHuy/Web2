@@ -1,96 +1,63 @@
 import './Dashboard.css';
 import React, { useState, useEffect } from 'react';
 import * as UserServicesFE from '../servicesFE/UserServicesFE';
-import InputForm from '../Inputform/Inputform';
-import { useSelector, useDispatch } from 'react-redux';
-import { setProducts, addProduct, setError } from '../redux/slides/productSlice';
-
+import InputComponent from '../Inputform/InputComponent';
 function Dashboard() {
-    const dispatch = useDispatch();
-    const products = useSelector((state) => state.product);
-    const [name, setName] = useState('');
-    const [price, setPrice] = useState('');
-    const [color, setColor] = useState('');
-    const [sizeS, setSizeS] = useState(false);
-    const [sizeM, setSizeM] = useState(false);
-    const [sizeL, setSizeL] = useState(false);
-    const [sizeXL, setSizeXL] = useState(false);
-
-
-
-
-    const handleOnchangeName =(value) =>{
-        setName(value)
-    }
-    const handleOnchangePrice =(value) =>{
-        setPrice(value)
-    }
-    const handleOnchangeColor =(value) =>{
-        setColor(value)
-    }
-    const handleOnchangeSizeS = (event) => {
-        setSizeS(event.target.checked);
-    }
-    
-    const handleOnchangeSizeM = (event) => {
-        setSizeM(event.target.checked);
-    }
-    
-    const handleOnchangeSizeL = (event) => {
-        setSizeL(event.target.checked);
-    }
-    
-    const handleOnchangeSizeXL = (event) => {
-        setSizeXL(event.target.checked);
-    }
+    const [error, setError] = useState(null); // Trạng thái để lưu lỗi
+    const [data, setData] = useState(null); // Trạng thái để lưu dữ liệu từ API
+    const [products, setProducts] = useState([]); // Trạng thái để lưu danh sách sản phẩm
+   const [stateProduct,setStateProduct] = useState({
+    name:'',
+    price:'',
+    color:''
+   })
+    // Lấy tất cả sản phẩm
+    const getAllProducts = async () => {
+        try {
+            const res = await UserServicesFE.GetAllProduct();
+            setProducts(res.data.data || []); 
+            console.log(res.data.data)// Giả sử API trả về danh sách sản phẩm tại `res.data.products`
+        } catch (error) {
+            setError({ status: 'ERR', message: 'Failed to fetch products' });
+        }
+    };
+    // Gọi getAllProducts khi component mount
     useEffect(() => {
-        fetchProducts();
+        getAllProducts();
     }, []);
-
-    const fetchProducts = async () => {
-        try {
-            const res = await UserServicesFE.createProducts(); // Hàm lấy danh sách sản phẩm
-            if (res.data.status === "OK") {
-                dispatch(setProducts(res.data.data));
-            } else {
-                dispatch(setError(res.data.message));
-            }
-        } catch (error) {
-            dispatch(setError('Error fetching products: ' + error.message));
+   const handleCreateProduct =async() => {
+    try {
+        const res = await UserServicesFE.createProducts({
+            name: stateProduct.name,
+            price: stateProduct.price,
+            color: stateProduct.color
+        });
+        console.log(res.data)
+        setData(res.data); // Lưu dữ liệu từ API
+        if (res.data.status === "ERR") {
+            setError(res.data); // Lưu lỗi nếu có
         }
-    };
-
-    const handleCreateProduct = async () => {
-        try {
-            const res = await UserServicesFE.createProducts({
-                name,
-                price,
-                color,
-                sizes: {
-                    S: sizeS,
-                    M: sizeM,
-                    L: sizeL,
-                    XL: sizeXL
-                }
-            });
-            if (res.data.status === "OK") {
-                dispatch(addProduct(res.data.product)); // Giả sử response trả về sản phẩm mới
-                setName('');
-                setPrice('');
-                setColor('');
-                setSizeS(false);
-                setSizeM(false);
-                setSizeL(false);
-                setSizeXL(false);
-                alert("CREATE PRODUCT SUCCESS")
-            } else {
-                dispatch(setError(res.data.message));
-            }
-        } catch (error) {
-            dispatch(setError('Error creating product: ' + error.message));
+        if(res.data.status === "OK"){
+            setError(res.data)
+            setStateProduct({ name: '', price: '', color: '' }); // Reset stateProduct
+            getAllProducts()
         }
-    };
-
+      }catch (error) {
+        setError({ status: 'ERR', message: 'An error occurred' }); 
+        setError({ status: 'OK', message: 'SIGN UP SUCCESS!' })// Cập nhật lỗi nếu có ngoại lệ
+      }
+}
+   const onFinish = () => {
+    getAllProducts()
+    handleCreateProduct()
+    console.log("finish",stateProduct)
+   }
+   const handleOnchange = (e) =>{
+    setStateProduct({
+        ...stateProduct,
+        [e.target.name]:e.target.value
+    })
+   }
     return (
         <div className="Dashboard">
             <div className="dashboard-title">
@@ -100,73 +67,61 @@ function Dashboard() {
                 <div className="Input-DS">
                     <div className="Input-ds">
                         <h4>Name</h4>
-                        <InputForm
+                        <InputComponent
+                            value={stateProduct.name}
                             type="text"
                             id="InputCreate"
                             placeholder="Name Product"
                             name='name'
-                            value={name}
-                            onChange={handleOnchangeName}
+                            onChange={handleOnchange}
                         />
                     </div>
                     <div className="Input-ds">
                         <h4>Color</h4>
-                        <InputForm
+                        <InputComponent
+                            value={stateProduct.color}
                             type="text"
                             id="InputCreate"
                             placeholder="Color"
                             name='color'
-                            value={color}
-                            onChange={handleOnchangeColor}
+                            onChange={handleOnchange}
                         />
                     </div>
                     <div className="Input-ds">
                         <h4>Price</h4>
-                        <InputForm
+                        <InputComponent
+                            value={stateProduct.price}
                             type="text"
                             id="InputCreate"
                             placeholder="Price"
                             name='price'
-                            value={price}
-                            onChange={handleOnchangePrice}
+                            onChange={handleOnchange}
                         />
                     </div>
-                    <div className="size-container">
-                        <div className="size-s">
-                            <p>S</p>
-                            <input
-                                type="checkbox"
-                                checked={sizeS}
-                                onChange={handleOnchangeSizeS}
-                            />
-                        </div>
-                        <div className="size-m">
-                            <p>M</p>
-                            <input
-                                type="checkbox"
-                                checked={sizeM}
-                                onChange={handleOnchangeSizeM}
-                            />
-                        </div>
-                        <div className="size-l">
-                            <p>L</p>
-                            <input
-                                type="checkbox"
-                                checked={sizeL}
-                                onChange={handleOnchangeSizeL}
-                            />
-                        </div>
-                        <div className="size-xl">
-                            <p>XL</p>
-                            <input
-                                type="checkbox"
-                                checked={sizeXL}
-                                onChange={handleOnchangeSizeXL}
-                            />
-                        </div>
-                    </div>
                 </div>
-                <button className="create-DS-btn" onClick={handleCreateProduct}>Create</button>
+                    {error && error.status === "ERR" && (
+                        <span id="err">{error.message}</span>
+                    )}
+                <button className="create-DS-btn" onClick={onFinish}>Create</button>
+            </div>
+            <div className="ProductList">
+                <h2>Product List</h2>
+                {products.length > 0 ? (
+                    <ul className='ulProduct'>
+                        {products.map((product, index) => (
+                            <li key={index} className='liProduct'>
+                                <div className="information">
+                                <strong>Name: {product.name}</strong>
+                                <strong>Price: {product.price}</strong>
+                                <strong>Color: {product.color}</strong>
+                                </div>
+                                <button>X</button>
+                            </li>
+                        ))}
+                    </ul>
+                ) : (
+                    <p>No products available.</p>
+                )}
             </div>
         </div>
     );

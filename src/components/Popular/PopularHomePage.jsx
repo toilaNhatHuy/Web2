@@ -1,9 +1,22 @@
 import './PopularHomePage.css'
 import Carousel from 'react-bootstrap/Carousel';
-import React from 'react';
+import React, { useRef } from 'react'
 import {Link} from 'react-router-dom'
 
 function Popular() {
+  const carouselRef = useRef(null);
+
+  const handlePrev = () => {
+    if (carouselRef.current) {
+      carouselRef.current.prev();
+    }
+  };
+
+  const handleNext = () => {
+    if (carouselRef.current) {
+      carouselRef.current.next();
+    }
+  };
   return (
     <div className="container-ppl">
       <div className="Featured">
@@ -13,12 +26,14 @@ function Popular() {
 
         <div className="left-ft">
           <h3 id = "h3-2">Shop</h3>
+          <button id="prev-ft" onClick={handlePrev}>{'<'}</button>
+          <button id="next-ft" onClick={handleNext}>{'>'}</button>
         </div>
       </div>
 
       <div className="container-ppl-2">
         
-        <Carousel data-bs-theme="dark">
+        <Carousel data-bs-theme="dark" ref={carouselRef}>
           <Carousel.Item>
             <div className="Popular-1">
               <div className="pl-1">

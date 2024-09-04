@@ -98,8 +98,48 @@
 }
 
 .container-at-2 a.carousel-control-prev {
-    transform: translate(0,-40px);
+    display: none;
 }
+
+.container-at-2 a.carousel-control-next {
+    display: none;
+}
+
+.container-at-2 {
+    position: relative;
+  }
+  
+.container-at-2 #prev-ft  {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-100px);
+    width: 50px;
+    height: 120px;
+    border-radius: 50px;
+    background-color: rgb(208,208,208);
+    color: black;
+    border: none;
+  }
+
+  .container-at-2 #next-ft {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-100px);
+    width: 50px;
+    height: 120px;
+    border-radius: 50px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+  }
+  
+.container-at-2  #prev-ft {
+    left: -100px; 
+  }
+  
+.container-at-2  #next-ft {
+    right: -100px;
+  }
 .SM {
     position: relative;
     font-size: 17px;
