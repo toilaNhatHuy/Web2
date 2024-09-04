@@ -146,10 +146,12 @@
 
 
 
+
+
 .boton-elegante {
     padding: 15px 30px;
-    border: 2px solid #2c2c2c;
-    background-color: #1a1a1a;
+    border: 2px solid #004d40; /* Đổi màu viền thành màu xanh đậm */
+    background-color: #00796b; /* Đổi màu nền thành màu xanh */
     color: #ffffff;
     font-size: 1.2rem;
     cursor: pointer;
@@ -158,9 +160,9 @@
     position: relative;
     overflow: hidden;
     font-weight: bold;
-  }
+}
   
-  .boton-elegante::after {
+.boton-elegante::after {
     content: "";
     position: absolute;
     top: 0;
@@ -169,19 +171,19 @@
     height: 100%;
     background: radial-gradient(
       circle,
-      rgba(255, 255, 255, 0.25) 0%,
+      rgba(0, 150, 136, 0.25) 0%, /* Đổi màu gradient thành màu xanh nhạt */
       rgba(255, 255, 255, 0) 70%
     );
     transform: scale(0);
     transition: transform 0.5s ease;
-  }
+}
   
-  .boton-elegante:hover::after {
+.boton-elegante:hover::after {
     transform: scale(4);
-  }
+}
   
-  .boton-elegante:hover {
-    border-color: #666666;
-    background: #292929;
-  }
+.boton-elegante:hover {
+    border-color: #00695c; /* Đổi màu viền khi hover thành màu xanh đậm hơn */
+    background: #004d40; /* Đổi màu nền khi hover thành màu xanh đậm hơn */
+}
   

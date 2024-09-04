@@ -54,3 +54,13 @@ a.carousel-control-prev {
     justify-content: center;
 }
 
+.Popular-1 img {
+    object-fit: cover;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 1px 1px 2px;
+}
+
+.Popular-2 img {
+    object-fit: cover;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 1px 1px 2px;
+}
+

@@ -15,7 +15,6 @@ function SlideShow() {
           <img src="https://i.pinimg.com/736x/59/82/89/5982893cdd0fd5f91300248166c5e552.jpg" width={'400px'} id = "img3" alt="a" />
         </div>
         <Carousel.Caption>
-          <h5>First slide label</h5>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -25,7 +24,6 @@ function SlideShow() {
             <img src="https://i.pinimg.com/736x/95/ad/b9/95adb94559db5d7e09c2aa7bf21c9534.jpg" width={'400px'} id = "img3" alt="a" />
         </div>
         <Carousel.Caption>
-          <h5>Second slide label</h5>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -35,7 +33,6 @@ function SlideShow() {
             <img src="https://i.pinimg.com/736x/36/56/b3/3656b3c266a9a43e9301c12ee8f13aa4.jpg" width={'400px'} id = "img3" alt="a" />
         </div>
         <Carousel.Caption>
-          <h5>Third slide label</h5>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel></div>

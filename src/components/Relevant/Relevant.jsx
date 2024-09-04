@@ -1,9 +1,22 @@
 import "./Relevant.css"
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect, useRef} from 'react'
 import Carousel from 'react-bootstrap/Carousel';
 import {Link} from 'react-router-dom'
 
 function Relevant() {
+  const carouselRef = useRef(null);
+
+  const handlePrev = () => {
+    if (carouselRef.current) {
+      carouselRef.current.prev();
+    }
+  };
+
+  const handleNext = () => {
+    if (carouselRef.current) {
+      carouselRef.current.next();
+    }
+  };
   const relevantproducts = [
         { id: 1, name: "Men's Checkered Long Sleeve Button Shirt", price: 27.6, salePrice: 22.8, imageUrl: "https://i.pinimg.com/736x/ab/44/73/ab44736245c77fe9bd1e88ed3c659f6a.jpg" },
         { id: 2, name: "Aelfric Eden Corduroy Plaid Fake Two Jacket", price: 17.2, salePrice: 14.1, imageUrl: "https://i.pinimg.com/736x/33/89/02/338902d7bc2a84778f1faca5ec0aa6ae.jpg?fbclid=IwZXh0bgNhZW0CMTEAAR26Fl_Jqq437W1jVDOXwu6_XU0T2Y5AlxjxrbkVS85yqco449jmYx9RETI_aem_RJwGfmJ3iLWg96E73ve2JA" },
@@ -51,12 +64,20 @@ function Relevant() {
 
   return (
     <div className="Relevant">
-        <div className="rlv-title">
-            <h1>YOU MIGHT ALSO LIKE</h1>
-            <div className="line"></div>
+        <div className="Featured">
+        <div className="right-ft">
+          <h3 id = "h3-1">YOU MIGHT ALSO LIKE</h3>
+          <div className="line"></div>
         </div>
+
+        <div className="left-ft">
+          <h3 id = "h3-2">Shop</h3>
+          <button id="prev-ft" onClick={handlePrev}>{'<'}</button>
+          <button id="next-ft" onClick={handleNext}>{'>'}</button>
+        </div>
+      </div>
         <div className="relevant-products">
-        <Carousel data-bs-theme="dark">
+        <Carousel data-bs-theme="dark" ref={carouselRef}>
           <Carousel.Item>
           
             <div className="rlv-products-1">

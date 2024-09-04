@@ -42,9 +42,7 @@ function Featured() {
               <Link id="attire-2" to="/products4">
                 Tank Tops
               </Link>
-              <Link id="attire-3" to="/products3">
-                Sweater
-              </Link>
+              
             </div>
             <Carousel.Caption>
               {/* <h5>First slide label</h5> */}
@@ -52,11 +50,12 @@ function Featured() {
           </Carousel.Item>
           <Carousel.Item>
             <div className="Attire-ep-2">
+              <Link id="attire-3" to="/products3">
+                Sweater
+              </Link>
               <Link id="attire-4" to="/products">
                 Shirts
               </Link>
-              <div className="attire-5-k"></div>
-              <div className="attire-6-k"></div>
             </div>
             <Carousel.Caption>
               {/* <h5>Second slide label</h5> */}
