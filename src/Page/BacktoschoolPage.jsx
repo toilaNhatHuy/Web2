@@ -6,6 +6,7 @@ import Backtoschool from "../components/Backtoschool/Backtoschool"
 import Footer from "../components/Footer/Footer"
 import BacktoschoolTitle from "../components/BacktoschoolTitle/BacktoschoolTitle"
 import React from 'react'
+
 function BacktoschoolPage() {
   return (
     <>
