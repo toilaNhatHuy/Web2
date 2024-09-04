@@ -22,6 +22,7 @@
     padding: 5px 50px;
     font-size: 30px;
     transition: 0.3s;
+    font-family: "Righteous", sans-serif;
 }
 
 #np-btn:hover {

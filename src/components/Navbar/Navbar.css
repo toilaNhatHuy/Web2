@@ -51,7 +51,7 @@ body {
   background-color: white;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
   font-weight: bold;
-  position:fixed;
+  /* position:fixed; */
   width: 100%;
   z-index: 100;
   font-family: "Righteous", sans-serif;

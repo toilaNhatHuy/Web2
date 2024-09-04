@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Righteous&family=Staatliches&display=swap');
+
 .countdown {
     display: flex;
     justify-content: center;
@@ -13,7 +15,7 @@
 .countdown h2 {
     font-size: 5em;
     text-transform: uppercase;
-    text-decoration: underline;
+    font-family: "Righteous", sans-serif;
 }
 
 .countdown-all {

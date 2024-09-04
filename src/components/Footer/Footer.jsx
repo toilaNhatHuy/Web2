@@ -40,12 +40,6 @@ function Footer(){
                                 <p>Sweaters</p>
                 
                             </div>
-                            <div className="row-2">
-                                <p>Shorts</p>
-                                <p>Jeans</p>
-                                <p>Pants</p>
-                                <p>Cargos</p>
-                            </div>
               
                         </div>
                     </div>

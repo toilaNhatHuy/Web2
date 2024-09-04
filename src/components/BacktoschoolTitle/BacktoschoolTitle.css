@@ -1,7 +1,7 @@
 .BTS{
     width: 100%;
     height:900px;
-    background-image: url("https://as2.ftcdn.net/v2/jpg/03/82/28/91/1000_F_382289191_5ywAIlBuIXmnYxA4ByA8WmvKzi7xzW0u.jpg");
+    background-image: url("../Image/WallBTS.jpg");
     background-repeat: no-repeat;
     background-size:100%;
     background-position: 100%;
@@ -11,7 +11,7 @@
     align-items: center;
 }
 #HeadBTS{
-    font-size: 200px;
+    font-size: 170px;
     font-family: "Righteous", sans-serif;
     color: rgb(0, 0, 0)
 }

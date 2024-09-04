@@ -21,6 +21,16 @@ function Dashboard() {
             setError({ status: 'ERR', message: 'Failed to fetch products' });
         }
     };
+   // Xóa sản phẩm
+    const handleDeleteProduct = async (id) => {
+        try {
+            await UserServicesFE.deleteProduct(id);
+            // Cập nhật danh sách sản phẩm sau khi xóa
+            setProducts(products.filter(product => product._id !== id));
+        } catch (error) {
+            setError({ status: 'ERR', message: 'Failed to delete product' });
+        }
+    };
     // Gọi getAllProducts khi component mount
     useEffect(() => {
         getAllProducts();
@@ -115,7 +125,7 @@ function Dashboard() {
                                 <strong>Price: {product.price}</strong>
                                 <strong>Color: {product.color}</strong>
                                 </div>
-                                <button>X</button>
+                                <button onClick={() => handleDeleteProduct(product._id)}>X</button>
                             </li>
                         ))}
                     </ul>

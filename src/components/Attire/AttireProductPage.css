@@ -120,7 +120,15 @@
     color: black;
     border: none;
   }
+  .container-at-2 #prev-ft:hover{
+    background-color: rgb(130, 130, 130);
+    color: white;
+    transition: 0.3s;
+  }
+  .container-at-2 #prev-ft:active{
+    background-color: rgb(208,208,208);
 
+  }
   .container-at-2 #next-ft {
     position: absolute;
     top: 50%;
@@ -132,7 +140,15 @@
     color: rgb(255, 255, 255);
     border: none;
   }
-  
+  .container-at-2 #next-ft:hover{
+    background-color: rgb(130, 130, 130);
+    color: white;
+    transition: 0.3s;
+  }
+  .container-at-2 #next-ft:active{
+    background-color: rgb(208,208,208);
+
+  }
 .container-at-2  #prev-ft {
     left: -100px; 
   }

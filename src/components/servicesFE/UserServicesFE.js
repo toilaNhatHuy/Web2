@@ -23,3 +23,7 @@ export const GetAllProduct = async (data) => {
     const res = await axios.get(`http://localhost:3001/api/product/get-all`,data)
     return res
 }
+export const deleteProduct = async (id) => {
+    const res = await axios.delete(`http://localhost:3001/api/product/delete-product/${id}`)
+    return res
+}
